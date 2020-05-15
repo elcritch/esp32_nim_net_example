@@ -10,7 +10,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <errno.h>
-#include <poll.h>
+#include <sys/poll.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
