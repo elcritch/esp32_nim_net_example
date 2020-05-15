@@ -136,6 +136,8 @@ void app_main(void)
 
     printf("finish!\n");
 
-    nimMain();
+    NimMain();
+    printf("NimMain!\n");
     run_http_server();
+    printf("run_http_server\n");
 }
