@@ -63,6 +63,9 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
     ESP_LOGI(TAG, "~~~~~~~~~~~");
 }
 
+void nimMain();
+void run_http_server();
+
 void app_main(void)
 {
     vTaskDelay(5000 / portTICK_PERIOD_MS);
@@ -132,4 +135,7 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_eth_start(eth_handle));
 
     printf("finish!\n");
+
+    nimMain();
+    run_http_server();
 }
