@@ -8,6 +8,7 @@
 
 #include "nimbase.h"
 #include <sys/socket.h>
+#include <sys/un.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
