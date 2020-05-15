@@ -17,7 +17,112 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 
-static const char *TAG = "eth_example";
+#include <string.h>
+#include "esp_system.h"
+#include "nvs_flash.h"
+#include "esp_netif.h"
+#include "protocol_examples_common.h"
+#include "mdns.h"
+#include "driver/gpio.h"
+#include "netdb.h"
+
+#define EXAMPLE_MDNS_INSTANCE "mdns-test"
+#define EXAMPLE_BUTTON_GPIO     0
+
+static char* generate_hostname(void);
+
+#if CONFIG_MDNS_RESOLVE_TEST_SERVICES == 1
+static void  query_mdns_host_with_gethostbyname(char * host);
+static void  query_mdns_host_with_getaddrinfo(char * host);
+#endif
+
+static const char *TAG = "mdns-test";
+
+static void initialise_mdns(void)
+{
+    char* hostname = TAG;
+    //initialize mDNS
+    ESP_ERROR_CHECK( mdns_init() );
+    //set mDNS hostname (required if you want to advertise services)
+    ESP_ERROR_CHECK( mdns_hostname_set(hostname) );
+    ESP_LOGI(TAG, "mdns hostname set to: [%s]", hostname);
+    //set default mDNS instance name
+    ESP_ERROR_CHECK( mdns_instance_name_set(hostname) );
+
+    //structure with TXT records
+    mdns_txt_item_t serviceTxtData[3] = {
+        {"board","esp32"},
+        {"u","user"},
+        {"p","password"}
+    };
+
+    //initialize service
+    ESP_ERROR_CHECK( mdns_service_add("ESP32-WebServer", "_http", "_tcp", 80, serviceTxtData, 3) );
+    //add another TXT item
+    ESP_ERROR_CHECK( mdns_service_txt_item_set("_http", "_tcp", "path", "/foobar") );
+    //change TXT item value
+    ESP_ERROR_CHECK( mdns_service_txt_item_set("_http", "_tcp", "u", "admin") );
+    free(hostname);
+}
+
+/* these strings match tcpip_adapter_if_t enumeration */
+static const char * if_str[] = {"STA", "AP", "ETH", "MAX"};
+
+/* these strings match mdns_ip_protocol_t enumeration */
+static const char * ip_protocol_str[] = {"V4", "V6", "MAX"};
+
+static void mdns_print_results(mdns_result_t * results){
+    mdns_result_t * r = results;
+    mdns_ip_addr_t * a = NULL;
+    int i = 1, t;
+    while(r){
+        printf("%d: Interface: %s, Type: %s\n", i++, if_str[r->tcpip_if], ip_protocol_str[r->ip_protocol]);
+        if(r->instance_name){
+            printf("  PTR : %s\n", r->instance_name);
+        }
+        if(r->hostname){
+            printf("  SRV : %s.local:%u\n", r->hostname, r->port);
+        }
+        if(r->txt_count){
+            printf("  TXT : [%u] ", r->txt_count);
+            for(t=0; t<r->txt_count; t++){
+                printf("%s=%s; ", r->txt[t].key, r->txt[t].value?r->txt[t].value:"NULL");
+            }
+            printf("\n");
+        }
+        a = r->addr;
+        while(a){
+            if(a->addr.type == ESP_IPADDR_TYPE_V6){
+                printf("  AAAA: " IPV6STR "\n", IPV62STR(a->addr.u_addr.ip6));
+            } else {
+                printf("  A   : " IPSTR "\n", IP2STR(&(a->addr.u_addr.ip4)));
+            }
+            a = a->next;
+        }
+        r = r->next;
+    }
+
+}
+
+static void query_mdns_service(const char * service_name, const char * proto)
+{
+    ESP_LOGI(TAG, "Query PTR: %s.%s.local", service_name, proto);
+
+    mdns_result_t * results = NULL;
+    esp_err_t err = mdns_query_ptr(service_name, proto, 3000, 20,  &results);
+    if(err){
+        ESP_LOGE(TAG, "Query Failed: %s", esp_err_to_name(err));
+        return;
+    }
+    if(!results){
+        ESP_LOGW(TAG, "No results found!");
+        return;
+    }
+
+    mdns_print_results(results);
+    mdns_query_results_free(results);
+}
+
 
 /** Event handler for Ethernet events */
 static void eth_event_handler(void *arg, esp_event_base_t event_base,
@@ -65,6 +170,8 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
 
 void app_main(void)
 {
+    ESP_ERROR_CHECK(nvs_flash_init());
+
     vTaskDelay(5000 / portTICK_PERIOD_MS);
     printf("Hello world!\n");
 
@@ -80,49 +187,17 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, &got_ip_event_handler, NULL));
 
+    initialise_mdns();
+
+
     eth_mac_config_t mac_config = ETH_MAC_DEFAULT_CONFIG();
     eth_phy_config_t phy_config = ETH_PHY_DEFAULT_CONFIG();
     phy_config.phy_addr = CONFIG_EXAMPLE_ETH_PHY_ADDR;
     phy_config.reset_gpio_num = CONFIG_EXAMPLE_ETH_PHY_RST_GPIO;
-#if CONFIG_EXAMPLE_USE_INTERNAL_ETHERNET
     mac_config.smi_mdc_gpio_num = CONFIG_EXAMPLE_ETH_MDC_GPIO;
     mac_config.smi_mdio_gpio_num = CONFIG_EXAMPLE_ETH_MDIO_GPIO;
     esp_eth_mac_t *mac = esp_eth_mac_new_esp32(&mac_config);
-#if CONFIG_EXAMPLE_ETH_PHY_IP101
-    esp_eth_phy_t *phy = esp_eth_phy_new_ip101(&phy_config);
-#elif CONFIG_EXAMPLE_ETH_PHY_RTL8201
-    esp_eth_phy_t *phy = esp_eth_phy_new_rtl8201(&phy_config);
-#elif CONFIG_EXAMPLE_ETH_PHY_LAN8720
     esp_eth_phy_t *phy = esp_eth_phy_new_lan8720(&phy_config);
-#elif CONFIG_EXAMPLE_ETH_PHY_DP83848
-    esp_eth_phy_t *phy = esp_eth_phy_new_dp83848(&phy_config);
-#endif
-#elif CONFIG_EXAMPLE_USE_DM9051
-    gpio_install_isr_service(0);
-    spi_device_handle_t spi_handle = NULL;
-    spi_bus_config_t buscfg = {
-        .miso_io_num = CONFIG_EXAMPLE_DM9051_MISO_GPIO,
-        .mosi_io_num = CONFIG_EXAMPLE_DM9051_MOSI_GPIO,
-        .sclk_io_num = CONFIG_EXAMPLE_DM9051_SCLK_GPIO,
-        .quadwp_io_num = -1,
-        .quadhd_io_num = -1,
-    };
-    ESP_ERROR_CHECK(spi_bus_initialize(CONFIG_EXAMPLE_DM9051_SPI_HOST, &buscfg, 1));
-    spi_device_interface_config_t devcfg = {
-        .command_bits = 1,
-        .address_bits = 7,
-        .mode = 0,
-        .clock_speed_hz = CONFIG_EXAMPLE_DM9051_SPI_CLOCK_MHZ * 1000 * 1000,
-        .spics_io_num = CONFIG_EXAMPLE_DM9051_CS_GPIO,
-        .queue_size = 20
-    };
-    ESP_ERROR_CHECK(spi_bus_add_device(CONFIG_EXAMPLE_DM9051_SPI_HOST, &devcfg, &spi_handle));
-    /* dm9051 ethernet driver is based on spi driver */
-    eth_dm9051_config_t dm9051_config = ETH_DM9051_DEFAULT_CONFIG(spi_handle);
-    dm9051_config.int_gpio_num = CONFIG_EXAMPLE_DM9051_INT_GPIO;
-    esp_eth_mac_t *mac = esp_eth_mac_new_dm9051(&dm9051_config, &mac_config);
-    esp_eth_phy_t *phy = esp_eth_phy_new_dm9051(&phy_config);
-#endif
     esp_eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
     esp_eth_handle_t eth_handle = NULL;
     ESP_ERROR_CHECK(esp_eth_driver_install(&config, &eth_handle));
@@ -130,6 +205,5 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_netif_attach(eth_netif, esp_eth_new_netif_glue(eth_handle)));
     /* start Ethernet driver state machine */
     ESP_ERROR_CHECK(esp_eth_start(eth_handle));
-
-    printf("finish!\n");
 }
+
