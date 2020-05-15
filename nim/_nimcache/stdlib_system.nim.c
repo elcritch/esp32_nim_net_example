@@ -10,7 +10,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <sys/poll.h>
+#include <poll.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL

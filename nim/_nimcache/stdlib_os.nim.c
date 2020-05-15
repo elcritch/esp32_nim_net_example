@@ -7,8 +7,8 @@
 /* section: NIM_merge_HEADERS */
 
 #include "nimbase.h"
-#include <string.h>
 #include <errno.h>
+#include <string.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -163,6 +163,11 @@ extern NIM_THREADVAR NIM_BOOL nimInErrorMode__759bT87luu8XGcbkw13FUjA;
 
 /* section: NIM_merge_PROCS */
 
+#line 97 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
+N_LIB_PRIVATE N_NIMCALL(NI32, osLastError__9bUWNxbcGnToMWA9b79aTXLIw)(void) {	NI32 result;	result = (NI32)0;
+#line 119 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
+	result = errno;	return result;}
+
 #line 549 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 static N_INLINE(void, nimFrame)(TFrame* s) {
 #line 550 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
@@ -231,11 +236,6 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, osErrorMsg__33xViSVWAmDrexoKkLfMhg)(NI32 er
 	}
 	LA3_: ;
 	popFrame();	return result;}
-
-#line 97 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
-N_LIB_PRIVATE N_NIMCALL(NI32, osLastError__9bUWNxbcGnToMWA9b79aTXLIw)(void) {	NI32 result;	result = (NI32)0;
-#line 119 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
-	result = errno;	return result;}
 
 #line 436 "/home/elcritch/.asdf/installs/nim/devel/lib/system/arithmetics.nim"
 static N_INLINE(NI, minuspercent___dgYAo7RfdUVVpvkfKDym8wsystem)(NI x, NI y) {	NI result;	nimfr_("-%", "/home/elcritch/.asdf/installs/nim/devel/lib/system/arithmetics."
