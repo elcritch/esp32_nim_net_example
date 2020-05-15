@@ -8,7 +8,7 @@
 
 #include "nimbase.h"
 #include <string.h>
-#include <poll.h>
+#include <sys/poll.h>
 #include <errno.h>
 #include <unistd.h>
 #undef LANGUAGE_C

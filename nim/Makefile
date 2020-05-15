@@ -29,6 +29,7 @@ all: clean
 
 	@echo NIMLIB: $(NIMLIB)
 	cp -v $(NIMLIB)/nimbase.h  $(NIMCACHE)/nimbase.h
+	sed -i 's|<poll.h>|<sys/poll.h>|' _nimcache/*
 
 clean:
 	rm -Rf $(NIMCACHE)
