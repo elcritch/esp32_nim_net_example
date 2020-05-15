@@ -1,0 +1,66 @@
+From 50517cb122329a3198f012e324080570f62f7e6f Mon Sep 17 00:00:00 2001
+From: Jaremy Creechley <creechley@gmail.com>
+Date: Fri, 15 May 2020 02:06:50 -0600
+Subject: [PATCH] pathching
+
+---
+ nim/_nimcache/stdlib_asyncdispatch.nim.c | 2 +-
+ nim/_nimcache/stdlib_nativesockets.nim.c | 1 +
+ nim/_nimcache/stdlib_selectors.nim.c     | 2 +-
+ nim/_nimcache/stdlib_system.nim.c        | 2 +-
+ 4 files changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/nim/_nimcache/stdlib_asyncdispatch.nim.c b/nim/_nimcache/stdlib_asyncdispatch.nim.c
+index e96d424..66b43d4 100644
+--- a/nim/_nimcache/stdlib_asyncdispatch.nim.c
++++ b/nim/_nimcache/stdlib_asyncdispatch.nim.c
+@@ -10,7 +10,7 @@
+ #include <string.h>
+ #include <sys/socket.h>
+ #include <errno.h>
+-#include <poll.h>
++#include <sys/poll.h>
+ #undef LANGUAGE_C
+ #undef MIPSEB
+ #undef MIPSEL
+diff --git a/nim/_nimcache/stdlib_nativesockets.nim.c b/nim/_nimcache/stdlib_nativesockets.nim.c
+index 5a3d77b..52bdaf0 100644
+--- a/nim/_nimcache/stdlib_nativesockets.nim.c
++++ b/nim/_nimcache/stdlib_nativesockets.nim.c
+@@ -8,6 +8,7 @@
+ 
+ #include "nimbase.h"
+ #include <sys/socket.h>
++#include <sys/un.h>
+ #include <unistd.h>
+ #include <netinet/in.h>
+ #include <fcntl.h>
+diff --git a/nim/_nimcache/stdlib_selectors.nim.c b/nim/_nimcache/stdlib_selectors.nim.c
+index fca4de9..5bab820 100644
+--- a/nim/_nimcache/stdlib_selectors.nim.c
++++ b/nim/_nimcache/stdlib_selectors.nim.c
+@@ -8,7 +8,7 @@
+ 
+ #include "nimbase.h"
+ #include <string.h>
+-#include <poll.h>
++#include <sys/poll.h>
+ #include <errno.h>
+ #include <unistd.h>
+ #undef LANGUAGE_C
+diff --git a/nim/_nimcache/stdlib_system.nim.c b/nim/_nimcache/stdlib_system.nim.c
+index 77bfd47..ea5bb28 100644
+--- a/nim/_nimcache/stdlib_system.nim.c
++++ b/nim/_nimcache/stdlib_system.nim.c
+@@ -10,7 +10,7 @@
+ #include <string.h>
+ #include <stdlib.h>
+ #include <stdio.h>
+-#include <poll.h>
++#include <sys/poll.h>
+ #undef LANGUAGE_C
+ #undef MIPSEB
+ #undef MIPSEL
+-- 
+2.20.1
+
