@@ -30,6 +30,7 @@ all: clean
 	@echo NIMLIB: $(NIMLIB)
 	cp -v $(NIMLIB)/nimbase.h  $(NIMCACHE)/nimbase.h
 	sed -i 's|<poll.h>|<sys/poll.h>|' _nimcache/*
+	sed -i 's|include <arpa/inet.h>|include <arpa/inet.h>\n#include <sys/un.h>|' _nimcache/*
 
 clean:
 	rm -Rf $(NIMCACHE)

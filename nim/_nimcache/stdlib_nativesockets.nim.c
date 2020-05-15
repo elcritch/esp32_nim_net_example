@@ -14,6 +14,7 @@
 #include <netdb.h>
 #include <string.h>
 #include <arpa/inet.h>
+#include <sys/un.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
