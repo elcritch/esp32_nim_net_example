@@ -2,6 +2,7 @@
 /*   (c) 2020 Andreas Rumpf */
 /* The generated code is subject to the original license. */
 #define NIM_INTBITS 32
+#define NIM_EmulateOverflowChecks
 
 /* section: NIM_merge_HEADERS */
 
@@ -27,41 +28,17 @@
 /* section: NIM_merge_PROC_HEADERS */
 N_LIB_PRIVATE N_NIMCALL(void, nimTestErrorFlag)(void);
 static N_INLINE(void, initStackBottomWith)(void* locals);
-N_LIB_PRIVATE N_NOINLINE(void, nimGC_setStackBottom)(void* theStackBottom);
 N_LIB_PRIVATE N_NIMCALL(void, systemDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, systemInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_posixDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_timesDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_timesInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_osDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_osInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_heapqueueDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_dequesDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_asyncfuturesDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_asyncfuturesInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_monotimesDatInit000)(void);
 N_LIB_PRIVATE N_NIMCALL(void, stdlib_nativesocketsInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_selectorsDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_asyncdispatchDatInit000)(void);
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_asyncdispatchInit000)(void);
 N_LIB_PRIVATE N_NIMCALL(void, NimMainModule)(void);
 
 /* section: NIM_merge_PROCS */
 
 #line 2107 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-static N_INLINE(void, initStackBottomWith)(void* locals) {
-#line 2111 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-
-#line 2111 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimGC_setStackBottom(locals);
-}
+static N_INLINE(void, initStackBottomWith)(void* locals) {}
 
 N_LIB_PRIVATE void PreMainInner(void) {
-	stdlib_timesInit000();
-	stdlib_osInit000();
-	stdlib_asyncfuturesInit000();
 	stdlib_nativesocketsInit000();
-	stdlib_asyncdispatchInit000();
 }
 
 N_LIB_PRIVATE int cmdCount;
@@ -72,16 +49,6 @@ N_LIB_PRIVATE void PreMain(void) {
 	inner = PreMainInner;
 	systemDatInit000();
 	initStackBottomWith((void *)&inner);
-	systemInit000();
-	stdlib_posixDatInit000();
-	stdlib_timesDatInit000();
-	stdlib_osDatInit000();
-	stdlib_heapqueueDatInit000();
-	stdlib_dequesDatInit000();
-	stdlib_asyncfuturesDatInit000();
-	stdlib_monotimesDatInit000();
-	stdlib_selectorsDatInit000();
-	stdlib_asyncdispatchDatInit000();
 	(*inner)();
 }
 

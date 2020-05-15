@@ -2,6 +2,7 @@
 /*   (c) 2020 Andreas Rumpf */
 /* The generated code is subject to the original license. */
 #define NIM_INTBITS 32
+#define NIM_EmulateOverflowChecks
 
 /* section: NIM_merge_HEADERS */
 
