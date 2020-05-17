@@ -8,7 +8,6 @@
 
 #include "nimbase.h"
 #include <arpa/inet.h>
-#include <inet.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL

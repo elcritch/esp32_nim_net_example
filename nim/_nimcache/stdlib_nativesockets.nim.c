@@ -9,14 +9,11 @@
 #include "nimbase.h"
 #include <sys/socket.h>
 #include <unistd.h>
-#include <sys/sockets.h>
 #include <fcntl.h>
 #include <sys/fcntl.h>
 #include <netdb.h>
 #include <string.h>
 #include <arpa/inet.h>
-#include <sockets.h>
-#include <inet.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -157,7 +154,7 @@ static const NimStringV2 TM__f9bP3LqjpgpB9cXL8Nnak7tQ_12 = {38, (NimStrPayload*)
 N_LIB_PRIVATE NIM_CONST int osInvalidSocket__voz9aUXu8jtRbvGZZJHNE8w = ((int) -1);
 N_LIB_PRIVATE int nativeAfInet__rQwsjQjVqXvdaL9aZofzWwg;
 N_LIB_PRIVATE int nativeAfInet6__Da6PongZL9aJxBrf7qeBmfA;
-N_LIB_PRIVATE int nativeAfUnix__F0RRmJ8JjfNr6yLSNEn9abA;
+N_LIB_PRIVATE NIM_CONST int nativeAfUnix__F0RRmJ8JjfNr6yLSNEn9abA = ((int) 1);
 extern NIM_THREADVAR NIM_BOOL nimInErrorMode__759bT87luu8XGcbkw13FUjA;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
@@ -291,7 +288,7 @@ N_LIB_PRIVATE N_NIMCALL(int, toInt__na0alpTcWAzTnn2v04w1CQ)(tyEnum_Domain__Q79bE
 	{
 #line 136 "/Users/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 		nimln_(136, "/Users/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets"
-".nim");		result = AF_UNIX;	}
+".nim");		result = ((int) 1);	}
 	break;
 	case ((tyEnum_Domain__Q79bEtFARvq0ekDNtvj3Vqg) 2):
 	{
@@ -840,9 +837,6 @@ N_LIB_PRIVATE N_NIMCALL(void, stdlib_nativesocketsInit000)(void) {
 ".nim");	nativeAfInet__rQwsjQjVqXvdaL9aZofzWwg = AF_INET;
 #line 114 "/Users/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 	nimln_(114, "/Users/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets"
-".nim");	nativeAfInet6__Da6PongZL9aJxBrf7qeBmfA = AF_INET6;
-#line 115 "/Users/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-	nimln_(115, "/Users/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets"
-".nim");	nativeAfUnix__F0RRmJ8JjfNr6yLSNEn9abA = AF_UNIX;	popFrame();}
+".nim");	nativeAfInet6__Da6PongZL9aJxBrf7qeBmfA = AF_INET6;	popFrame();}
 }
 
