@@ -7,7 +7,8 @@
 /* section: NIM_merge_HEADERS */
 
 #include "nimbase.h"
-#include <fcntl.h>
+#include <arpa/inet.h>
+#include <inet.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -34,6 +35,9 @@
   #  define nimln_(n, file) \
       FR_.line = n; FR_.filename = file;
   
+/* section: NIM_merge_TYPES */
+typedef NIM_CHAR tyArray__Wfh9bjgBQ4UqJsyISUuDSuA[16];
+
 /* section: NIM_merge_PROC_HEADERS */
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_LIB_PRIVATE N_NOINLINE(void, callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw)(void);
@@ -89,48 +93,25 @@ static N_INLINE(void, popFrame)(void) {
 #line 86 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
 
-#line 326 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, setInheritable__avyDiy1HdQrfaD3Ql9b63EQ)(int f, NIM_BOOL inheritable) {	NIM_BOOL result;	int flags;	int T10_;	nimfr_("setInheritable", "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");{	result = (NIM_BOOL)0;
-#line 336 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(336, "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 336 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	flags = fcntl(f, F_GETFD);
-#line 337 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(337, "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	{
-#line 337 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		if (!(flags == ((NI32) -1))) goto LA3_;
+#line 487 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+N_LIB_PRIVATE N_NIMCALL(int, IN6_IS_ADDR_V4MAPPED__mw8gNzyO9aefqvIsVO04r4Q)(struct in6_addr* ipv6_address) {	int result;	NU32* bits32;	NIM_BOOL T1_;	NU32 T3_;	nimfr_("IN6_IS_ADDR_V4MAPPED", "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");{	result = (int)0;
+#line 488 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	nimln_(488, "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");	bits32 = ((NU32*) (ipv6_address));
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	nimln_(489, "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 
-#line 338 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		nimln_(338, "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 338 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		result = NIM_FALSE;		goto BeforeRet_;
-	}
-	LA3_: ;
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	T1_ = (NIM_BOOL)0;
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	T1_ = (bits32[(((NI) 1))- 0] == ((NU32) 0));	if (!(T1_)) goto LA2_;
 
-#line 339 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(339, "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 339 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	{		if (!inheritable) goto LA7_;
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 
-#line 339 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 
-#line 339 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		flags = (NI32)(flags & (NI32)((NU32) ~(FD_CLOEXEC)));	}
-	goto LA5_;
-	LA7_: ;
-	{
-#line 339 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		flags = (NI32)(flags | FD_CLOEXEC);	}
-	LA5_: ;
-
-#line 340 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(340, "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 340 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/Users/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	T10_ = (int)0;	T10_ = fcntl(f, F_SETFD, flags);	result = !((T10_ == ((NI32) -1)));	}BeforeRet_: ;
+#line 489 "/Users/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	T3_ = (NU32)0;	T3_ = htonl(((NU32) 65535));	T1_ = (bits32[(((NI) 2))- 0] == T3_);	LA2_: ;
+	result = ((int) (T1_));	goto BeforeRet_;
+	}BeforeRet_: ;
 	popFrame();	return result;}
