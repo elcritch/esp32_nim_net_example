@@ -115,7 +115,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, dollar___RkX9btpg5sQIaP8yYXB6tbA)(NU64 x);
 static N_INLINE(NCSTRING, nimToCStringConv)(NimStringV2 s);
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ)(NimStringV2* dest);
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, cstrToNimstr)(NCSTRING str);
-N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
 N_NIMCALL(NimStringV2, mnewString)(NI len);
 N_LIB_PRIVATE N_NOINLINE(void, raiseRangeErrorI)(NI64 i, NI64 a, NI64 b);
 static N_INLINE(NIM_BOOL, eqeq___aqip9cmQIuefPKdd25wuEEwsystem)(NCSTRING x, NCSTRING y);
@@ -430,7 +430,7 @@ N_LIB_PRIVATE N_NIMCALL(void, setBlocking__cb4bf1XfwV3lYUWrh9aK0fQ)(int s, NIM_B
 	popFrame();}
 
 #line 595 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-N_LIB_PRIVATE N_NIMCALL(void, setSockOptInt__MLZnSwDorteS4Gs1Wzk4Ag)(int socket_0, NI level, NI optname, NI optval) {	int value;NIM_BOOL* nimErr_;	nimfr_("setSockOptInt", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
+N_LIB_PRIVATE N_NIMCALL(void, setSockOptInt__MLZnSwDorteS4Gs1Wzk4Ag)(int socket, NI level, NI optname, NI optval) {	int value;NIM_BOOL* nimErr_;	nimfr_("setSockOptInt", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");{nimErr_ = nimErrorFlag();
 #line 598 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 	nimln_(598, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
@@ -445,7 +445,7 @@ N_LIB_PRIVATE N_NIMCALL(void, setSockOptInt__MLZnSwDorteS4Gs1Wzk4Ag)(int socket_
 		nimln_(599, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");
 #line 599 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-		T3_ = (int)0;		T3_ = setsockopt(socket_0, ((int) (level)), ((int) (optname)), ((void*) ((&value))), ((socklen_t) 4));		if (!(T3_ < ((NI32) 0))) goto LA4_;
+		T3_ = (int)0;		T3_ = setsockopt(socket, ((int) (level)), ((int) (optname)), ((void*) ((&value))), ((socklen_t) 4));		if (!(T3_ < ((NI32) 0))) goto LA4_;
 
 #line 601 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 		nimln_(601, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
@@ -578,22 +578,22 @@ N_LIB_PRIVATE N_NIMCALL(struct addrinfo*, getAddrInfo__tqDVFDDrykzhk8Hg89bBGOA)(
 	popFrame();	return result;}
 
 #line 261 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-N_LIB_PRIVATE N_NIMCALL(int, bindAddr__2bWNEuMNpqyrisnee7salA)(int socket_0, struct sockaddr* name, socklen_t namelen) {	int result;	nimfr_("bindAddr", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
+N_LIB_PRIVATE N_NIMCALL(int, bindAddr__2bWNEuMNpqyrisnee7salA)(int socket, struct sockaddr* name, socklen_t namelen) {	int result;	nimfr_("bindAddr", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");	result = (int)0;
 #line 263 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 	nimln_(263, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");
 #line 263 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-	result = bind(socket_0, name, namelen);	popFrame();	return result;}
+	result = bind(socket, name, namelen);	popFrame();	return result;}
 
 #line 265 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-N_LIB_PRIVATE N_NIMCALL(int, listen__GKjm1SHWHhunkOA9brJ9boWQ)(int socket_0, int backlog) {	int result;	nimfr_("listen", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
+N_LIB_PRIVATE N_NIMCALL(int, listen__GKjm1SHWHhunkOA9brJ9boWQ)(int socket, int backlog) {	int result;	nimfr_("listen", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");	result = (int)0;
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 	nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-	result = listen(socket_0, backlog);	popFrame();	return result;}
+	result = listen(socket, backlog);	popFrame();	return result;}
 
 #line 2877 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
 static N_INLINE(NIM_BOOL, eqeq___aqip9cmQIuefPKdd25wuEEwsystem)(NCSTRING x, NCSTRING y) {	NIM_BOOL result;	nimfr_("==", "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	result = (NIM_BOOL)0;
@@ -677,7 +677,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, getAddrString__gGVgxrpFPEWusQ1lEJKgrQ)(stru
 #line 470 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 		T9_.len = 0; T9_.p = NIM_NIL;		T9_ = mnewString(((NI) (addrLen)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA((&result), T9_);
+		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA_2((&result), T9_);
 
 #line 471 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 		nimln_(471, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
@@ -733,7 +733,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, getAddrString__gGVgxrpFPEWusQ1lEJKgrQ)(stru
 #line 477 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 			T22_.len = 0; T22_.p = NIM_NIL;			T22_ = substr__iGg0RIKceRvsmvq8FUHOEw(result, ((NI) 7));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");			eqsink___aBBXmHFBEivKqERloP6zmA((&result), T22_);
+			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");			eqsink___aBBXmHFBEivKqERloP6zmA_2((&result), T22_);
 		}
 		LA20_: ;
 
@@ -754,7 +754,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, getAddrString__gGVgxrpFPEWusQ1lEJKgrQ)(stru
 	popFrame();	return result;}
 
 #line 197 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-N_LIB_PRIVATE N_NIMCALL(void, close__aWWGrvNmJHY3nTDogHjdsw)(int socket_0) {	int T1_;	nimfr_("close", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
+N_LIB_PRIVATE N_NIMCALL(void, close__aWWGrvNmJHY3nTDogHjdsw)(int socket) {	int T1_;	nimfr_("close", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
 "nim");
 #line 202 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 	nimln_(202, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets."
@@ -762,7 +762,7 @@ N_LIB_PRIVATE N_NIMCALL(void, close__aWWGrvNmJHY3nTDogHjdsw)(int socket_0) {	int
 #line 202 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
 
 #line 202 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim"
-	T1_ = (int)0;	T1_ = close(socket_0);	(void)(T1_);
+	T1_ = (int)0;	T1_ = close(socket);	(void)(T1_);
 	popFrame();}
 N_LIB_PRIVATE N_NIMCALL(void, stdlib_nativesocketsInit000)(void) {
 

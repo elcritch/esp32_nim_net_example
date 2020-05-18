@@ -195,7 +195,7 @@ N_LIB_PRIVATE N_NIMCALL(void, failedAssertImpl__W9cjVocn1tjhW7p7xohJj6A)(NimStri
 N_LIB_PRIVATE N_NOINLINE(void, raiseRangeErrorI)(NI64 i, NI64 a, NI64 b);
 N_LIB_PRIVATE N_NIMCALL(void*, newSeqPayload)(NI cap, NI elemSize, NI elemAlign);
 N_LIB_PRIVATE N_NOINLINE(void, raiseIndexError2)(NI i, NI n);
-N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___r6aagoRVuov7HvfEjIi3Uw)(tySequence__sM4lkSb7zS6F7OVMvW9cffQ* dest, tySequence__sM4lkSb7zS6F7OVMvW9cffQ src);
 static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 N_LIB_PRIVATE N_NIMCALL(void, X5BX5Deq___mN6pEafN35VS9clM9cSab8RQ)(tyObject_Table__qagh2zcXAhSb9aRfetCb26g* t, NimStringV2 key, tySequence__sM4lkSb7zS6F7OVMvW9cffQ val);
@@ -609,7 +609,7 @@ N_LIB_PRIVATE N_NIMCALL(void, clear__07MLq9aB3eLozSrm47FsXlQ)(tyObject_Table__qa
 				nimln_(113, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/ta"
 "bleimpl.nim");				T5_.len = 0; T5_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				eqsink___aBBXmHFBEivKqERloP6zmA((&(*t).data.p->data[i].Field1), T5_);
+				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				eqsink___aBBXmHFBEivKqERloP6zmA_2((&(*t).data.p->data[i].Field1), T5_);
 
 #line 2161 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
 				nimln_(2161, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");				if ((NU)(i) >= (NU)(*t).data.len){ raiseIndexError2(i,(*t).data.len-1); goto BeforeRet_;}
@@ -934,7 +934,7 @@ N_LIB_PRIVATE N_NIMCALL(void, rawInsert__33xmfwuCZJNeqIPBi0H8pw)(tyObject_Table_
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	if ((NU)(h) >= (NU)(*data).len){ raiseIndexError2(h,(*data).len-1); goto LA1_;}
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	eqsink___aBBXmHFBEivKqERloP6zmA((&(*data).p->data[h].Field1), key);
+	eqsink___aBBXmHFBEivKqERloP6zmA_2((&(*data).p->data[h].Field1), key);
 
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim"
 	nimln_(22, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/ta"

@@ -185,7 +185,7 @@ static N_INLINE(void, nimZeroMem)(void* p, NI size);
 static N_INLINE(void, nimSetMem__JE6t4x7Z3v2iVz27Nx0MRAmemory)(void* a, int v, NI size);
 N_LIB_PRIVATE N_NIMCALL(void, verifySelectParams__VELOTGJpsenobkytwG1KAw)(NI timeout);
 N_LIB_PRIVATE N_NIMCALL(void, failedAssertImpl__W9cjVocn1tjhW7p7xohJj6A)(NimStringV2 msg);
-N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
 static N_INLINE(void, appendString)(NimStringV2* dest, NimStringV2 src);
 static N_INLINE(void, copyMem__M04YC71iJg1N7gBF3HZTngsystem)(void* dest, void* source, NI size);
 static N_INLINE(void, nimCopyMem)(void* dest, void* source, NI size);
@@ -655,10 +655,10 @@ N_LIB_PRIVATE N_NIMCALL(void, verifySelectParams__VELOTGJpsenobkytwG1KAw)(NI tim
 #line 324 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim"
 		nimln_(324, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim");		T7_.len = 0; T7_.p = NIM_NIL;		T7_ = nimIntToStr(timeout);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD_), T7_);
+		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD_), T7_);
 		T6_ = rawNewString(colontmpD_.len + 129);appendString((&T6_), TM__ln5vuDpFyDrAqQbYD2g52Q_5);appendString((&T6_), colontmpD_);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__2), T6_);
+		eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD__2), T6_);
 
 #line 324 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim"
 		nimln_(324, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim");		failedAssertImpl__W9cjVocn1tjhW7p7xohJj6A(colontmpD__2);
@@ -877,17 +877,17 @@ N_LIB_PRIVATE N_NIMCALL(void, raiseIOSelectorsError__E2YyF3Q0SipazWf0jnjh7w)(NI3
 #line 276 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim"
 	T3_.len = 0; T3_.p = NIM_NIL;	T3_ = osErrorMsg__33xViSVWAmDrexoKkLfMhg(message);	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD_), T3_);
+	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD_), T3_);
 
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 
 #line 276 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim"
 	nimln_(276, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim");	T4_.len = 0; T4_.p = NIM_NIL;	T4_ = nimIntToStr(((NI) (message)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__2), T4_);
+	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD__2), T4_);
 	T2_ = rawNewString(colontmpD_.len + colontmpD__2.len + 9);appendString((&T2_), colontmpD_);appendString((&T2_), TM__ln5vuDpFyDrAqQbYD2g52Q_14);appendString((&T2_), colontmpD__2);appendString((&T2_), TM__ln5vuDpFyDrAqQbYD2g52Q_16);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__3), T2_);
+	eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD__3), T2_);
 	prepareAdd((&msg), colontmpD__3.len + 0);appendString((&msg), colontmpD__3);
 #line 279 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim"
 	nimln_(279, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim");	T5_ = (tyObject_IOSelectorsException__W6GmT4FRSGpTsHizSNfKpA*)0;	T5_ = (tyObject_IOSelectorsException__W6GmT4FRSGpTsHizSNfKpA*) nimNewObj(sizeof(tyObject_IOSelectorsException__W6GmT4FRSGpTsHizSNfKpA));	(*T5_).Sup.Sup.Sup.m_type = (&NTI__W6GmT4FRSGpTsHizSNfKpA_);	(*T5_).Sup.Sup.name = "IOSelectorsException";
@@ -1456,10 +1456,10 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_SelectorKey__561GPxg10TdJiEAAWoraPw*, getKey__N
 		nimln_(231, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/iose"
 "lectors_select.nim");		T13_.len = 0; T13_.p = NIM_NIL;		T13_ = nimIntToStr(((NI) (fd)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD_), T13_);
+		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD_), T13_);
 		T12_ = rawNewString(colontmpD_.len + 153);appendString((&T12_), TM__ln5vuDpFyDrAqQbYD2g52Q_59);appendString((&T12_), colontmpD_);appendString((&T12_), TM__ln5vuDpFyDrAqQbYD2g52Q_61);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__2), T12_);
+		eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD__2), T12_);
 
 #line 231 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim"
 		nimln_(231, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/iose"
@@ -1547,10 +1547,10 @@ N_LIB_PRIVATE N_NIMCALL(void, delKey__IQ6AIJwY1reVEiO0aLbv4g)(tyObject_SelectorI
 		nimln_(244, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/iose"
 "lectors_select.nim");		T13_.len = 0; T13_.p = NIM_NIL;		T13_ = nimIntToStr(((NI) (fd)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD_), T13_);
+		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD_), T13_);
 		T12_ = rawNewString(colontmpD_.len + 153);appendString((&T12_), TM__ln5vuDpFyDrAqQbYD2g52Q_66);appendString((&T12_), colontmpD_);appendString((&T12_), TM__ln5vuDpFyDrAqQbYD2g52Q_67);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__2), T12_);
+		eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD__2), T12_);
 
 #line 244 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim"
 		nimln_(244, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/iose"

@@ -65,7 +65,7 @@ struct tySequence__uB9b75OUPRENsBAu4AnoePA_Content { NI cap; tyObject_StackTrace
       
 /* section: NIM_merge_PROC_HEADERS */
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, collectionToString__bl0bSVWGY9awnrUbJL6olrQ)(tySequence__uB9b75OUPRENsBAu4AnoePA x, NimStringV2 prefix, NimStringV2 separator, NimStringV2 suffix);
-N_LIB_PRIVATE N_NIMCALL(void, eq___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eq___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
 static N_INLINE(void, nimZeroMem)(void* p, NI size);
 static N_INLINE(void, nimSetMem__JE6t4x7Z3v2iVz27Nx0MRAmemory)(void* a, int v, NI size);
 static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
@@ -374,7 +374,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, collectionToString__bl0bSVWGY9awnrUbJL6olrQ
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	eq___aBBXmHFBEivKqERloP6zmA_2((&result), prefix);
+	eq___aBBXmHFBEivKqERloP6zmA((&result), prefix);
 
 #line 119 "/home/elcritch/.asdf/installs/nim/devel/lib/system/dollars.nim"
 	nimln_(119, "/home/elcritch/.asdf/installs/nim/devel/lib/system/dollars.nim");	firstElement = NIM_TRUE;	{		tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA value;		NI i;		NI L;		NI T2_;		nimZeroMem((void*)(&value), sizeof(tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA));

@@ -74,7 +74,7 @@ static N_INLINE(NI, parseUntil__yxs3WjxMSDtXEyiLC9aqFCAparseutils)(NimStringV2 s
 static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 N_LIB_PRIVATE N_NOINLINE(void, raiseOverflow)(void);
 static N_INLINE(NIM_BOOL, nimSubInt)(NI a, NI b, NI* res);
-N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, substr__2yh9cer0ymNRHlOOg8P7IuA)(NimStringV2 s, NI first, NI last);
 N_LIB_PRIVATE N_NIMCALL(NI, nsuCmpIgnoreCase)(NimStringV2 a, NimStringV2 b);
 N_LIB_PRIVATE N_NIMCALL(void, parseAuthority__zi1fIQvZNRFlvZX648raeA)(NimStringV2 authority, tyObject_Uri__j49bukNPrq747O1GRd4Ng9bQ* result);
@@ -382,7 +382,7 @@ static N_INLINE(NI, parseUntil__yxs3WjxMSDtXEyiLC9aqFCAparseutils)(NimStringV2 s
 #line 323 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/parseutils.nim"
 	T5_.len = 0; T5_.p = NIM_NIL;	T5_ = substr__2yh9cer0ymNRHlOOg8P7IuA(s, start, (NI)(TM__VzbRQH9cb1xm1tSKH4PwBSw_13));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&(*token)), T5_);
+	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA_2((&(*token)), T5_);
 	}BeforeRet_: ;
 	popFrame();	return result;}
 
@@ -572,7 +572,7 @@ static N_INLINE(NI, parseWhile__aIOGZyeHx2rHC71Dcc2SCwparseutils)(NimStringV2 s,
 #line 383 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/parseutils.nim"
 	T5_.len = 0; T5_.p = NIM_NIL;	T5_ = substr__2yh9cer0ymNRHlOOg8P7IuA(s, start, (NI)(TM__VzbRQH9cb1xm1tSKH4PwBSw_26));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&(*token)), T5_);
+	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA_2((&(*token)), T5_);
 	}BeforeRet_: ;
 	popFrame();	return result;}
 

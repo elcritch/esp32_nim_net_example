@@ -96,7 +96,7 @@ static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_LIB_PRIVATE N_NOINLINE(void, callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw)(void);
 static N_INLINE(void, popFrame)(void);
-N_LIB_PRIVATE N_NIMCALL(void, eq___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eq___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
 
 /* section: NIM_merge_DATA */
 extern TNimType NTI__PtYxPmY5X0dorfvxAFbJpQ_;
@@ -185,7 +185,7 @@ N_LIB_PRIVATE N_NOINLINE(void, raiseAssert__gpGJG5CoQzE64skFd9bPG7A)(NimStringV2
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	eq___aBBXmHFBEivKqERloP6zmA_2((&colontmpD_), msg);
+	eq___aBBXmHFBEivKqERloP6zmA((&colontmpD_), msg);
 
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/system/assertions.nim"
 	nimln_(22, "/home/elcritch/.asdf/installs/nim/devel/lib/system/assertions.n"

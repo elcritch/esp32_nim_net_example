@@ -94,7 +94,7 @@ struct tySequence__uB9b75OUPRENsBAu4AnoePA_Content { NI cap; tyObject_StackTrace
 N_LIB_PRIVATE N_NOINLINE(void, raiseIndexError2)(NI i, NI n);
 static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 N_LIB_PRIVATE N_NOINLINE(void, raiseOverflow)(void);
-N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, substr__2yh9cer0ymNRHlOOg8P7IuA)(NimStringV2 s, NI first, NI last);
 static N_INLINE(NIM_BOOL, nimSubInt)(NI a, NI b, NI* res);
 static N_INLINE(void, appendString)(NimStringV2* dest, NimStringV2 src);
@@ -397,7 +397,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, nsuIndent)(NimStringV2 s, NI count, NimStri
 #line 1493 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 				nimln_(1493, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				T32_.len = 0; T32_.p = NIM_NIL;				T32_ = substr__2yh9cer0ymNRHlOOg8P7IuA(s, first, T26_);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				eqsink___aBBXmHFBEivKqERloP6zmA((&line), T32_);
+				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				eqsink___aBBXmHFBEivKqERloP6zmA_2((&line), T32_);
 
 #line 1494 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 				nimln_(1494, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				{
@@ -1446,7 +1446,7 @@ N_LIB_PRIVATE N_NIMCALL(void, nsuAddf)(NimStringV2* s, NimStringV2 formatstr, Ni
 #line 2741 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 						T70_.len = 0; T70_.p = NIM_NIL;						T70_ = substr__2yh9cer0ymNRHlOOg8P7IuA(formatstr, (NI)(TM__JGc9b9bh2D3nTdUR7TGyq8aA_68), (NI)(TM__JGc9b9bh2D3nTdUR7TGyq8aA_69));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-						nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");						eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD_), T70_);
+						nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");						eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD_), T70_);
 
 #line 2741 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 						nimln_(2741, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");						x = findNormalized__7LxW6wQxHkQGOeaPw6nEjQ(colontmpD_, a, aLen_0);						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
@@ -1523,7 +1523,7 @@ N_LIB_PRIVATE N_NIMCALL(void, nsuAddf)(NimStringV2* s, NimStringV2 formatstr, Ni
 #line 2748 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 					T83_.len = 0; T83_.p = NIM_NIL;					T83_ = substr__2yh9cer0ymNRHlOOg8P7IuA(formatstr, (NI)(TM__JGc9b9bh2D3nTdUR7TGyq8aA_74), (NI)(TM__JGc9b9bh2D3nTdUR7TGyq8aA_75));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-					nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");					eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__2), T83_);
+					nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");					eqsink___aBBXmHFBEivKqERloP6zmA_2((&colontmpD__2), T83_);
 
 #line 2748 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 					nimln_(2748, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");					x_2 = findNormalized__7LxW6wQxHkQGOeaPw6nEjQ(colontmpD__2, a, aLen_0);					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;

@@ -115,7 +115,7 @@ struct tySequence__uB9b75OUPRENsBAu4AnoePA_Content { NI cap; tyObject_StackTrace
 
       
 /* section: NIM_merge_PROC_HEADERS */
-N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, cstrToNimstr)(NCSTRING str);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_LIB_PRIVATE N_NOINLINE(void, callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw)(void);
@@ -238,7 +238,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, osErrorMsg__33xViSVWAmDrexoKkLfMhg)(NI32 er
 #line 58 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
 		T5_ = (NCSTRING)0;		T5_ = strerror(errorCode);		T6_.len = 0; T6_.p = NIM_NIL;		T6_ = cstrToNimstr(T5_);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA((&result), T6_);
+		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA_2((&result), T6_);
 	}
 	LA3_: ;
 	popFrame();	return result;}
@@ -443,7 +443,7 @@ N_LIB_PRIVATE N_NOINLINE(tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA*, newOSError__
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
 	T2_.len = 0; T2_.p = NIM_NIL;	T2_ = osErrorMsg__33xViSVWAmDrexoKkLfMhg(errorCode);	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&(*e).Sup.Sup.message), T2_);
+	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA_2((&(*e).Sup.Sup.message), T2_);
 
 #line 81 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim"
 	nimln_(81, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr"
@@ -497,7 +497,7 @@ N_LIB_PRIVATE N_NOINLINE(tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA*, newOSError__
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqsink___aBBXmHFBEivKqERloP6zmA((&(*e).Sup.Sup.message), TM__yu6cxgKBBXbNsTkT9cyMd4g_11);
+		eqsink___aBBXmHFBEivKqERloP6zmA_2((&(*e).Sup.Sup.message), TM__yu6cxgKBBXbNsTkT9cyMd4g_11);
 	}
 	LA16_: ;
 

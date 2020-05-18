@@ -8,7 +8,6 @@
 
 #include "nimbase.h"
 #include <sys/socket.h>
-#include "winsock2.h"
 #include <errno.h>
 #undef LANGUAGE_C
 #undef MIPSEB
@@ -99,12 +98,12 @@ static N_INLINE(void, popFrame)(void) {
 #line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
 
-#line 1035 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-N_LIB_PRIVATE N_NIMCALL(int, toCInt__jdGcpZaHg8FvJJ7dgE9b75w)(tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ opt) {	int result;	nimfr_("toCInt", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (int)0;
-#line 1036 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(1036, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
 #line 1037 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(1037, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	switch (opt) {
+N_LIB_PRIVATE N_NIMCALL(int, toCInt__jdGcpZaHg8FvJJ7dgE9b75w)(tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ opt) {	int result;	nimfr_("toCInt", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (int)0;
+#line 1038 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(1038, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
+#line 1039 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(1039, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	switch (opt) {
 	case ((tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ) 0):
 	{		result = SO_ACCEPTCONN;	}
 	break;
