@@ -7,6 +7,7 @@
 /* section: NIM_merge_HEADERS */
 
 #include "nimbase.h"
+#include <stdio.h>
 #include <string.h>
 #undef LANGUAGE_C
 #undef MIPSEB
@@ -721,19 +722,27 @@ static N_INLINE(NIM_BOOL, nimDecRefIsLast)(void* p) {	NIM_BOOL result;	nimfr_("n
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
 		T5_ = (NI)0;		T5_ = minuspercent___dgYAo7RfdUVVpvkfKDym8wsystem(((NI) (ptrdiff_t) (p)), ((NI) 4));		cell = ((tyObject_RefHeader__Gi7WQzlT1ZRToh9a2ueYb4A*) (T5_));
 #line 153 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
-		nimln_(153, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");		{
+		nimln_(153, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");		{			int T10_;
 #line 153 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
 
 #line 153 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
 			if (!((NI)((*cell).rc & ((NI) -8)) == ((NI) 0))) goto LA8_;
 
 #line 154 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
-			nimln_(154, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");			result = NIM_TRUE;		}
+			nimln_(154, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");			result = NIM_TRUE;
+#line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+			nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");
+#line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+			T10_ = (int)0;			T10_ = printf("[ABOUT TO DESTROY] %p\012", cell);		}
 		goto LA6_;
 		LA8_: ;
-		{			NI TM__vnqLhdH9cCREQ2r9aXVOqbvQ_2;
+		{			NI TM__vnqLhdH9cCREQ2r9aXVOqbvQ_2;			int T12_;
 #line 158 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
-			nimln_(158, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");			if (nimSubInt((*cell).rc, ((NI) 8), &TM__vnqLhdH9cCREQ2r9aXVOqbvQ_2)) { raiseOverflow(); goto BeforeRet_;};			(*cell).rc = (NI)(TM__vnqLhdH9cCREQ2r9aXVOqbvQ_2);		}
+			nimln_(158, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");			if (nimSubInt((*cell).rc, ((NI) 8), &TM__vnqLhdH9cCREQ2r9aXVOqbvQ_2)) { raiseOverflow(); goto BeforeRet_;};			(*cell).rc = (NI)(TM__vnqLhdH9cCREQ2r9aXVOqbvQ_2);
+#line 161 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+			nimln_(161, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");
+#line 161 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+			T12_ = (int)0;			T12_ = printf("[DeCREF] %p\012", cell);		}
 		LA6_: ;
 	}
 	LA3_: ;
@@ -816,13 +825,21 @@ static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	NI 
 	return result;}
 
 #line 107 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
-static N_INLINE(void, nimIncRef)(void* p) {	NI T1_;	NI TM__vnqLhdH9cCREQ2r9aXVOqbvQ_3;	nimfr_("nimIncRef", "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");{
+static N_INLINE(void, nimIncRef)(void* p) {	NI T1_;	NI TM__vnqLhdH9cCREQ2r9aXVOqbvQ_3;	NI T2_;	int T3_;	nimfr_("nimIncRef", "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");{
 #line 108 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
 	nimln_(108, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
 	nimln_(65, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
-	T1_ = (NI)0;	T1_ = minuspercent___dgYAo7RfdUVVpvkfKDym8wsystem(((NI) (ptrdiff_t) (p)), ((NI) 4));	if (nimAddInt((*((tyObject_RefHeader__Gi7WQzlT1ZRToh9a2ueYb4A*) (T1_))).rc, ((NI) 8), &TM__vnqLhdH9cCREQ2r9aXVOqbvQ_3)) { raiseOverflow(); goto BeforeRet_;};	(*((tyObject_RefHeader__Gi7WQzlT1ZRToh9a2ueYb4A*) (T1_))).rc = (NI)(TM__vnqLhdH9cCREQ2r9aXVOqbvQ_3);	}BeforeRet_: ;
+	T1_ = (NI)0;	T1_ = minuspercent___dgYAo7RfdUVVpvkfKDym8wsystem(((NI) (ptrdiff_t) (p)), ((NI) 4));	if (nimAddInt((*((tyObject_RefHeader__Gi7WQzlT1ZRToh9a2ueYb4A*) (T1_))).rc, ((NI) 8), &TM__vnqLhdH9cCREQ2r9aXVOqbvQ_3)) { raiseOverflow(); goto BeforeRet_;};	(*((tyObject_RefHeader__Gi7WQzlT1ZRToh9a2ueYb4A*) (T1_))).rc = (NI)(TM__vnqLhdH9cCREQ2r9aXVOqbvQ_3);
+#line 110 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+	nimln_(110, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");
+#line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+	nimln_(65, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");
+#line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+	T2_ = (NI)0;	T2_ = minuspercent___dgYAo7RfdUVVpvkfKDym8wsystem(((NI) (ptrdiff_t) (p)), ((NI) 4));
+#line 110 "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim"
+	nimln_(110, "/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim");	T3_ = (int)0;	T3_ = printf("[INCREF] %p\012", ((tyObject_RefHeader__Gi7WQzlT1ZRToh9a2ueYb4A*) (T2_)));	}BeforeRet_: ;
 	popFrame();}
 
 #line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"

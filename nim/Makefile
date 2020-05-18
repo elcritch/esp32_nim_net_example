@@ -9,6 +9,8 @@ all: nim
 nim: clean
 	nim c \
 		--gc:arc \
+		-d:debug \
+		-d:traceArc \
 		--cpu:$(NIM_CPU) \
 		--nim_cache:"$(NIMCACHE)" \
 		--nimble_path:"$(NIMBLE)/pkgs" \
