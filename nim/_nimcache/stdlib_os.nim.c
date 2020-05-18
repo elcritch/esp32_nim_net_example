@@ -36,8 +36,9 @@
       FR_.line = n; FR_.filename = file;
   
 /* section: NIM_merge_FORWARD_TYPES */
-typedef struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ tySequence__sM4lkSb7zS6F7OVMvW9cffQ;
-typedef struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content;
+typedef struct tyObject_Table__Ji6x6JQ0gVMaFr8AIk18Ug tyObject_Table__Ji6x6JQ0gVMaFr8AIk18Ug;
+typedef struct tySequence__SFipDZIkFtPcrLs0AGBBjQ tySequence__SFipDZIkFtPcrLs0AGBBjQ;
+typedef struct tySequence__SFipDZIkFtPcrLs0AGBBjQ_Content tySequence__SFipDZIkFtPcrLs0AGBBjQ_Content;
 typedef struct NimStrPayload NimStrPayload;
 typedef struct NimStringV2 NimStringV2;
 typedef struct tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA;
@@ -49,11 +50,15 @@ typedef struct TNimType TNimType;
 typedef struct tySequence__uB9b75OUPRENsBAu4AnoePA tySequence__uB9b75OUPRENsBAu4AnoePA;
 typedef struct tySequence__uB9b75OUPRENsBAu4AnoePA_Content tySequence__uB9b75OUPRENsBAu4AnoePA_Content;
 typedef struct TNimNode TNimNode;
+typedef struct tyTuple__8ZxhPt1NwfElsJs8zUSV9bg tyTuple__8ZxhPt1NwfElsJs8zUSV9bg;
 typedef struct tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA;
 
 /* section: NIM_merge_TYPES */
-struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ {
-  NI len; tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content* p;
+struct tySequence__SFipDZIkFtPcrLs0AGBBjQ {
+  NI len; tySequence__SFipDZIkFtPcrLs0AGBBjQ_Content* p;
+};
+struct tyObject_Table__Ji6x6JQ0gVMaFr8AIk18Ug {tySequence__SFipDZIkFtPcrLs0AGBBjQ data;
+NI counter;
 };
 struct NimStrPayload {NI cap;
 NIM_CHAR data[SEQ_DECL_SIZE];
@@ -85,11 +90,16 @@ struct tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA {  tyObject_CatchableError__qrLS
 };
 struct TNimNode {char dummy;
 };
+struct tyTuple__8ZxhPt1NwfElsJs8zUSV9bg {
+NI Field0;
+NimStringV2 Field1;
+NimStringV2 Field2;
+};
 
 
-#ifndef tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content_PP
-#define tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content_PP
-struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content { NI cap; NimStringV2 data[SEQ_DECL_SIZE];};
+#ifndef tySequence__SFipDZIkFtPcrLs0AGBBjQ_Content_PP
+#define tySequence__SFipDZIkFtPcrLs0AGBBjQ_Content_PP
+struct tySequence__SFipDZIkFtPcrLs0AGBBjQ_Content { NI cap; tyTuple__8ZxhPt1NwfElsJs8zUSV9bg data[SEQ_DECL_SIZE];};
 #endif
 
       struct tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA {NCSTRING procname;
@@ -148,11 +158,7 @@ static const struct {
 static const NimStringV2 TM__yu6cxgKBBXbNsTkT9cyMd4g_11 = {16, (NimStrPayload*)&TM__yu6cxgKBBXbNsTkT9cyMd4g_10};
 
 /* section: NIM_merge_VARS */
-N_LIB_PRIVATE NIM_THREADVAR tySequence__sM4lkSb7zS6F7OVMvW9cffQ environment__mlhK49b6YMgc9cgrcYkKq9a3g;
-N_LIB_PRIVATE NIM_THREADVAR NIM_BOOL envComputed__LLyFo9bsdu1ZXMDvAe8DhrQ;
-extern NCSTRING* environ;
-extern int cmdCount;
-extern NCSTRING* cmdLine;
+N_LIB_PRIVATE tyObject_Table__Ji6x6JQ0gVMaFr8AIk18Ug customEnvs__CMOOgY0OnFeLZvQ9bvVtIlQ;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;

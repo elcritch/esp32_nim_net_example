@@ -11,14 +11,12 @@ x	x	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/deques.nim	278	
 i	i_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/deques.nim	232	6
 c	c	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/deques.nim	233	6
 i	i_3	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	106	8
-i	i	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	22	22
-n	n	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	22	25
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	111	20
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	111	20
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/threads.nim	92	2
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system/threads.nim	92	2
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	111	20
-=sink	eqsink___3jnNrMXG9anmSfMvKM3VngA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1129	61
+=sink	eqsink___3jnNrMXG9anmSfMvKM3VngA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1133	61
 initDeque	initDeque__Kr8HCWIBMx47VJFMcYKH3A	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/deques.nim	79	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/deques.nim	79	0
 popFirst	popFirst__kfjJjckToUmFi0mj0ynAVQdeques	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/deques.nim	410	5

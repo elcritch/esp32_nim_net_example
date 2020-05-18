@@ -1283,93 +1283,93 @@ N_LIB_PRIVATE N_NIMCALL(void, eq___AatyilZWoNC5mWgbjzbd9aA_2)(tyObject_SelectorI
 	(*dest) = src;	}BeforeRet_: ;
 }
 
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, dollar___FJwGmkGW6MRlCkX9beCaoBw)(tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg e) {	NimStringV2 result;	result.len = 0; result.p = NIM_NIL;
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 	switch (e) {
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 0):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_24;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 1):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_26;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 2):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_28;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 3):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_30;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 4):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_32;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 5):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_34;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 6):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_36;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 7):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_38;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 8):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_40;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 9):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_42;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 10):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_44;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 11):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_46;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 12):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_48;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 13):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_50;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 14):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_52;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 15):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_54;	}
 	break;
 	case ((tyEnum_Event__nI40bZzTyYVrl763dZ9aHDg) 16):
 	{
-#line 1212 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		result = TM__ln5vuDpFyDrAqQbYD2g52Q_56;	}
 	break;
 	}

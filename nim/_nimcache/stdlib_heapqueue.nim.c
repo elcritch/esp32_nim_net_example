@@ -280,38 +280,38 @@ static N_INLINE(NIM_BOOL, nimDecRefIsLast)(void* p) {	NIM_BOOL result;	nimfr_("n
 	}BeforeRet_: ;
 	popFrame();	return result;}
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___6249b6bLN3qXx9bLdBAZTdsA)(tySequence__oKfdUHDH0q5oP14wOM6kug* dest) {	NI colontmp_;
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 	colontmp_ = ((NI) 0);	{
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 		while (1) {			NI T3_;
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 			T3_ = (*dest).len;			if (!(colontmp_ < T3_)) goto LA2;
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 			{				NIM_BOOL T6_;
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 				T6_ = (NIM_BOOL)0;				T6_ = nimDecRefIsLast((*dest).p->data[colontmp_].Field1);				if (!T6_) goto LA7_;
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 				nimDestroyAndDispose((*dest).p->data[colontmp_].Field1);
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 				(*dest).p->data[colontmp_].Field1 = NIM_NIL;			}
 			LA7_: ;
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 			colontmp_ += ((NI) 1);		} LA2: ;
 	}
 
-#line 1126 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
+#line 1130 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim"
 	if ((*dest).p && !((*dest).p->cap & NIM_STRLIT_FLAG)) { deallocShared((*dest).p); (*dest).p = NIM_NIL; (*dest).len = 0; }}
 
 #line 157 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/heapqueue.nim"

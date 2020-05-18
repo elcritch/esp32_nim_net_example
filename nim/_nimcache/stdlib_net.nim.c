@@ -8,7 +8,7 @@
 
 #include "nimbase.h"
 #include <sys/socket.h>
-#include <netinet/tcp.h>
+#include "winsock2.h"
 #include <errno.h>
 #undef LANGUAGE_C
 #undef MIPSEB
@@ -99,12 +99,12 @@ static N_INLINE(void, popFrame)(void) {
 #line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
 
-#line 1033 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-N_LIB_PRIVATE N_NIMCALL(int, toCInt__jdGcpZaHg8FvJJ7dgE9b75w)(tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ opt) {	int result;	nimfr_("toCInt", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (int)0;
-#line 1034 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(1034, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
 #line 1035 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(1035, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	switch (opt) {
+N_LIB_PRIVATE N_NIMCALL(int, toCInt__jdGcpZaHg8FvJJ7dgE9b75w)(tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ opt) {	int result;	nimfr_("toCInt", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (int)0;
+#line 1036 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(1036, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
+#line 1037 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(1037, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	switch (opt) {
 	case ((tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ) 0):
 	{		result = SO_ACCEPTCONN;	}
 	break;
@@ -135,28 +135,28 @@ N_LIB_PRIVATE N_NIMCALL(int, toCInt__jdGcpZaHg8FvJJ7dgE9b75w)(tyEnum_SOBool__SDl
 	}
 	popFrame();	return result;}
 
-#line 177 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, isDisconnectionError__XxybNfLJKXhPAkMhmPhNzQ)(tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg flags, NI32 lastError) {	NIM_BOOL result;	NIM_BOOL T1_;	NIM_BOOL T3_;	NIM_BOOL T4_;	nimfr_("isDisconnectionError", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (NIM_BOOL)0;
 #line 179 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(179, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
-#line 189 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(189, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T1_ = (NIM_BOOL)0;
-#line 189 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, isDisconnectionError__XxybNfLJKXhPAkMhmPhNzQ)(tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg flags, NI32 lastError) {	NIM_BOOL result;	NIM_BOOL T1_;	NIM_BOOL T3_;	NIM_BOOL T4_;	nimfr_("isDisconnectionError", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (NIM_BOOL)0;
+#line 181 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(181, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
+#line 191 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(191, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T1_ = (NIM_BOOL)0;
+#line 191 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 	T1_ = ((flags &(1U<<((NU)(((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1))&7U)))!=0);	if (!(T1_)) goto LA2_;
 
-#line 191 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(191, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T3_ = (NIM_BOOL)0;
-#line 190 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(190, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T4_ = (NIM_BOOL)0;
-#line 190 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+#line 193 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(193, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T3_ = (NIM_BOOL)0;
+#line 192 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(192, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T4_ = (NIM_BOOL)0;
+#line 192 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 	T4_ = (lastError == ECONNRESET);	if (T4_) goto LA5_;
 
-#line 191 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(191, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T4_ = (lastError == EPIPE);	LA5_: ;
+#line 193 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(193, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T4_ = (lastError == EPIPE);	LA5_: ;
 	T3_ = T4_;	if (T3_) goto LA6_;
 
-#line 192 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	nimln_(192, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T3_ = (lastError == ENETRESET);	LA6_: ;
+#line 194 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	nimln_(194, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	T3_ = (lastError == ENETRESET);	LA6_: ;
 	T1_ = T3_;	LA2_: ;
 	result = T1_;	popFrame();	return result;}
 
@@ -191,7 +191,7 @@ static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	NI 
 	LA1_: ;
 	return result;}
 
-#line 194 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+#line 196 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 N_LIB_PRIVATE N_NIMCALL(int, toOSFlags__o0FbRanOjUQrx1x33AiBQA)(tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg socketFlags) {	int result;	nimfr_("toOSFlags", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");{	result = (int)0;	{		tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg f;		NI i;		f = (tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg)0;
 #line 37 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 		nimln_(37, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
@@ -208,21 +208,21 @@ N_LIB_PRIVATE N_NIMCALL(int, toOSFlags__o0FbRanOjUQrx1x33AiBQA)(tySet_tyEnum_Soc
 #line 39 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); goto BeforeRet_;}					if (!((socketFlags &(1U<<((NU)(((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i)))&7U)))!=0)) goto LA6_;
 
-#line 196 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-					nimln_(196, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); goto BeforeRet_;}					f = ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i));					{
-#line 197 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-						nimln_(197, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");						switch (f) {
+#line 198 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+					nimln_(198, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); goto BeforeRet_;}					f = ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i));					{
+#line 199 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+						nimln_(199, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");						switch (f) {
 						case ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0):
 						{
-#line 199 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-							nimln_(199, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
-#line 199 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+#line 201 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+							nimln_(201, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");
+#line 201 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 							result = (NI32)(result | MSG_PEEK);						}
 						break;
 						case ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1):
 						{
-#line 200 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-							nimln_(200, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");							goto LA8;
+#line 202 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+							nimln_(202, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");							goto LA8;
 						}
 						break;
 						}

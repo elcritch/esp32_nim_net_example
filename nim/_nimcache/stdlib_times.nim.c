@@ -239,25 +239,25 @@ static N_INLINE(NIM_BOOL, nimMulInt64)(NI64 a, NI64 b, NI64* res) {	NIM_BOOL res
 	LA3_: ;
 	return result;}
 
-#line 399 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 static N_INLINE(NI64, convert__2z1a0DRE31bT73xgVvBfQAtimes)(tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ unitFrom, tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ unitTo, NI64 quantity) {	NI64 result;	nimfr_("convert", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{	result = (NI64)0;
-#line 401 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(401, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(407, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_2;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_3;
-#line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(416, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_2;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_3;
+#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (!(unitFrom < unitTo)) goto LA3_;
 
-#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(408, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(417, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0] == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0], unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0], &TM__6NbDwwj5FY059b1gz2AsAZQ_2)) { raiseOverflow(); goto BeforeRet_;};		if ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_2) == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(quantity, (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_2), &TM__6NbDwwj5FY059b1gz2AsAZQ_3)) { raiseOverflow(); goto BeforeRet_;};		result = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_3);	}
 	goto LA1_;
 	LA3_: ;
 	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_4;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_5;
-#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(419, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0] == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0], unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0], &TM__6NbDwwj5FY059b1gz2AsAZQ_4)) { raiseOverflow(); goto BeforeRet_;};		if (nimMulInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_4), quantity, &TM__6NbDwwj5FY059b1gz2AsAZQ_5)) { raiseOverflow(); goto BeforeRet_;};		result = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_5);	}
 	LA1_: ;
 	}BeforeRet_: ;
@@ -294,25 +294,25 @@ static N_INLINE(NIM_BOOL, nimAddInt64)(NI64 a, NI64 b, NI64* res) {	NIM_BOOL res
 	LA1_: ;
 	return result;}
 
-#line 399 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 static N_INLINE(NI, convert__vsrmXCcg8GubJb67VXeq4wtimes)(tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ unitFrom, tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ unitTo, NI quantity) {	NI result;	nimfr_("convert", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{	result = (NI)0;
-#line 401 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(401, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(407, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_7;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_8;
-#line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(416, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_7;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_8;
+#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (!(unitFrom < unitTo)) goto LA3_;
 
-#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(408, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(417, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0] == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0], unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0], &TM__6NbDwwj5FY059b1gz2AsAZQ_7)) { raiseOverflow(); goto BeforeRet_;};		if ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_7) == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(((NI64) (quantity)), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_7), &TM__6NbDwwj5FY059b1gz2AsAZQ_8)) { raiseOverflow(); goto BeforeRet_;};		if (((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_8)) < ((NI) (-2147483647 -1)) || ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_8)) > ((NI) 2147483647)){ raiseRangeErrorI((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_8), ((NI) (-2147483647 -1)), ((NI) 2147483647)); goto BeforeRet_;}		result = ((NI) ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_8)));	}
 	goto LA1_;
 	LA3_: ;
 	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_9;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_10;
-#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(419, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0] == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0], unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0], &TM__6NbDwwj5FY059b1gz2AsAZQ_9)) { raiseOverflow(); goto BeforeRet_;};		if (nimMulInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_9), ((NI64) (quantity)), &TM__6NbDwwj5FY059b1gz2AsAZQ_10)) { raiseOverflow(); goto BeforeRet_;};		if (((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_10)) < ((NI) (-2147483647 -1)) || ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_10)) > ((NI) 2147483647)){ raiseRangeErrorI((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_10), ((NI) (-2147483647 -1)), ((NI) 2147483647)); goto BeforeRet_;}		result = ((NI) ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_10)));	}
 	LA1_: ;
 	}BeforeRet_: ;
@@ -384,25 +384,25 @@ static N_INLINE(NIM_BOOL, nimSubInt64)(NI64 a, NI64 b, NI64* res) {	NIM_BOOL res
 	LA1_: ;
 	return result;}
 
-#line 399 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 static N_INLINE(NI, convert__bBJ7N1GpubC85YlnXz3nHgtimes)(tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ unitFrom, tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ unitTo, NI quantity) {	NI result;	nimfr_("convert", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{	result = (NI)0;
-#line 401 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(401, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(407, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_13;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_14;
-#line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(416, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_13;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_14;
+#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (!(unitFrom < unitTo)) goto LA3_;
 
-#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(408, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(417, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0] == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0], unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0], &TM__6NbDwwj5FY059b1gz2AsAZQ_13)) { raiseOverflow(); goto BeforeRet_;};		if ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_13) == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(((NI64) (quantity)), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_13), &TM__6NbDwwj5FY059b1gz2AsAZQ_14)) { raiseOverflow(); goto BeforeRet_;};		if (((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_14)) < ((NI) 0) || ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_14)) > ((NI) 999999999)){ raiseRangeErrorI((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_14), ((NI) 0), ((NI) 999999999)); goto BeforeRet_;}		result = ((NI) ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_14)));	}
 	goto LA1_;
 	LA3_: ;
 	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_15;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_16;
-#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(419, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0] == 0){ raiseDivByZero(); goto BeforeRet_;}		if (nimDivInt64(unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitFrom)- 0], unitWeights__cpugRVHYEC9bUpLa71eZMsQ[(unitTo)- 0], &TM__6NbDwwj5FY059b1gz2AsAZQ_15)) { raiseOverflow(); goto BeforeRet_;};		if (nimMulInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_15), ((NI64) (quantity)), &TM__6NbDwwj5FY059b1gz2AsAZQ_16)) { raiseOverflow(); goto BeforeRet_;};		if (((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_16)) < ((NI) 0) || ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_16)) > ((NI) 999999999)){ raiseRangeErrorI((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_16), ((NI) 0), ((NI) 999999999)); goto BeforeRet_;}		result = ((NI) ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_16)));	}
 	LA1_: ;
 	}BeforeRet_: ;
@@ -413,53 +413,53 @@ static N_INLINE(NIM_BOOL*, nimErrorFlag)(void) {	NIM_BOOL* result;	result = (NIM
 #line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	result = (&nimInErrorMode__759bT87luu8XGcbkw13FUjA);	return result;}
 
-#line 655 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-N_LIB_PRIVATE N_NIMCALL(NI64, inMilliseconds__df0d89cDnRIju9aB6p1W1qVA)(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw dur) {	NI64 result;	NIM_BOOL correctionX60gensym21990230_;	NIM_BOOL T1_;NIM_BOOL* nimErr_;	nimfr_("inMilliseconds", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{nimErr_ = nimErrorFlag();	result = (NI64)0;
-#line 656 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(656, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 608 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(608, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 608 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 664 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+N_LIB_PRIVATE N_NIMCALL(NI64, inMilliseconds__df0d89cDnRIju9aB6p1W1qVA)(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw dur) {	NI64 result;	NIM_BOOL correctionX60gensym21860230_;	NIM_BOOL T1_;NIM_BOOL* nimErr_;	nimfr_("inMilliseconds", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{nimErr_ = nimErrorFlag();	result = (NI64)0;
+#line 665 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(665, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(617, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	T1_ = (NIM_BOOL)0;
-#line 608 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	T1_ = (dur.seconds < IL64(0));	if (!(T1_)) goto LA2_;
 
-#line 608 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	T1_ = (((NI) 0) < ((NI) (dur.nanosecond)));	LA2_: ;
-	correctionX60gensym21990230_ = T1_;
-#line 612 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(612, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_6;		NI64 T7_;		NI T8_;		NI TM__6NbDwwj5FY059b1gz2AsAZQ_11;		NI T9_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_12;		if (!correctionX60gensym21990230_) goto LA5_;
+	correctionX60gensym21860230_ = T1_;
+#line 621 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(621, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_6;		NI64 T7_;		NI T8_;		NI TM__6NbDwwj5FY059b1gz2AsAZQ_11;		NI T9_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_12;		if (!correctionX60gensym21860230_) goto LA5_;
 
-#line 613 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(613, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 613 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 622 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(622, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 622 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 613 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 622 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (nimAddInt64(dur.seconds, IL64(1), &TM__6NbDwwj5FY059b1gz2AsAZQ_6)) { raiseOverflow(); goto BeforeRet_;};
-#line 613 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 622 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		T7_ = (NI64)0;		T7_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_6));		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
-#line 614 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(614, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 615 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(615, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 615 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 623 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(623, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 624 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(624, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 624 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 615 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 624 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		T8_ = (NI)0;		T8_ = convert__vsrmXCcg8GubJb67VXeq4wtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((NI) 1));		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		if (nimSubInt(T8_, ((NI) (dur.nanosecond)), &TM__6NbDwwj5FY059b1gz2AsAZQ_11)) { raiseOverflow(); goto BeforeRet_;};
-#line 614 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(614, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");		T9_ = (NI)0;		T9_ = convert__vsrmXCcg8GubJb67VXeq4wtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), (NI)(TM__6NbDwwj5FY059b1gz2AsAZQ_11));		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		if (nimSubInt64(T7_, ((NI64) (T9_)), &TM__6NbDwwj5FY059b1gz2AsAZQ_12)) { raiseOverflow(); goto BeforeRet_;};		result = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_12);	}
+#line 623 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(623, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");		T9_ = (NI)0;		T9_ = convert__vsrmXCcg8GubJb67VXeq4wtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), (NI)(TM__6NbDwwj5FY059b1gz2AsAZQ_11));		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		if (nimSubInt64(T7_, ((NI64) (T9_)), &TM__6NbDwwj5FY059b1gz2AsAZQ_12)) { raiseOverflow(); goto BeforeRet_;};		result = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_12);	}
 	goto LA3_;
 	LA5_: ;
 	{		NI64 T11_;		NI T12_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_17;
-#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(617, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 626 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(626, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 626 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 626 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		T11_ = (NI64)0;		T11_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), dur.seconds);		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
-#line 618 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(618, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 618 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 627 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(627, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 627 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		T12_ = (NI)0;		T12_ = convert__bBJ7N1GpubC85YlnXz3nHgtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), dur.nanosecond);		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		if (nimAddInt64(T11_, ((NI64) (T12_)), &TM__6NbDwwj5FY059b1gz2AsAZQ_17)) { raiseOverflow(); goto BeforeRet_;};		result = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_17);	}
 	LA3_: ;
 	}BeforeRet_: ;
@@ -481,115 +481,115 @@ static N_INLINE(void, nimZeroMem)(void* p, NI size) {NIM_BOOL* nimErr_;{nimErr_ 
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 }
 
-#line 412 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 421 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 N_LIB_PRIVATE N_NIMCALL(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw, normalize__JK8O6vJVu4WsESmu0kL4aQ)(NI64 seconds, NI64 nanoseconds) {	tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw result;	NI64 T1_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_30;	NI64 nanosecond;	NI T2_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_31;NIM_BOOL* nimErr_;	nimfr_("normalize", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{nimErr_ = nimErrorFlag();	nimZeroMem((void*)(&result), sizeof(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw));
-#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(416, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(425, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 416 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	T1_ = (NI64)0;	T1_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), nanoseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64(seconds, T1_, &TM__6NbDwwj5FY059b1gz2AsAZQ_30)) { raiseOverflow(); goto BeforeRet_;};	result.seconds = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_30);
-#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(417, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 426 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(426, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 426 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 426 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 417 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 426 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	T2_ = (NI)0;	T2_ = convert__vsrmXCcg8GubJb67VXeq4wtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((NI) 1));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (((NI64) (T2_)) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(nanoseconds, ((NI64) (T2_)), &TM__6NbDwwj5FY059b1gz2AsAZQ_31)) { raiseOverflow(); goto BeforeRet_;};	nanosecond = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_31);
-#line 418 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(418, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI T7_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_32;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_33;
-#line 418 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 427 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(427, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI T7_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_32;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_33;
+#line 427 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		if (!(nanosecond < IL64(0))) goto LA5_;
 
-#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(419, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 428 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(428, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 428 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 
-#line 419 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 428 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		T7_ = (NI)0;		T7_ = convert__vsrmXCcg8GubJb67VXeq4wtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((NI) 1));		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		if (nimAddInt64(nanosecond, ((NI64) (T7_)), &TM__6NbDwwj5FY059b1gz2AsAZQ_32)) { raiseOverflow(); goto BeforeRet_;};		nanosecond = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_32);
-#line 420 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-		nimln_(420, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");		if (nimSubInt64(result.seconds, ((NI) 1), &TM__6NbDwwj5FY059b1gz2AsAZQ_33)) { raiseOverflow(); goto BeforeRet_;};		result.seconds = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_33);	}
+#line 429 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+		nimln_(429, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");		if (nimSubInt64(result.seconds, ((NI) 1), &TM__6NbDwwj5FY059b1gz2AsAZQ_33)) { raiseOverflow(); goto BeforeRet_;};		result.seconds = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_33);	}
 	LA5_: ;
 
-#line 421 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(421, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	if ((nanosecond) < ((NI) (-2147483647 -1)) || (nanosecond) > ((NI) 2147483647)){ raiseRangeErrorI(nanosecond, ((NI) (-2147483647 -1)), ((NI) 2147483647)); goto BeforeRet_;}	if ((((NI) (nanosecond))) < ((NI) 0) || (((NI) (nanosecond))) > ((NI) 999999999)){ raiseRangeErrorI(((NI) (nanosecond)), ((NI) 0), ((NI) 999999999)); goto BeforeRet_;}	result.nanosecond = ((NI) (((NI) (nanosecond))));	}BeforeRet_: ;
+#line 430 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(430, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	if ((nanosecond) < ((NI) (-2147483647 -1)) || (nanosecond) > ((NI) 2147483647)){ raiseRangeErrorI(nanosecond, ((NI) (-2147483647 -1)), ((NI) 2147483647)); goto BeforeRet_;}	if ((((NI) (nanosecond))) < ((NI) 0) || (((NI) (nanosecond))) > ((NI) 999999999)){ raiseRangeErrorI(((NI) (nanosecond)), ((NI) 0), ((NI) 999999999)); goto BeforeRet_;}	result.nanosecond = ((NI) (((NI) (nanosecond))));	}BeforeRet_: ;
 	popFrame();	return result;}
 
-#line 579 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+#line 588 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 N_LIB_PRIVATE N_NIMCALL(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw, initDuration__wcR3zetvspAUsyuvWZ07Xg)(NI64 nanoseconds, NI64 microseconds, NI64 milliseconds, NI64 seconds, NI64 minutes, NI64 hours, NI64 days, NI64 weeks) {	tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw result;	NI64 seconds_2;	NI64 T1_;	NI64 T2_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_18;	NI64 T3_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_19;	NI64 T4_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_20;	NI64 T5_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_21;	NI64 T6_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_22;	NI64 T7_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_23;	NI64 T8_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_24;	NI nanoseconds_2;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_25;	NI64 T9_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_26;	NI64 T10_;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_27;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_28;	NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_29;NIM_BOOL* nimErr_;	nimfr_("initDuration", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{nimErr_ = nimErrorFlag();	nimZeroMem((void*)(&result), sizeof(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw));
-#line 587 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(587, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 593 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(593, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 592 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(592, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 591 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(591, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 590 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(590, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 589 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(589, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 588 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(588, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 587 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(587, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 587 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-
-#line 587 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T1_ = (NI64)0;	T1_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 7), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), weeks);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
-#line 588 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(588, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 588 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T2_ = (NI64)0;	T2_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 6), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), days);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64(T1_, T2_, &TM__6NbDwwj5FY059b1gz2AsAZQ_18)) { raiseOverflow(); goto BeforeRet_;};
-#line 589 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(589, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 589 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T3_ = (NI64)0;	T3_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 4), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), minutes);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_18), T3_, &TM__6NbDwwj5FY059b1gz2AsAZQ_19)) { raiseOverflow(); goto BeforeRet_;};
-#line 590 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(590, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 590 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T4_ = (NI64)0;	T4_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 5), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), hours);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_19), T4_, &TM__6NbDwwj5FY059b1gz2AsAZQ_20)) { raiseOverflow(); goto BeforeRet_;};
-#line 591 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(591, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 591 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T5_ = (NI64)0;	T5_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), seconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_20), T5_, &TM__6NbDwwj5FY059b1gz2AsAZQ_21)) { raiseOverflow(); goto BeforeRet_;};
-#line 592 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(592, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 592 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T6_ = (NI64)0;	T6_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), milliseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_21), T6_, &TM__6NbDwwj5FY059b1gz2AsAZQ_22)) { raiseOverflow(); goto BeforeRet_;};
-#line 593 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(593, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 593 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T7_ = (NI64)0;	T7_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 1), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), microseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_22), T7_, &TM__6NbDwwj5FY059b1gz2AsAZQ_23)) { raiseOverflow(); goto BeforeRet_;};
-#line 594 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(594, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 594 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T8_ = (NI64)0;	T8_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), nanoseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_23), T8_, &TM__6NbDwwj5FY059b1gz2AsAZQ_24)) { raiseOverflow(); goto BeforeRet_;};	seconds_2 = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_24);
-#line 595 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(595, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
 #line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	nimln_(596, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 595 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(595, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 595 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-
-#line 595 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	if (IL64(1000) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(milliseconds, IL64(1000), &TM__6NbDwwj5FY059b1gz2AsAZQ_25)) { raiseOverflow(); goto BeforeRet_;};
-#line 595 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T9_ = (NI64)0;	T9_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_25));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
-#line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(596, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
-#line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	if (IL64(1000000) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(microseconds, IL64(1000000), &TM__6NbDwwj5FY059b1gz2AsAZQ_26)) { raiseOverflow(); goto BeforeRet_;};
-#line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	T10_ = (NI64)0;	T10_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 1), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_26));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64(T9_, T10_, &TM__6NbDwwj5FY059b1gz2AsAZQ_27)) { raiseOverflow(); goto BeforeRet_;};
+#line 602 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(602, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 601 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(601, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 600 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(600, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 599 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(599, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 598 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(598, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
 #line 597 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(597, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	if (IL64(1000000000) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(nanoseconds, IL64(1000000000), &TM__6NbDwwj5FY059b1gz2AsAZQ_28)) { raiseOverflow(); goto BeforeRet_;};	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_27), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_28), &TM__6NbDwwj5FY059b1gz2AsAZQ_29)) { raiseOverflow(); goto BeforeRet_;};	if (((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29)) < ((NI) (-2147483647 -1)) || ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29)) > ((NI) 2147483647)){ raiseRangeErrorI((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29), ((NI) (-2147483647 -1)), ((NI) 2147483647)); goto BeforeRet_;}	nanoseconds_2 = ((NI) ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29)));
+	nimln_(597, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(596, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+
+#line 596 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T1_ = (NI64)0;	T1_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 7), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), weeks);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
+#line 597 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(597, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 597 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T2_ = (NI64)0;	T2_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 6), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), days);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64(T1_, T2_, &TM__6NbDwwj5FY059b1gz2AsAZQ_18)) { raiseOverflow(); goto BeforeRet_;};
+#line 598 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(598, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 598 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T3_ = (NI64)0;	T3_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 4), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), minutes);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_18), T3_, &TM__6NbDwwj5FY059b1gz2AsAZQ_19)) { raiseOverflow(); goto BeforeRet_;};
 #line 599 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	nimln_(599, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
 #line 599 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T4_ = (NI64)0;	T4_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 5), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), hours);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_19), T4_, &TM__6NbDwwj5FY059b1gz2AsAZQ_20)) { raiseOverflow(); goto BeforeRet_;};
+#line 600 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(600, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 600 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T5_ = (NI64)0;	T5_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), seconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_20), T5_, &TM__6NbDwwj5FY059b1gz2AsAZQ_21)) { raiseOverflow(); goto BeforeRet_;};
+#line 601 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(601, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 601 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T6_ = (NI64)0;	T6_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), milliseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_21), T6_, &TM__6NbDwwj5FY059b1gz2AsAZQ_22)) { raiseOverflow(); goto BeforeRet_;};
+#line 602 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(602, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 602 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T7_ = (NI64)0;	T7_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 1), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), microseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_22), T7_, &TM__6NbDwwj5FY059b1gz2AsAZQ_23)) { raiseOverflow(); goto BeforeRet_;};
+#line 603 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(603, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 603 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T8_ = (NI64)0;	T8_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 3), nanoseconds);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_23), T8_, &TM__6NbDwwj5FY059b1gz2AsAZQ_24)) { raiseOverflow(); goto BeforeRet_;};	seconds_2 = (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_24);
+#line 604 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(604, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 605 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(605, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 604 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(604, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 604 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+
+#line 604 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	if (IL64(1000) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(milliseconds, IL64(1000), &TM__6NbDwwj5FY059b1gz2AsAZQ_25)) { raiseOverflow(); goto BeforeRet_;};
+#line 604 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T9_ = (NI64)0;	T9_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 2), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_25));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
+#line 605 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(605, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 605 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	if (IL64(1000000) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(microseconds, IL64(1000000), &TM__6NbDwwj5FY059b1gz2AsAZQ_26)) { raiseOverflow(); goto BeforeRet_;};
+#line 605 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	T10_ = (NI64)0;	T10_ = convert__2z1a0DRE31bT73xgVvBfQAtimes(((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 1), ((tyEnum_TimeUnit__52alPn04ElUUbqLeok9b3PQ) 0), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_26));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	if (nimAddInt64(T9_, T10_, &TM__6NbDwwj5FY059b1gz2AsAZQ_27)) { raiseOverflow(); goto BeforeRet_;};
+#line 606 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(606, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	if (IL64(1000000000) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt64(nanoseconds, IL64(1000000000), &TM__6NbDwwj5FY059b1gz2AsAZQ_28)) { raiseOverflow(); goto BeforeRet_;};	if (nimAddInt64((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_27), (NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_28), &TM__6NbDwwj5FY059b1gz2AsAZQ_29)) { raiseOverflow(); goto BeforeRet_;};	if (((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29)) < ((NI) (-2147483647 -1)) || ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29)) > ((NI) 2147483647)){ raiseRangeErrorI((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29), ((NI) (-2147483647 -1)), ((NI) 2147483647)); goto BeforeRet_;}	nanoseconds_2 = ((NI) ((NI64)(TM__6NbDwwj5FY059b1gz2AsAZQ_29)));
+#line 608 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
+	nimln_(608, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
+#line 608 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	result = normalize__JK8O6vJVu4WsESmu0kL4aQ(seconds_2, ((NI64) (nanoseconds_2)));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();	return result;}

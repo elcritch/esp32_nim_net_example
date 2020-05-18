@@ -1,5 +1,4 @@
-environment	environment__mlhK49b6YMgc9cgrcYkKq9a3g	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/osenv.nim	21	2
-envComputed	envComputed__LLyFo9bsdu1ZXMDvAe8DhrQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/osenv.nim	20	2
+customEnvs	customEnvs__CMOOgY0OnFeLZvQ9bvVtIlQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/oslite.nim	21	4
 osLastError	osLastError__9bUWNxbcGnToMWA9b79aTXLIw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim	97	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim	97	0
 osErrorMsg	osErrorMsg__33xViSVWAmDrexoKkLfMhg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim	18	5

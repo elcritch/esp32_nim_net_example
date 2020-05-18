@@ -136,6 +136,10 @@ void app_main(void)
 
     printf("finish!\n");
 
+    vTaskDelay(10000 / portTICK_PERIOD_MS);
+
+    printf("Wait for Ethernet\n");
+
     NimMain();
     printf("NimMain!\n");
     run_http_server();

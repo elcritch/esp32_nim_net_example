@@ -1,3 +1,6 @@
-setInheritable	setInheritable__avyDiy1HdQrfaD3Ql9b63EQ	/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim	326	7
-result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim	326	2
-flags	flags	/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim	336	10
+s	s	/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim	738	10
+i	i	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim	3	6
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+i	i	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	22	22
+n	n	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	22	25

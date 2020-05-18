@@ -7,7 +7,7 @@
 /* section: NIM_merge_HEADERS */
 
 #include "nimbase.h"
-#include <fcntl.h>
+#include <stdio.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -34,12 +34,32 @@
   #  define nimln_(n, file) \
       FR_.line = n; FR_.filename = file;
   
+/* section: NIM_merge_FORWARD_TYPES */
+typedef struct NimStrPayload NimStrPayload;
+typedef struct NimStringV2 NimStringV2;
+
+/* section: NIM_merge_TYPES */
+struct NimStrPayload {NI cap;
+NIM_CHAR data[SEQ_DECL_SIZE];
+};
+struct NimStringV2 {NI len;
+NimStrPayload* p;
+};
+
 /* section: NIM_merge_PROC_HEADERS */
+N_LIB_PRIVATE N_NIMCALL(void, eq___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, NimStringV2 src);
+N_LIB_PRIVATE N_NOINLINE(void, raiseIndexError2)(NI i, NI n);
+static N_INLINE(NCSTRING, nimToCStringConv)(NimStringV2 s);
+static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
+N_LIB_PRIVATE N_NOINLINE(void, raiseOverflow)(void);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ)(NimStringV2* dest);
+static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
 static N_INLINE(void, nimFrame)(TFrame* s);
 N_LIB_PRIVATE N_NOINLINE(void, callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw)(void);
 static N_INLINE(void, popFrame)(void);
 
 /* section: NIM_merge_VARS */
+extern NIM_THREADVAR NIM_BOOL nimInErrorMode__759bT87luu8XGcbkw13FUjA;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
@@ -48,6 +68,59 @@ extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 
 /* section: NIM_merge_PROCS */
+
+#line 76 "/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim"
+static N_INLINE(NCSTRING, nimToCStringConv)(NimStringV2 s) {	NCSTRING result;	result = (NCSTRING)0;
+#line 77 "/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim"
+	{
+#line 77 "/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim"
+		if (!(s.len == ((NI) 0))) goto LA3_;
+
+#line 77 "/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim"
+		result = "";	}
+	goto LA1_;
+	LA3_: ;
+	{
+#line 78 "/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim"
+		result = ((NCSTRING) ((*s.p).data));	}
+	LA1_: ;
+	return result;}
+
+#line 52 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	NI r;	result = (NIM_BOOL)0;
+#line 46 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+
+#line 46 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+	r = ((NI) ((NU)((NU32)(((NU) (a))) + (NU32)(((NU) (b))))));
+#line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+	{		NIM_BOOL T3_;
+#line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+		T3_ = (NIM_BOOL)0;
+#line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+
+#line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+		T3_ = (((NI) 0) <= (NI)(r ^ a));		if (T3_) goto LA4_;
+
+#line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+
+#line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+		T3_ = (((NI) 0) <= (NI)(r ^ b));		LA4_: ;
+		if (!T3_) goto LA5_;
+
+#line 48 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+		(*res) = r;	}
+	goto LA1_;
+	LA5_: ;
+	{
+#line 50 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
+		result = NIM_TRUE;	}
+	LA1_: ;
+	return result;}
+
+#line 424 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
+static N_INLINE(NIM_BOOL*, nimErrorFlag)(void) {	NIM_BOOL* result;	result = (NIM_BOOL*)0;
+#line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
+	result = (&nimInErrorMode__759bT87luu8XGcbkw13FUjA);	return result;}
 
 #line 549 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 static N_INLINE(void, nimFrame)(TFrame* s) {
@@ -89,48 +162,68 @@ static N_INLINE(void, popFrame)(void) {
 #line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
 
-#line 326 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, setInheritable__avyDiy1HdQrfaD3Ql9b63EQ)(int f, NIM_BOOL inheritable) {	NIM_BOOL result;	int flags;	int T10_;	nimfr_("setInheritable", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");{	result = (NIM_BOOL)0;
-#line 336 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(336, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 336 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	flags = fcntl(f, F_GETFD);
-#line 337 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(337, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	{
-#line 337 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		if (!(flags == ((NI32) -1))) goto LA3_;
+#line 724 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0) {	NimStringV2 s;	int T6_;	int T7_;NIM_BOOL* nimErr_;	nimfr_("echoBinSafe", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");{nimErr_ = nimErrorFlag();	s.len = 0; s.p = NIM_NIL;
+#line 735 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(735, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 735 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	flockfile(stdout);
+	{		NI i;
+#line 3 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
+		nimln_(3, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
+"m");		i = ((NI) 0);		{
+#line 4 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
+			nimln_(4, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
+"m");			while (1) {				int T5_;				NI TM__MnCJ0VAmeZ9aTATUB39cx60Q_2;
+#line 4 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 
-#line 338 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		nimln_(338, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 338 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		result = NIM_FALSE;		goto BeforeRet_;
+#line 4 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
+				if (!(i < argsLen_0)) goto LA4;
+
+#line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
+				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				if ((NU)(i) >= (NU)(argsLen_0)){ raiseIndexError2(i,argsLen_0-1); goto LA1_;}
+#line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
+				eq___aBBXmHFBEivKqERloP6zmA_2((&s), args[i]);
+
+#line 742 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+				nimln_(742, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 742 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+
+#line 742 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+
+#line 742 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+				T5_ = (int)0;				T5_ = fwrite(((void*) (nimToCStringConv(s))), ((size_t) (s.len)), ((size_t) 1), stdout);				(void)(T5_);
+
+#line 6 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
+				nimln_(6, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
+"m");				if (nimAddInt(i, ((NI) 1), &TM__MnCJ0VAmeZ9aTATUB39cx60Q_2)) { raiseOverflow(); goto LA1_;};				i = (NI)(TM__MnCJ0VAmeZ9aTATUB39cx60Q_2);			} LA4: ;
+		}
 	}
-	LA3_: ;
 
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(339, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	{		if (!inheritable) goto LA7_;
+#line 744 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(744, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 744 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 744 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	T6_ = (int)0;	T6_ = fwrite(((void*) ("\012")), ((size_t) 1), ((size_t) 1), stdout);	(void)(T6_);
 
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		flags = (NI32)(flags & (NI32)((NU32) ~(FD_CLOEXEC)));	}
-	goto LA5_;
-	LA7_: ;
+#line 745 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(745, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 745 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+
+#line 745 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	T7_ = (int)0;	T7_ = fflush(stdout);	(void)(T7_);
+
+#line 747 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(747, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 747 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	funlockfile(stdout);
+	{		LA1_:;	}
 	{
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		flags = (NI32)(flags | FD_CLOEXEC);	}
-	LA5_: ;
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(340, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	T10_ = (int)0;	T10_ = fcntl(f, F_SETFD, flags);	result = !((T10_ == ((NI32) -1)));	}BeforeRet_: ;
-	popFrame();	return result;}
+#line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
+		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
+#line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
+		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&s));
+	}
+	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
+	popFrame();}

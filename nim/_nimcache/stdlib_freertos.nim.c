@@ -92,24 +92,24 @@ static N_INLINE(void, popFrame)(void) {
 #line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
 
-#line 487 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 490 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 N_LIB_PRIVATE N_NIMCALL(int, IN6_IS_ADDR_V4MAPPED__mw8gNzyO9aefqvIsVO04r4Q)(struct in6_addr* ipv6_address) {	int result;	NU32* bits32;	NIM_BOOL T1_;	NU32 T3_;	nimfr_("IN6_IS_ADDR_V4MAPPED", "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");{	result = (int)0;
-#line 488 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
-	nimln_(488, "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");	bits32 = ((NU32*) (ipv6_address));
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
-	nimln_(489, "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 491 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	nimln_(491, "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");	bits32 = ((NU32*) (ipv6_address));
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+	nimln_(492, "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim");
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 	T1_ = (NIM_BOOL)0;
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 	T1_ = (bits32[(((NI) 1))- 0] == ((NU32) 0));	if (!(T1_)) goto LA2_;
 
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 
-#line 489 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
+#line 492 "/home/elcritch/.asdf/installs/nim/devel/lib/posix/freertos.nim"
 	T3_ = (NU32)0;	T3_ = htonl(((NU32) 65535));	T1_ = (bits32[(((NI) 2))- 0] == T3_);	LA2_: ;
 	result = ((int) (T1_));	goto BeforeRet_;
 	}BeforeRet_: ;
