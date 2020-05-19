@@ -8,4 +8,9 @@ proc run_http_server*() {.exportc.} =
     echo "starting http server"
     var server = newAsyncHttpServer()
 
-    waitFor server.serve(Port(8080), cb)
+    waitFor server.serve(Port(8181), cb)
+
+when isMainModule:
+    echo "running server"
+    run_http_server()
+
