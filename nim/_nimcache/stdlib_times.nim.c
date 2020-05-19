@@ -414,7 +414,7 @@ static N_INLINE(NIM_BOOL*, nimErrorFlag)(void) {	NIM_BOOL* result;	result = (NIM
 	result = (&nimInErrorMode__759bT87luu8XGcbkw13FUjA);	return result;}
 
 #line 664 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-N_LIB_PRIVATE N_NIMCALL(NI64, inMilliseconds__df0d89cDnRIju9aB6p1W1qVA)(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw dur) {	NI64 result;	NIM_BOOL correctionX60gensym21860230_;	NIM_BOOL T1_;NIM_BOOL* nimErr_;	nimfr_("inMilliseconds", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{nimErr_ = nimErrorFlag();	result = (NI64)0;
+N_LIB_PRIVATE N_NIMCALL(NI64, inMilliseconds__df0d89cDnRIju9aB6p1W1qVA)(tyObject_Duration__lj9ar6Co3fgk6NgGnVaNpJw dur) {	NI64 result;	NIM_BOOL correctionX60gensym22100230_;	NIM_BOOL T1_;NIM_BOOL* nimErr_;	nimfr_("inMilliseconds", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");{nimErr_ = nimErrorFlag();	result = (NI64)0;
 #line 665 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	nimln_(665, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");
 #line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
@@ -426,9 +426,9 @@ N_LIB_PRIVATE N_NIMCALL(NI64, inMilliseconds__df0d89cDnRIju9aB6p1W1qVA)(tyObject
 
 #line 617 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 	T1_ = (((NI) 0) < ((NI) (dur.nanosecond)));	LA2_: ;
-	correctionX60gensym21860230_ = T1_;
+	correctionX60gensym22100230_ = T1_;
 #line 621 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
-	nimln_(621, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_6;		NI64 T7_;		NI T8_;		NI TM__6NbDwwj5FY059b1gz2AsAZQ_11;		NI T9_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_12;		if (!correctionX60gensym21860230_) goto LA5_;
+	nimln_(621, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");	{		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_6;		NI64 T7_;		NI T8_;		NI TM__6NbDwwj5FY059b1gz2AsAZQ_11;		NI T9_;		NI64 TM__6NbDwwj5FY059b1gz2AsAZQ_12;		if (!correctionX60gensym22100230_) goto LA5_;
 
 #line 622 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim"
 		nimln_(622, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/times.nim");

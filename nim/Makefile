@@ -11,7 +11,6 @@ all: nim
 
 nim: clean
 	nim c \
-		--gc:arc \
 		-d:debug \
 		--cpu:$(NIM_CPU) \
 		--nim_cache:"$(NIMCACHE)" \

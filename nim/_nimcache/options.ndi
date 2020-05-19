@@ -5,3 +5,8 @@ get	get__5q1FFZmQwiQUNLO9cNlN6Mg	/home/elcritch/.asdf/installs/nim/devel/lib/pur
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	170	0
 =destroy	eqdestroy___A0WfCorq86FTzHcRt3nkKw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
+=trace	eqtrace___umVFJaf5SzQNp0Wwgc2bRw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
+=dispose	eqdispose___A0WfCorq86FTzHcRt3nkKw_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/options.nim	185	22
