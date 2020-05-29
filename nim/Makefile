@@ -15,8 +15,8 @@ nim: clean
 	nim c \
 		-d:debug \
 		-d:use_malloc \
-		--gc:orc \
 		--os:freertos \
+		-d:StandaloneHeapSize:100000 \
 		--no_main \
 		--cpu:$(NIM_CPU) \
 		--nim_cache:"$(NIMCACHE)" \
@@ -31,7 +31,6 @@ nim: clean
 
 test-local: clean
 	nim c \
-		--gc:orc \
 		--nim_cache:"$(NIMCACHE)" \
 		--nimble_path:"$(NIMBLE)/pkgs" \
 		example_server.nim
