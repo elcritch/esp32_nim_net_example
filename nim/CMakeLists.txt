@@ -10,4 +10,5 @@ idf_build_set_property(C_COMPILE_OPTIONS -Wno-error=parentheses APPEND)
 idf_build_set_property(C_COMPILE_OPTIONS -Wno-error=implicit-function-declaration APPEND)
 idf_build_set_property(C_COMPILE_OPTIONS -Wno-error=maybe-uninitialized APPEND)
 idf_build_set_property(C_COMPILE_OPTIONS -Wno-error=nonnull APPEND)
+idf_build_set_property(C_COMPILE_OPTIONS -Wno-error=address APPEND)
 
