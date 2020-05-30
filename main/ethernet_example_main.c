@@ -10,7 +10,7 @@
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "esp_netif.h"
+#include "tcpip_adapter.h"
 #include "esp_eth.h"
 #include "esp_event.h"
 #include "esp_log.h"
