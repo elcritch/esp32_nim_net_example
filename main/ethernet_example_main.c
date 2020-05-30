@@ -66,13 +66,38 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
 void NimMain();
 void run_http_server();
 
+#define GPIO_OUTPUT_IO_4    4
+#define GPIO_OUTPUT_IO_5    5
+//#define GPIO_OUTPUT_PIN_SEL  ((1ULL<<GPIO_OUTPUT_IO_5) | (1ULL<<GPIO_OUTPUT_IO_4))
+#define GPIO_OUTPUT_PIN_SEL  ( (1ULL<<GPIO_OUTPUT_IO_4))
+
 void app_main(void)
 {
-    vTaskDelay(5000 / portTICK_PERIOD_MS);
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
     printf("Hello world!\n");
+
+    gpio_config_t io_conf;
+    io_conf.intr_type = GPIO_PIN_INTR_DISABLE;
+    //set as output mode
+    io_conf.mode = GPIO_MODE_OUTPUT;
+    io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
+    //disable pull-down mode
+    io_conf.pull_down_en = 0;
+    //disable pull-up mode
+    io_conf.pull_up_en = 0;
+    //configure GPIO with the given settings
+    gpio_config(&io_conf);
+
+    gpio_set_level(GPIO_OUTPUT_IO_4, 1);
+    //gpio_set_level(GPIO_OUTPUT_IO_5, 1);
+    //gpio_set_level(GPIO_OUTPUT_IO_5, 0);
+    vTaskDelay(100);
+    ESP_LOGI(TAG, "esp starting ... ");
+
 
     tcpip_adapter_init();
 
+    ESP_LOGI(TAG, "starting... ");
     ESP_ERROR_CHECK(esp_event_loop_create_default());
     ESP_ERROR_CHECK(tcpip_adapter_set_default_eth_handlers());
     ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
@@ -83,52 +108,24 @@ void app_main(void)
     phy_config.phy_addr = CONFIG_EXAMPLE_ETH_PHY_ADDR;
     phy_config.reset_gpio_num = CONFIG_EXAMPLE_ETH_PHY_RST_GPIO;
 
-#if CONFIG_EXAMPLE_USE_INTERNAL_ETHERNET
     mac_config.smi_mdc_gpio_num = CONFIG_EXAMPLE_ETH_MDC_GPIO;
     mac_config.smi_mdio_gpio_num = CONFIG_EXAMPLE_ETH_MDIO_GPIO;
+    ESP_LOGI(TAG, "phy config...");
     esp_eth_mac_t *mac = esp_eth_mac_new_esp32(&mac_config);
-#if CONFIG_EXAMPLE_ETH_PHY_IP101
-    esp_eth_phy_t *phy = esp_eth_phy_new_ip101(&phy_config);
-#elif CONFIG_EXAMPLE_ETH_PHY_RTL8201
-    esp_eth_phy_t *phy = esp_eth_phy_new_rtl8201(&phy_config);
-#elif CONFIG_EXAMPLE_ETH_PHY_LAN8720
-    esp_eth_phy_t *phy = esp_eth_phy_new_lan8720(&phy_config);
-#elif CONFIG_EXAMPLE_ETH_PHY_DP83848
+
+// CONFIG_EXAMPLE_ETH_PHY_DP83848
+    ESP_LOGI(TAG, "dp83848 starting... ");
     esp_eth_phy_t *phy = esp_eth_phy_new_dp83848(&phy_config);
-#endif
-#elif CONFIG_EXAMPLE_USE_DM9051
-    gpio_install_isr_service(0);
-    spi_device_handle_t spi_handle = NULL;
-    spi_bus_config_t buscfg = {
-        .miso_io_num = CONFIG_EXAMPLE_DM9051_MISO_GPIO,
-        .mosi_io_num = CONFIG_EXAMPLE_DM9051_MOSI_GPIO,
-        .sclk_io_num = CONFIG_EXAMPLE_DM9051_SCLK_GPIO,
-        .quadwp_io_num = -1,
-        .quadhd_io_num = -1,
-    };
-    ESP_ERROR_CHECK(spi_bus_initialize(CONFIG_EXAMPLE_DM9051_SPI_HOST, &buscfg, 1));
-    spi_device_interface_config_t devcfg = {
-        .command_bits = 1,
-        .address_bits = 7,
-        .mode = 0,
-        .clock_speed_hz = CONFIG_EXAMPLE_DM9051_SPI_CLOCK_MHZ * 1000 * 1000,
-        .spics_io_num = CONFIG_EXAMPLE_DM9051_CS_GPIO,
-        .queue_size = 20
-    };
-    ESP_ERROR_CHECK(spi_bus_add_device(CONFIG_EXAMPLE_DM9051_SPI_HOST, &devcfg, &spi_handle));
-    /* dm9051 ethernet driver is based on spi driver */
-    eth_dm9051_config_t dm9051_config = ETH_DM9051_DEFAULT_CONFIG(spi_handle);
-    dm9051_config.int_gpio_num = CONFIG_EXAMPLE_DM9051_INT_GPIO;
-    esp_eth_mac_t *mac = esp_eth_mac_new_dm9051(&dm9051_config, &mac_config);
-    esp_eth_phy_t *phy = esp_eth_phy_new_dm9051(&phy_config);
-#endif
+    ESP_LOGI(TAG, "dp83848 done... ");
+// endif CONFIG_EXAMPLE_ETH_PHY_DP83848
+
     esp_eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
     esp_eth_handle_t eth_handle = NULL;
     ESP_ERROR_CHECK(esp_eth_driver_install(&config, &eth_handle));
     /* start Ethernet driver state machine */
     ESP_ERROR_CHECK(esp_eth_start(eth_handle));
 
-    printf("finish!\n");
+    printf("ethernet setup!\n");
 
     vTaskDelay(10000 / portTICK_PERIOD_MS);
 
