@@ -13,7 +13,7 @@ all: nim
 
 nim: clean
 	nim c \
-		--gc:arc \
+		--gc:refc \
 		-d:debug \
 		-d:useMalloc \
 		--os:freertos \

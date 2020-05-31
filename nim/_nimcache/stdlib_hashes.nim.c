@@ -34,15 +34,14 @@
       FR_.line = n; FR_.filename = file;
   
 /* section: NIM_merge_FORWARD_TYPES */
-typedef struct NimStrPayload NimStrPayload;
-typedef struct NimStringV2 NimStringV2;
+typedef struct NimStringDesc NimStringDesc;
+typedef struct TGenericSeq TGenericSeq;
 
 /* section: NIM_merge_TYPES */
-struct NimStrPayload {NI cap;
-NIM_CHAR data[SEQ_DECL_SIZE];
+struct TGenericSeq {NI len;
+NI reserved;
 };
-struct NimStringV2 {NI len;
-NimStrPayload* p;
+struct NimStringDesc {  TGenericSeq Sup;NIM_CHAR data[SEQ_DECL_SIZE];
 };
 
 /* section: NIM_merge_PROC_HEADERS */
@@ -60,7 +59,6 @@ N_LIB_PRIVATE N_NOINLINE(void, raiseIndexError2)(NI i, NI n);
 static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 static N_INLINE(NU32, rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes)(NU32 x, NI r);
 static N_INLINE(NIM_BOOL, nimSubInt)(NI a, NI b, NI* res);
-static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
 N_LIB_PRIVATE N_NOINLINE(void, raiseIndexError)(void);
 
 /* section: NIM_merge_VARS */
@@ -70,7 +68,6 @@ extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern NIM_THREADVAR NIM_BOOL nimInErrorMode__759bT87luu8XGcbkw13FUjA;
 
 /* section: NIM_merge_PROCS */
 
@@ -287,7 +284,7 @@ static N_INLINE(NIM_BOOL, nimSubInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	NI 
 	return result;}
 
 #line 217 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-static N_INLINE(NU32, rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes)(NU32 x, NI r) {	NU32 result;	NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_5;	nimfr_("rotl32", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");{	result = (NU32)0;
+static N_INLINE(NU32, rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes)(NU32 x, NI r) {	NU32 result;	NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_5;	nimfr_("rotl32", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");	result = (NU32)0;
 #line 218 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(218, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 218 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -297,16 +294,10 @@ static N_INLINE(NU32, rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes)(NU32 x, NI r) {	NU32
 #line 218 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 
 #line 218 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-	if (nimSubInt(((NI) 32), r, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_5)) { raiseOverflow(); goto BeforeRet_;};	result = (NU32)((NU32)((NU32)(x) << (NU32)(r)) | (NU32)((NU32)(x) >> (NU32)((NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_5))));	}BeforeRet_: ;
-	popFrame();	return result;}
-
-#line 424 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-static N_INLINE(NIM_BOOL*, nimErrorFlag)(void) {	NIM_BOOL* result;	result = (NIM_BOOL*)0;
-#line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	result = (&nimInErrorMode__759bT87luu8XGcbkw13FUjA);	return result;}
+	if (nimSubInt(((NI) 32), r, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_5)) { raiseOverflow(); };	result = (NU32)((NU32)((NU32)(x) << (NU32)(r)) | (NU32)((NU32)(x) >> (NU32)((NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_5))));	popFrame();	return result;}
 
 #line 220 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLen_0) {	NI result;	NI size;	NI stepSize;	NI n;	NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_2;	NU32 h1;	NI i;	NU32 k1_2;	NI rem;	NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_6;NIM_BOOL* nimErr_;	nimfr_("murmurHash", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");{nimErr_ = nimErrorFlag();	result = (NI)0;
+N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLen_0) {	NI result;	NI size;	NI stepSize;	NI n;	NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_2;	NU32 h1;	NI i;	NU32 k1_2;	NI rem;	NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_6;	nimfr_("murmurHash", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");{	result = (NI)0;
 #line 229 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(229, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 229 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -316,7 +307,7 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 231 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(231, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 231 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-	if (stepSize == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimDivInt(size, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_2)) { raiseOverflow(); goto BeforeRet_;};	n = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_2);	h1 = (NU32)0;
+	if (stepSize == 0){ raiseDivByZero(); }	if (nimDivInt(size, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_2)) { raiseOverflow(); };	n = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_2);	h1 = (NU32)0;
 #line 234 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(234, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");	i = ((NI) 0);	{
 #line 237 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -324,12 +315,12 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 237 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 
 #line 237 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			if (nimMulInt(n, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_3)) { raiseOverflow(); goto BeforeRet_;};			if (!(i < (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_3))) goto LA2;
+			if (nimMulInt(n, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_3)) { raiseOverflow(); };			if (!(i < (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_3))) goto LA2;
 			k1 = (NU32)0;
 #line 245 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			nimln_(245, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");			if ((NU)(i) >= (NU)(xLen_0)){ raiseIndexError2(i,xLen_0-1); goto BeforeRet_;}			k1 = (*((NU32*) ((&x[i]))));
+			nimln_(245, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");			if ((NU)(i) >= (NU)(xLen_0)){ raiseIndexError2(i,xLen_0-1); }			k1 = (*((NU32*) ((&x[i]))));
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");			if (nimAddInt(i, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_4)) { raiseOverflow(); goto BeforeRet_;};			i = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_4);
+			nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");			if (nimAddInt(i, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_4)) { raiseOverflow(); };			i = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_4);
 #line 248 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			nimln_(248, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 248 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -337,7 +328,7 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 249 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			nimln_(249, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 249 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			k1 = rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes(k1, ((NI) 15));			if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
+			k1 = rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes(k1, ((NI) 15));
 #line 250 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			nimln_(250, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 250 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -349,7 +340,7 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 253 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			nimln_(253, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 253 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			h1 = rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes(h1, ((NI) 13));			if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
+			h1 = rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes(h1, ((NI) 13));
 #line 254 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			nimln_(254, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 254 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -361,14 +352,14 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 258 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(258, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 258 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-	if (stepSize == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimModInt(size, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_6)) { raiseOverflow(); goto BeforeRet_;};	rem = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_6);	{
+	if (stepSize == 0){ raiseDivByZero(); }	if (nimModInt(size, stepSize, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_6)) { raiseOverflow(); };	rem = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_6);	{
 #line 259 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 		nimln_(259, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");		while (1) {			NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_7;			NI TM__7tkD9cFJSchVDwHuwaY9bP9bA_8;
 #line 259 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			if (!(((NI) 0) < rem)) goto LA4;
 
 #line 260 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			nimln_(260, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");			if (nimSubInt(rem, ((NI) 1), &TM__7tkD9cFJSchVDwHuwaY9bP9bA_7)) { raiseOverflow(); goto BeforeRet_;};			rem = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_7);
+			nimln_(260, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");			if (nimSubInt(rem, ((NI) 1), &TM__7tkD9cFJSchVDwHuwaY9bP9bA_7)) { raiseOverflow(); };			rem = (NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_7);
 #line 261 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 			nimln_(261, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 261 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -378,7 +369,7 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 261 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 
 #line 261 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-			if (nimAddInt(i, rem, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_8)) { raiseOverflow(); goto BeforeRet_;};			if ((NU)((NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_8)) >= (NU)(xLen_0)){ raiseIndexError2((NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_8),xLen_0-1); goto BeforeRet_;}			k1_2 = (NU32)((NU32)((NU32)(k1_2) << (NU32)(((NI) 8))) | ((NU32) (x[(NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_8)])));		} LA4: ;
+			if (nimAddInt(i, rem, &TM__7tkD9cFJSchVDwHuwaY9bP9bA_8)) { raiseOverflow(); };			if ((NU)((NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_8)) >= (NU)(xLen_0)){ raiseIndexError2((NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_8),xLen_0-1); }			k1_2 = (NU32)((NU32)((NU32)(k1_2) << (NU32)(((NI) 8))) | ((NU32) (x[(NI)(TM__7tkD9cFJSchVDwHuwaY9bP9bA_8)])));		} LA4: ;
 	}
 
 #line 262 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -388,7 +379,7 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 #line 263 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(263, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 263 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-	k1_2 = rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes(k1_2, ((NI) 15));	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
+	k1_2 = rotl32__7D6LSWJ2oWPOMqrc3axXgwhashes(k1_2, ((NI) 15));
 #line 264 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(264, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 264 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
@@ -435,11 +426,10 @@ N_LIB_PRIVATE N_NIMCALL(NI, murmurHash__CiCiZV9c7F9alrF1xV3QD1ag)(NU8* x, NI xLe
 	popFrame();	return result;}
 
 #line 285 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-N_LIB_PRIVATE N_NIMCALL(NI, hash__6PCYkKlCNhq9cnRLnqWKkwQ)(NimStringV2 x) {	NI result;NIM_BOOL* nimErr_;	nimfr_("hash", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");{nimErr_ = nimErrorFlag();	result = (NI)0;
+N_LIB_PRIVATE N_NIMCALL(NI, hash__6PCYkKlCNhq9cnRLnqWKkwQ)(NimStringDesc* x) {	NI result;	nimfr_("hash", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");	result = (NI)0;
 #line 303 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
 	nimln_(303, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim");
 #line 303 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-	if ((x.len-1)-((NI) 0) != -1 && ((NU)(((NI) 0)) >= (NU)x.len || (NU)((x.len-1)) >= (NU)x.len)){ raiseIndexError(); goto BeforeRet_;}
+	if (((x ? x->Sup.len : 0)-1)-((NI) 0) != -1 && ((NU)(((NI) 0)) >= (NU)(x ? x->Sup.len : 0) || (NU)(((x ? x->Sup.len : 0)-1)) >= (NU)(x ? x->Sup.len : 0))){ raiseIndexError(); }
 #line 303 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/hashes.nim"
-	result = murmurHash__CiCiZV9c7F9alrF1xV3QD1ag((NU8*)x.p->data+(((NI) 0)), ((x.len-1))-(((NI) 0))+1);	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
-	popFrame();	return result;}
+	result = murmurHash__CiCiZV9c7F9alrF1xV3QD1ag((NU8*)x->data+(((NI) 0)), (((x ? x->Sup.len : 0)-1))-(((NI) 0))+1);	popFrame();	return result;}
