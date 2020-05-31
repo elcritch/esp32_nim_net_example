@@ -1735,7 +1735,7 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, nsuToLowerAsciiStr)(NimStringV2 s) {	NimStr
 #line 215 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 	if ((s.len) < ((NI) 0) || (s.len) > ((NI) 2147483647)){ raiseRangeErrorI(s.len, ((NI) 0), ((NI) 2147483647)); goto BeforeRet_;}
 #line 215 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-	result = mnewString(((NI) (s.len)));	{		NI iX60gensym20740050_;		NI colontmp_;		NI TM__JGc9b9bh2D3nTdUR7TGyq8aA_83;		NI res;		iX60gensym20740050_ = (NI)0;		colontmp_ = (NI)0;
+	result = mnewString(((NI) (s.len)));	{		NI iX60gensym20735050_;		NI colontmp_;		NI TM__JGc9b9bh2D3nTdUR7TGyq8aA_83;		NI res;		iX60gensym20735050_ = (NI)0;		colontmp_ = (NI)0;
 #line 216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 		nimln_(216, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");
 #line 216 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
@@ -1752,11 +1752,11 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, nsuToLowerAsciiStr)(NimStringV2 s) {	NimStr
 				if (!(res <= colontmp_)) goto LA3;
 
 #line 231 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				nimln_(231, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				iX60gensym20740050_ = res;				if ((NU)(iX60gensym20740050_) >= (NU)result.len){ raiseIndexError2(iX60gensym20740050_,result.len-1); goto BeforeRet_;}				nimPrepareStrMutationV2((&result));
+				nimln_(231, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				iX60gensym20735050_ = res;				if ((NU)(iX60gensym20735050_) >= (NU)result.len){ raiseIndexError2(iX60gensym20735050_,result.len-1); goto BeforeRet_;}				nimPrepareStrMutationV2((&result));
 #line 217 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				nimln_(217, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				if ((NU)(iX60gensym20740050_) >= (NU)s.len){ raiseIndexError2(iX60gensym20740050_,s.len-1); goto BeforeRet_;}
+				nimln_(217, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				if ((NU)(iX60gensym20735050_) >= (NU)s.len){ raiseIndexError2(iX60gensym20735050_,s.len-1); goto BeforeRet_;}
 #line 217 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				T4_ = (NIM_CHAR)0;				T4_ = nsuToLowerAsciiChar(s.p->data[iX60gensym20740050_]);				if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;				result.p->data[iX60gensym20740050_] = T4_;
+				T4_ = (NIM_CHAR)0;				T4_ = nsuToLowerAsciiChar(s.p->data[iX60gensym20735050_]);				if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;				result.p->data[iX60gensym20735050_] = T4_;
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim"
 				nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1."
 "nim");				if (nimAddInt(res, ((NI) 1), &TM__JGc9b9bh2D3nTdUR7TGyq8aA_84)) { raiseOverflow(); goto BeforeRet_;};				res = (NI)(TM__JGc9b9bh2D3nTdUR7TGyq8aA_84);			} LA3: ;

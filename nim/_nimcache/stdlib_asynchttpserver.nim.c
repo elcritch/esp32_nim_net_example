@@ -43,8 +43,8 @@ typedef struct tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w tyObject
 typedef struct tyObject_Request__1Wfxxtqzahm0R6lueM9aQmQ tyObject_Request__1Wfxxtqzahm0R6lueM9aQmQ;
 typedef struct NimStrPayload NimStrPayload;
 typedef struct NimStringV2 NimStringV2;
-typedef struct tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA;
-typedef struct tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw;
+typedef struct tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g;
+typedef struct tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA;
 typedef struct RootObj RootObj;
 typedef struct TNimType TNimType;
 typedef struct tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA;
@@ -54,16 +54,16 @@ typedef struct tySequence__uB9b75OUPRENsBAu4AnoePA tySequence__uB9b75OUPRENsBAu4
 typedef struct tySequence__uB9b75OUPRENsBAu4AnoePA_Content tySequence__uB9b75OUPRENsBAu4AnoePA_Content;
 typedef struct tyTuple__O5pdIMCwdzZuqrzSnslnMg tyTuple__O5pdIMCwdzZuqrzSnslnMg;
 typedef struct tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg;
-typedef struct tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw;
-typedef struct tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg;
+typedef struct tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA;
+typedef struct tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ;
 typedef struct tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw;
 typedef struct tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw;
 typedef struct tyObject_Uri__j49bukNPrq747O1GRd4Ng9bQ tyObject_Uri__j49bukNPrq747O1GRd4Ng9bQ;
 typedef struct tyObject_HttpHeaderscolonObjectType___GM611pWlOrQ7hvMPcuAACA tyObject_HttpHeaderscolonObjectType___GM611pWlOrQ7hvMPcuAACA;
 typedef struct tyTuple__kN8up2W6YKc5YA9avn5mV5w tyTuple__kN8up2W6YKc5YA9avn5mV5w;
 typedef struct tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA;
-typedef struct tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg;
-typedef struct tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA;
+typedef struct tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ;
+typedef struct tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ;
 typedef struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ tySequence__sM4lkSb7zS6F7OVMvW9cffQ;
 typedef struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content;
 typedef struct tyTuple__wOvXi5VibnCNgN9buQRQD4A tyTuple__wOvXi5VibnCNgN9buQRQD4A;
@@ -123,14 +123,14 @@ typedef struct {
 N_NIMCALL_PTR(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, ClP_0) (void* ClE_0);
 void* ClE_0;
 } tyProc__uz49bJm19cqLWB77G7nLz3FA;
-struct tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA {  RootObj Sup;NI colonstate_;
+struct tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g {  RootObj Sup;NI colonstate_;
 tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server1;
 NU16 port2;
 NimStringV2 address3;
 tyProc__czO9bLH6rWgTeb5AIcTKy5g callback4;
 tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* retFuture5;
-tyProc__uz49bJm19cqLWB77G7nLz3FA nameIterVarX60gensym286950686_;
-tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* retFutUnownX60gensym286950677_;
+tyProc__uz49bJm19cqLWB77G7nLz3FA nameIterVarX60gensym286900686_;
+tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* retFutUnownX60gensym286900677_;
 };
 typedef struct {
 N_NIMCALL_PTR(void, ClP_0) (void* ClE_0);
@@ -151,9 +151,9 @@ NI id;
 NimStringV2 fromProc;
 };
 struct tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w {  tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA Sup;};
-struct tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw {  RootObj Sup;NI colonstate_;
-tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* colonup_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28695073X60gensym287000422_;
+struct tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA {  RootObj Sup;NI colonstate_;
+tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* colonup_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28690073X60gensym286950422_;
 tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result3;
 NimStringV2 address4;
 tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client5;
@@ -166,20 +166,20 @@ typedef NU8 tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ;
 struct tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg {  tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA Sup;tyTuple__O5pdIMCwdzZuqrzSnslnMg value;
 };
 typedef NU8 tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg;
-struct tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw {  RootObj Sup;NI colonstate_;
+struct tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA {  RootObj Sup;NI colonstate_;
 tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client1;
 tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server2;
 NimStringV2 address3;
 tyProc__czO9bLH6rWgTeb5AIcTKy5g callback4;
 tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* retFuture5;
-tyProc__uz49bJm19cqLWB77G7nLz3FA nameIterVarX60gensym286502646_;
-tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* retFutUnownX60gensym286502637_;
+tyProc__uz49bJm19cqLWB77G7nLz3FA nameIterVarX60gensym286452646_;
+tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* retFutUnownX60gensym286452637_;
 };
-struct tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg {  RootObj Sup;NI colonstate_;
+struct tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ {  RootObj Sup;NI colonstate_;
 tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* request1;
 tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw* lineFut2;
-tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* colonup_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28650269X60gensym286606704_;
+tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* colonup_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28645269X60gensym286556704_;
 tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result5;
 NIM_BOOL retry6;
 };
@@ -209,7 +209,7 @@ NimStringV2 body;
 };
 struct tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA {  tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA Sup;NIM_BOOL value;
 };
-struct tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg {  RootObj Sup;NI colonstate_;
+struct tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ {  RootObj Sup;NI colonstate_;
 tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* req1;
 NimStringV2 address2;
 tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client3;
@@ -217,41 +217,41 @@ tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw* lineFut4;
 tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* retFuture5;
 tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server6;
 tyProc__czO9bLH6rWgTeb5AIcTKy5g callback7;
-tyProc__uz49bJm19cqLWB77G7nLz3FA nameIterVarX60gensym282500628_;
-tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* retFutUnownX60gensym282500619_;
+tyProc__uz49bJm19cqLWB77G7nLz3FA nameIterVarX60gensym282450628_;
+tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* retFutUnownX60gensym282450619_;
 };
 struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ {
   NI len; tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content* p;
 };
-struct tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA {  RootObj Sup;NI colonstate_;
+struct tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ {  RootObj Sup;NI colonstate_;
 NIM_BOOL result1;
-tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* colonup_;
+tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* colonup_;
 NI i3;
 NI res4;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym282950875_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym282900875_;
 tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result6;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym283250177_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym283200177_;
 NI i8;
 NimStringV2 linePart9;
 NimStringV2 colontmp10_;
-NI lastX60gensym2083513311_;
-NI splitsX60gensym2083513412_;
-NI firstX60gensym2083513513_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2842001714_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2842511915_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2844001716_;
+NI lastX60gensym2083013311_;
+NI splitsX60gensym2083013412_;
+NI firstX60gensym2083013513_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2841501714_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2842011915_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2843501716_;
 NimStringV2 key17;
 tySequence__sM4lkSb7zS6F7OVMvW9cffQ value18;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2846001719_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2849001720_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2849503621_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2845501719_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2848501720_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2849003621_;
 NI contentLength22;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2851501723_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2853001724_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2857501725_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2854001726_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2856001727_;
-tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28250067X60gensym2858501728_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2851001723_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2852501724_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2857001725_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2853501726_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2855501727_;
+tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* internalTmpFutureX60gensym28245067X60gensym2858001728_;
 };
 struct tyTuple__wOvXi5VibnCNgN9buQRQD4A {
 NimStringV2 Field0;
@@ -357,9 +357,9 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___L44M9bKySk5Aux1X65E2M6w)(tyObject_Asyn
 N_LIB_PRIVATE N_NIMCALL(void, nimRawDispose)(void* p);
 static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
 N_LIB_PRIVATE N_NIMCALL(void*, nimNewObj)(NI size);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___340QxwvC1Vq1fWkniNwgxA)(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA** dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___E9cr0YvW9bHtDrJDl6aHehtA)(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g** dest);
 N_LIB_PRIVATE N_NIMCALL(void, nimDestroyAndDispose)(void* p);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___aGgmexI9cFtoBSuI4nOOz1A)(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___9cxSAAbImtx3xBT37uZTPAw)(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* dest);
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ)(NimStringV2* dest);
 N_LIB_PRIVATE N_NIMCALL(void, eq___IXSFalYHG6hr9cpzYaJWKRQ)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw** dest, tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* src);
 static N_INLINE(void, nimIncRef)(void* p);
@@ -369,9 +369,9 @@ N_LIB_PRIVATE N_NIMCALL(void, eq___aBBXmHFBEivKqERloP6zmA_2)(NimStringV2* dest, 
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___ldMjcNJxoGs4TI2BzBMsVQ_2)(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w** dest, tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* src);
 N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*, newFuture__O5FiTIx7b9aJMbTMTl7J2SQ)(NimStringV2 fromProc);
 N_LIB_PRIVATE N_NIMCALL(void, eq___ldMjcNJxoGs4TI2BzBMsVQ)(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w** dest, tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* src);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___v9asVVOr5au22Z7SmS6ofiw)(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw** dest);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___vTf7JvLiS314PtiaxScldw)(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw* dest);
-N_LIB_PRIVATE N_NIMCALL(void, eq___EE9cyF2OI9chPZlkU9cBHvVkQ)(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA** dest, tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* src);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___e9c9b9ajkGTsfMM2rtL2j3AGA)(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA** dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___EQhDn6PWAOM1DhpG2v3nKA)(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA* dest);
+N_LIB_PRIVATE N_NIMCALL(void, eq___EAJKetzkVwASL9bB9cU85bVA)(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g** dest, tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* src);
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___qFCY9cDCItk3PpsKistRZ1Q)(tyProc__uz49bJm19cqLWB77G7nLz3FA* dest, tyProc__uz49bJm19cqLWB77G7nLz3FA src);
 N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, serveIter__9bFW7o03uH9aU8ZP0CEQpILA)(void* ClE_0);
 static N_INLINE(void, nimZeroMem)(void* p, NI size);
@@ -389,12 +389,12 @@ N_LIB_PRIVATE N_NIMCALL(void, read__yhIK2ge0FYBVC4vfDnCKTw)(tyObject_Futurecolon
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
 N_LIB_PRIVATE N_NIMCALL(void, asyncCheck__kYv5uOSTaUb7hZbxPjTMHA_5)(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* future);
 N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*, processClient__joQh6FjMH3k00E4frDo5bA)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client, NimStringV2 address, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___aWoMpZgcKA7WNVATkT69abA)(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw** dest);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___furgb7QK9a9aXdxQ0cSB5Rgg)(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___CuaXL1DymsPISA07Ns1oUA)(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA** dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___QQVikUR9cxS9crCYJ6R6xQ4g)(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* dest);
 N_LIB_PRIVATE N_NIMCALL(void, eq___zPZ79aT3JatfWzC3dGPR9bAQ_2)(tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg** dest, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* src);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___ZIixYK200o8GHJVksNptSw)(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg** dest);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___azm1Lm4JC0lXSvTNbzUM0A)(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg* dest);
-N_LIB_PRIVATE N_NIMCALL(void, eq___OXL49cFJoN8Ipc5tV1SRavA)(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw** dest, tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* src);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___6oLYg7HYahm107oqDmIm9cg)(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ** dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___wNLoKXd1ybWsnE69c889cJKw)(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ* dest);
+N_LIB_PRIVATE N_NIMCALL(void, eq___1iVHP5rloc5wHJRYo2xiAw)(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA** dest, tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* src);
 N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, processClientIter__9bFW7o03uH9aU8ZP0CEQpILA_2)(void* ClE_0);
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___EIjEYrV9bORq83jogSIatew)(tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw** dest, tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* src);
 N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw*, newFutureVar__XDPsxWPxi0l6fpPZSAM3yw)(NimStringV2 fromProc);
@@ -409,17 +409,17 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2*, mget__7CwNWaZC5K9cVRW7yaonRUQ)(tyObject_Fu
 N_NIMCALL(NimStringV2, rawNewString)(NI cap);
 N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, isClosed__si2f0r2MEtPGYLXSHjRDGQ)(tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* socket);
 N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*, processRequest__f9a10Eca1YKnGSdampx0naQ)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* req, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client, NimStringV2 address, tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw* lineFut, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___59aaHmRqq1RcZa79cOX4r30w)(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg** dest);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___4ET5t7DZalc78zPP9clw5gA)(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___SUQNs9aQaGXOvOad9cMP6aeQ)(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ** dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___UJvW9cINQW5y1GZ5sMskhLw)(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* dest);
 N_LIB_PRIVATE N_NIMCALL(void, eq___EIjEYrV9bORq83jogSIatew_2)(tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw** dest, tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* src);
 N_LIB_PRIVATE N_NIMCALL(void, eq___zLwZ6uCAs9bGPZGicKZM51Q_2)(tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw** dest, tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw* src);
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___s9cfI8X7b55ZgziAeyTH2YQ)(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA** dest, tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* src);
 N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*, newFuture__whxT9bNj3YP19coMA8DxFVSw)(NimStringV2 fromProc);
 N_LIB_PRIVATE N_NIMCALL(void, eq___s9cfI8X7b55ZgziAeyTH2YQ_2)(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA** dest, tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* src);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___Q0tqKrGLMEbqoBfDrTIkoQ)(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA** dest);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ)(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA* dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___lAg89bxCSTy89bmzSZwAJCzg)(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ** dest);
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___wQofCr9akMstrTfxV9a9bcUow)(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ* dest);
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___0RiuPw9cXhtLB9a2rQ2jA69cg)(tySequence__sM4lkSb7zS6F7OVMvW9cffQ* dest);
-N_LIB_PRIVATE N_NIMCALL(void, eq___DPyQeH6HWoOT89bKgwEB7ng)(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg** dest, tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* src);
+N_LIB_PRIVATE N_NIMCALL(void, eq___tCU39aIXUwOtmqMepxtSQkQ)(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ** dest, tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* src);
 N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, processRequestIter__9bFW7o03uH9aU8ZP0CEQpILA_3)(void* ClE_0);
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___9cEHZYAST9afMf7sM41NLYIQ)(tySequence__sM4lkSb7zS6F7OVMvW9cffQ* dest);
 N_LIB_PRIVATE N_NIMCALL(void, clear__qI6mxtq4h9aopTjkoL9cuNBQ)(tyObject_HttpHeaderscolonObjectType___GM611pWlOrQ7hvMPcuAACA* headers);
@@ -495,29 +495,29 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___gczQO0vzLYPQ2o5V9bLxOCQ)(tyObject_HttpHeaderscolonObjectType___GM611pWlOrQ7hvMPcuAACA* dest);
 
 /* section: NIM_merge_DATA */
-N_LIB_PRIVATE TNimType NTI__cRdXvkgWpGRWS39aV0zZGGA_;
+N_LIB_PRIVATE TNimType NTI__jX1guhaoKAk5SkkP9bos20g_;
 static const struct {
   NI cap; NIM_CHAR data[5+1];
 } TM__kCumGAOn2jB9aScSIGdDsJg_4 = { 5 | NIM_STRLIT_FLAG, "serve" };
 static const NimStringV2 TM__kCumGAOn2jB9aScSIGdDsJg_5 = {5, (NimStrPayload*)&TM__kCumGAOn2jB9aScSIGdDsJg_4};
-N_LIB_PRIVATE TNimType NTI__71jwUfUa5QLzfeh1nEgHdw_;
-N_LIB_PRIVATE TNimType NTI__eKRPksfhVOH1Lb9aPVdw3Gw_;
+N_LIB_PRIVATE TNimType NTI__lfDu4jBQ85cbCNruvP36OA_;
+N_LIB_PRIVATE TNimType NTI__z9bMReBhhMUbzPG7IPa6vVA_;
 static const struct {
   NI cap; NIM_CHAR data[13+1];
 } TM__kCumGAOn2jB9aScSIGdDsJg_6 = { 13 | NIM_STRLIT_FLAG, "processClient" };
 static const NimStringV2 TM__kCumGAOn2jB9aScSIGdDsJg_7 = {13, (NimStrPayload*)&TM__kCumGAOn2jB9aScSIGdDsJg_6};
-N_LIB_PRIVATE TNimType NTI__NN9c9c4Ajiia37T7fga8eLhg_;
+N_LIB_PRIVATE TNimType NTI__pf9bPNVy3dI37jrrRoquOlQ_;
 static const struct {
   NI cap; NIM_CHAR data[29+1];
 } TM__kCumGAOn2jB9aScSIGdDsJg_8 = { 29 | NIM_STRLIT_FLAG, "asynchttpserver.processClient" };
 static const NimStringV2 TM__kCumGAOn2jB9aScSIGdDsJg_9 = {29, (NimStrPayload*)&TM__kCumGAOn2jB9aScSIGdDsJg_8};
 static const NimStringV2 TM__kCumGAOn2jB9aScSIGdDsJg_10 = {29, (NimStrPayload*)&TM__kCumGAOn2jB9aScSIGdDsJg_8};
-N_LIB_PRIVATE TNimType NTI__xBVSKYqqvD09aPggIj28FSg_;
+N_LIB_PRIVATE TNimType NTI__9bd5QXnTk7rvzbJKNe729cAQ_;
 static const struct {
   NI cap; NIM_CHAR data[14+1];
 } TM__kCumGAOn2jB9aScSIGdDsJg_11 = { 14 | NIM_STRLIT_FLAG, "processRequest" };
 static const NimStringV2 TM__kCumGAOn2jB9aScSIGdDsJg_12 = {14, (NimStrPayload*)&TM__kCumGAOn2jB9aScSIGdDsJg_11};
-N_LIB_PRIVATE TNimType NTI__VELQqa064fUzQzSuskXBnA_;
+N_LIB_PRIVATE TNimType NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_;
 static const struct {
   NI cap; NIM_CHAR data[0+1];
 } TM__kCumGAOn2jB9aScSIGdDsJg_13 = { 0 | NIM_STRLIT_FLAG, "" };
@@ -895,7 +895,7 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g
 	popFrame();	return result;}
 
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___340QxwvC1Vq1fWkniNwgxA)(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA** dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___E9cr0YvW9bHtDrJDl6aHehtA)(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g** dest) {
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	{		NIM_BOOL T3_;
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
@@ -914,7 +914,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___340QxwvC1Vq1fWkniNwgxA)(tyObject_Env_a
 	(*dest) = NIM_NIL;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___aGgmexI9cFtoBSuI4nOOz1A)(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___9cxSAAbImtx3xBT37uZTPAw)(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -986,37 +986,37 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___aGgmexI9cFtoBSuI4nOOz1A)(tyObject_Env_
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T18_ = (NIM_BOOL)0;		T18_ = nimDecRefIsLast((*dest).nameIterVarX60gensym286950686_.ClE_0);		if (!T18_) goto LA19_;
+		T18_ = (NIM_BOOL)0;		T18_ = nimDecRefIsLast((*dest).nameIterVarX60gensym286900686_.ClE_0);		if (!T18_) goto LA19_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).nameIterVarX60gensym286950686_.ClE_0);
+		nimDestroyAndDispose((*dest).nameIterVarX60gensym286900686_.ClE_0);
 	}
 	LA19_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).nameIterVarX60gensym286950686_.ClE_0 = NIM_NIL;
+	(*dest).nameIterVarX60gensym286900686_.ClE_0 = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T23_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T23_ = (NIM_BOOL)0;		T23_ = nimDecRefIsLast((*dest).retFutUnownX60gensym286950677_);		if (!T23_) goto LA24_;
+		T23_ = (NIM_BOOL)0;		T23_ = nimDecRefIsLast((*dest).retFutUnownX60gensym286900677_);		if (!T23_) goto LA24_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).retFutUnownX60gensym286950677_);
+		nimDestroyAndDispose((*dest).retFutUnownX60gensym286900677_);
 	}
 	LA24_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).retFutUnownX60gensym286950677_ = NIM_NIL;	}BeforeRet_: ;
+	(*dest).retFutUnownX60gensym286900677_ = NIM_NIL;	}BeforeRet_: ;
 }
 
 #line 52 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
@@ -1133,7 +1133,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eq___C9b81mnqTWQgtFdSNQtcLKA)(tyProc__czO9bLH6rWgT
 	(*dest).ClE_0 = src.ClE_0;	(*dest).ClP_0 = src.ClP_0;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___v9asVVOr5au22Z7SmS6ofiw)(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw** dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___e9c9b9ajkGTsfMM2rtL2j3AGA)(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA** dest) {
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1152,7 +1152,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___v9asVVOr5au22Z7SmS6ofiw)(tyObject_Env_
 	(*dest) = NIM_NIL;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___vTf7JvLiS314PtiaxScldw)(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___EQhDn6PWAOM1DhpG2v3nKA)(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1174,17 +1174,17 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___vTf7JvLiS314PtiaxScldw)(tyObject_Env_a
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T8_ = (NIM_BOOL)0;		T8_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28695073X60gensym287000422_);		if (!T8_) goto LA9_;
+		T8_ = (NIM_BOOL)0;		T8_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28690073X60gensym286950422_);		if (!T8_) goto LA9_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28695073X60gensym287000422_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28690073X60gensym286950422_);
 	}
 	LA9_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28695073X60gensym287000422_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28690073X60gensym286950422_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T13_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1230,7 +1230,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___vTf7JvLiS314PtiaxScldw)(tyObject_Env_a
 }
 
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eq___EE9cyF2OI9chPZlkU9cBHvVkQ)(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA** dest, tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* src) {
+N_LIB_PRIVATE N_NIMCALL(void, eq___EAJKetzkVwASL9bB9cU85bVA)(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g** dest, tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* src) {
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	{		if (!src) goto LA3_;
 
@@ -1275,7 +1275,7 @@ static N_INLINE(void, nimZeroMem)(void* p, NI size) {NIM_BOOL* nimErr_;{nimErr_ 
 }
 
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___aWoMpZgcKA7WNVATkT69abA)(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw** dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___CuaXL1DymsPISA07Ns1oUA)(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA** dest) {
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	{		NIM_BOOL T3_;
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
@@ -1294,7 +1294,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___aWoMpZgcKA7WNVATkT69abA)(tyObject_Env_
 	(*dest) = NIM_NIL;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___furgb7QK9a9aXdxQ0cSB5Rgg)(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___QQVikUR9cxS9crCYJ6R6xQ4g)(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1387,41 +1387,41 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___furgb7QK9a9aXdxQ0cSB5Rgg)(tyObject_Env
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T23_ = (NIM_BOOL)0;		T23_ = nimDecRefIsLast((*dest).nameIterVarX60gensym286502646_.ClE_0);		if (!T23_) goto LA24_;
+		T23_ = (NIM_BOOL)0;		T23_ = nimDecRefIsLast((*dest).nameIterVarX60gensym286452646_.ClE_0);		if (!T23_) goto LA24_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).nameIterVarX60gensym286502646_.ClE_0);
+		nimDestroyAndDispose((*dest).nameIterVarX60gensym286452646_.ClE_0);
 	}
 	LA24_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).nameIterVarX60gensym286502646_.ClE_0 = NIM_NIL;
+	(*dest).nameIterVarX60gensym286452646_.ClE_0 = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T28_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T28_ = (NIM_BOOL)0;		T28_ = nimDecRefIsLast((*dest).retFutUnownX60gensym286502637_);		if (!T28_) goto LA29_;
+		T28_ = (NIM_BOOL)0;		T28_ = nimDecRefIsLast((*dest).retFutUnownX60gensym286452637_);		if (!T28_) goto LA29_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).retFutUnownX60gensym286502637_);
+		nimDestroyAndDispose((*dest).retFutUnownX60gensym286452637_);
 	}
 	LA29_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).retFutUnownX60gensym286502637_ = NIM_NIL;	}BeforeRet_: ;
+	(*dest).retFutUnownX60gensym286452637_ = NIM_NIL;	}BeforeRet_: ;
 }
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___ZIixYK200o8GHJVksNptSw)(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg** dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___6oLYg7HYahm107oqDmIm9cg)(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ** dest) {
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1440,7 +1440,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___ZIixYK200o8GHJVksNptSw)(tyObject_Env_a
 	(*dest) = NIM_NIL;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___azm1Lm4JC0lXSvTNbzUM0A)(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg* dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___wNLoKXd1ybWsnE69c889cJKw)(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ* dest) {
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1494,17 +1494,17 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___azm1Lm4JC0lXSvTNbzUM0A)(tyObject_Env_a
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T18_ = (NIM_BOOL)0;		T18_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28650269X60gensym286606704_);		if (!T18_) goto LA19_;
+		T18_ = (NIM_BOOL)0;		T18_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28645269X60gensym286556704_);		if (!T18_) goto LA19_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28650269X60gensym286606704_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28645269X60gensym286556704_);
 	}
 	LA19_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28650269X60gensym286606704_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28645269X60gensym286556704_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T23_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1523,7 +1523,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___azm1Lm4JC0lXSvTNbzUM0A)(tyObject_Env_a
 	(*dest).result5 = NIM_NIL;}
 
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eq___OXL49cFJoN8Ipc5tV1SRavA)(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw** dest, tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* src) {
+N_LIB_PRIVATE N_NIMCALL(void, eq___1iVHP5rloc5wHJRYo2xiAw)(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA** dest, tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* src) {
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	{		if (!src) goto LA3_;
 
@@ -1552,7 +1552,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eq___OXL49cFJoN8Ipc5tV1SRavA)(tyObject_Env_asyncht
 	(*dest) = src;}
 
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___59aaHmRqq1RcZa79cOX4r30w)(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg** dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___SUQNs9aQaGXOvOad9cMP6aeQ)(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ** dest) {
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	{		NIM_BOOL T3_;
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
@@ -1571,7 +1571,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___59aaHmRqq1RcZa79cOX4r30w)(tyObject_Env
 	(*dest) = NIM_NIL;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___4ET5t7DZalc78zPP9clw5gA)(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___UJvW9cINQW5y1GZ5sMskhLw)(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1696,41 +1696,41 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___4ET5t7DZalc78zPP9clw5gA)(tyObject_Env_
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T33_ = (NIM_BOOL)0;		T33_ = nimDecRefIsLast((*dest).nameIterVarX60gensym282500628_.ClE_0);		if (!T33_) goto LA34_;
+		T33_ = (NIM_BOOL)0;		T33_ = nimDecRefIsLast((*dest).nameIterVarX60gensym282450628_.ClE_0);		if (!T33_) goto LA34_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).nameIterVarX60gensym282500628_.ClE_0);
+		nimDestroyAndDispose((*dest).nameIterVarX60gensym282450628_.ClE_0);
 	}
 	LA34_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).nameIterVarX60gensym282500628_.ClE_0 = NIM_NIL;
+	(*dest).nameIterVarX60gensym282450628_.ClE_0 = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T38_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T38_ = (NIM_BOOL)0;		T38_ = nimDecRefIsLast((*dest).retFutUnownX60gensym282500619_);		if (!T38_) goto LA39_;
+		T38_ = (NIM_BOOL)0;		T38_ = nimDecRefIsLast((*dest).retFutUnownX60gensym282450619_);		if (!T38_) goto LA39_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).retFutUnownX60gensym282500619_);
+		nimDestroyAndDispose((*dest).retFutUnownX60gensym282450619_);
 	}
 	LA39_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).retFutUnownX60gensym282500619_ = NIM_NIL;	}BeforeRet_: ;
+	(*dest).retFutUnownX60gensym282450619_ = NIM_NIL;	}BeforeRet_: ;
 }
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___Q0tqKrGLMEbqoBfDrTIkoQ)(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA** dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___lAg89bxCSTy89bmzSZwAJCzg)(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ** dest) {
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1749,7 +1749,7 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___Q0tqKrGLMEbqoBfDrTIkoQ)(tyObject_Env_a
 	(*dest) = NIM_NIL;}
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ)(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA* dest) {
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___wQofCr9akMstrTfxV9a9bcUow)(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ* dest) {
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T3_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1771,17 +1771,17 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ)(tyObject_En
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T8_ = (NIM_BOOL)0;		T8_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym282950875_);		if (!T8_) goto LA9_;
+		T8_ = (NIM_BOOL)0;		T8_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym282900875_);		if (!T8_) goto LA9_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym282950875_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym282900875_);
 	}
 	LA9_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym282950875_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym282900875_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T13_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1803,17 +1803,17 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ)(tyObject_En
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T18_ = (NIM_BOOL)0;		T18_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym283250177_);		if (!T18_) goto LA19_;
+		T18_ = (NIM_BOOL)0;		T18_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym283200177_);		if (!T18_) goto LA19_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym283250177_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym283200177_);
 	}
 	LA19_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym283250177_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym283200177_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1829,49 +1829,49 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ)(tyObject_En
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T23_ = (NIM_BOOL)0;		T23_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2842001714_);		if (!T23_) goto LA24_;
+		T23_ = (NIM_BOOL)0;		T23_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2841501714_);		if (!T23_) goto LA24_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2842001714_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2841501714_);
 	}
 	LA24_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2842001714_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2841501714_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T28_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T28_ = (NIM_BOOL)0;		T28_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2842511915_);		if (!T28_) goto LA29_;
+		T28_ = (NIM_BOOL)0;		T28_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2842011915_);		if (!T28_) goto LA29_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2842511915_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2842011915_);
 	}
 	LA29_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2842511915_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2842011915_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T33_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T33_ = (NIM_BOOL)0;		T33_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2844001716_);		if (!T33_) goto LA34_;
+		T33_ = (NIM_BOOL)0;		T33_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2843501716_);		if (!T33_) goto LA34_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2844001716_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2843501716_);
 	}
 	LA34_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2844001716_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2843501716_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -1887,148 +1887,148 @@ N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ)(tyObject_En
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T38_ = (NIM_BOOL)0;		T38_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2846001719_);		if (!T38_) goto LA39_;
+		T38_ = (NIM_BOOL)0;		T38_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2845501719_);		if (!T38_) goto LA39_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2846001719_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2845501719_);
 	}
 	LA39_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2846001719_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2845501719_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T43_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T43_ = (NIM_BOOL)0;		T43_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2849001720_);		if (!T43_) goto LA44_;
+		T43_ = (NIM_BOOL)0;		T43_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2848501720_);		if (!T43_) goto LA44_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2849001720_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2848501720_);
 	}
 	LA44_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2849001720_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2848501720_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T48_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T48_ = (NIM_BOOL)0;		T48_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2849503621_);		if (!T48_) goto LA49_;
+		T48_ = (NIM_BOOL)0;		T48_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2849003621_);		if (!T48_) goto LA49_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2849503621_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2849003621_);
 	}
 	LA49_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2849503621_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2849003621_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T53_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T53_ = (NIM_BOOL)0;		T53_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2851501723_);		if (!T53_) goto LA54_;
+		T53_ = (NIM_BOOL)0;		T53_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2851001723_);		if (!T53_) goto LA54_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2851501723_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2851001723_);
 	}
 	LA54_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2851501723_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2851001723_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T58_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T58_ = (NIM_BOOL)0;		T58_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2853001724_);		if (!T58_) goto LA59_;
+		T58_ = (NIM_BOOL)0;		T58_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2852501724_);		if (!T58_) goto LA59_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2853001724_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2852501724_);
 	}
 	LA59_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2853001724_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2852501724_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T63_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T63_ = (NIM_BOOL)0;		T63_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2857501725_);		if (!T63_) goto LA64_;
+		T63_ = (NIM_BOOL)0;		T63_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2857001725_);		if (!T63_) goto LA64_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2857501725_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2857001725_);
 	}
 	LA64_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2857501725_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2857001725_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T68_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T68_ = (NIM_BOOL)0;		T68_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2854001726_);		if (!T68_) goto LA69_;
+		T68_ = (NIM_BOOL)0;		T68_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2853501726_);		if (!T68_) goto LA69_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2854001726_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2853501726_);
 	}
 	LA69_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2854001726_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2853501726_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T73_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T73_ = (NIM_BOOL)0;		T73_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2856001727_);		if (!T73_) goto LA74_;
+		T73_ = (NIM_BOOL)0;		T73_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2855501727_);		if (!T73_) goto LA74_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2856001727_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2855501727_);
 	}
 	LA74_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2856001727_ = NIM_NIL;
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2855501727_ = NIM_NIL;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	{		NIM_BOOL T78_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T78_ = (NIM_BOOL)0;		T78_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28250067X60gensym2858501728_);		if (!T78_) goto LA79_;
+		T78_ = (NIM_BOOL)0;		T78_ = nimDecRefIsLast((*dest).internalTmpFutureX60gensym28245067X60gensym2858001728_);		if (!T78_) goto LA79_;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28250067X60gensym2858501728_);
+		nimDestroyAndDispose((*dest).internalTmpFutureX60gensym28245067X60gensym2858001728_);
 	}
 	LA79_: ;
 
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	(*dest).internalTmpFutureX60gensym28250067X60gensym2858501728_ = NIM_NIL;}
+	(*dest).internalTmpFutureX60gensym28245067X60gensym2858001728_ = NIM_NIL;}
 
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eq___DPyQeH6HWoOT89bKgwEB7ng)(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg** dest, tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* src) {
+N_LIB_PRIVATE N_NIMCALL(void, eq___tCU39aIXUwOtmqMepxtSQkQ)(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ** dest, tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* src) {
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	{		if (!src) goto LA3_;
 
@@ -2601,7 +2601,7 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 	popFrame();	return result;}
 
 #line 205 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, processRequestIter__9bFW7o03uH9aU8ZP0CEQpILA_3)(void* ClE_0) {	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result;	tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA* colonenvP_;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD_;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD__2;	NimStringV2 colontmpD__3;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD__4;	tyTuple__wOvXi5VibnCNgN9buQRQD4A colontmp_;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__5;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__6;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__7;	NimStringV2 colontmpD__8;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__9;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__10;	NimStringV2 colontmpD__11;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__12;	NimStringV2 colontmpD__13;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processRequestIter", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	colonenvP_ = (tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA*) ClE_0;	colontmpD_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colontmpD__2 = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colontmpD__3.len = 0; colontmpD__3.p = NIM_NIL;	colontmpD__4 = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	nimZeroMem((void*)(&colontmp_), sizeof(tyTuple__wOvXi5VibnCNgN9buQRQD4A));	colontmpD__5.len = 0; colontmpD__5.p = NIM_NIL;	colontmpD__6.len = 0; colontmpD__6.p = NIM_NIL;	colontmpD__7.len = 0; colontmpD__7.p = NIM_NIL;	colontmpD__8.len = 0; colontmpD__8.p = NIM_NIL;	colontmpD__9.len = 0; colontmpD__9.p = NIM_NIL;	colontmpD__10.len = 0; colontmpD__10.p = NIM_NIL;	colontmpD__11.len = 0; colontmpD__11.p = NIM_NIL;	colontmpD__12.len = 0; colontmpD__12.p = NIM_NIL;	colontmpD__13.len = 0; colontmpD__13.p = NIM_NIL;
+N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, processRequestIter__9bFW7o03uH9aU8ZP0CEQpILA_3)(void* ClE_0) {	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result;	tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ* colonenvP_;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD_;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD__2;	NimStringV2 colontmpD__3;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD__4;	tyTuple__wOvXi5VibnCNgN9buQRQD4A colontmp_;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__5;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__6;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__7;	NimStringV2 colontmpD__8;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__9;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__10;	NimStringV2 colontmpD__11;	tySequence__sM4lkSb7zS6F7OVMvW9cffQ colontmpD__12;	NimStringV2 colontmpD__13;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processRequestIter", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	colonenvP_ = (tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ*) ClE_0;	colontmpD_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colontmpD__2 = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colontmpD__3.len = 0; colontmpD__3.p = NIM_NIL;	colontmpD__4 = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	nimZeroMem((void*)(&colontmp_), sizeof(tyTuple__wOvXi5VibnCNgN9buQRQD4A));	colontmpD__5.len = 0; colontmpD__5.p = NIM_NIL;	colontmpD__6.len = 0; colontmpD__6.p = NIM_NIL;	colontmpD__7.len = 0; colontmpD__7.p = NIM_NIL;	colontmpD__8.len = 0; colontmpD__8.p = NIM_NIL;	colontmpD__9.len = 0; colontmpD__9.p = NIM_NIL;	colontmpD__10.len = 0; colontmpD__10.p = NIM_NIL;	colontmpD__11.len = 0; colontmpD__11.p = NIM_NIL;	colontmpD__12.len = 0; colontmpD__12.p = NIM_NIL;	colontmpD__13.len = 0; colontmpD__13.p = NIM_NIL;
 #line 145 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(145, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");	while (1) {		if (!1) goto LA2;
@@ -2813,7 +2813,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				T19_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T19_ = recvLineInto__oM6RSAsSAZHNSzsm0Xjbbg((*(*colonenvP_).colonup_).client3, (*(*colonenvP_).colonup_).lineFut4, 2, ((NI) 8192));				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T20_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T20_ = &T19_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym282950875_, T20_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym282900875_, T20_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 2);
@@ -2823,7 +2823,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym282950875_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym282900875_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -2896,7 +2896,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym282950875_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym282900875_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 3);
@@ -3017,7 +3017,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				T33_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T33_ = respondError__d6pATfvl9bhZSdB1hDgI45g((&(*T32_)), ((NI) 413));				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T34_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T34_ = &T33_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym283250177_, T34_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym283200177_, T34_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 4);
@@ -3027,7 +3027,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym283250177_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym283200177_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -3100,7 +3100,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym283250177_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym283200177_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 5);
@@ -3253,9 +3253,9 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				eq___aBBXmHFBEivKqERloP6zmA_2((&(*colonenvP_).colontmp10_), (*T44_));
 
 #line 403 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				nimln_(403, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				(*colonenvP_).lastX60gensym2083513311_ = ((NI) 0);
+				nimln_(403, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				(*colonenvP_).lastX60gensym2083013311_ = ((NI) 0);
 #line 404 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				nimln_(404, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				(*colonenvP_).splitsX60gensym2083513412_ = ((NI) -1);				{
+				nimln_(404, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				(*colonenvP_).splitsX60gensym2083013412_ = ((NI) -1);				{
 #line 0 "\?\?\?"
 					(*colonenvP_).colonstate_ = ((NI) 9);
 #line 464 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
@@ -3268,10 +3268,10 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 406 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 				nimln_(406, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");
 #line 406 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				if (!((*colonenvP_).lastX60gensym2083513311_ <= (*colonenvP_).colontmp10_.len)) goto LA48_;
+				if (!((*colonenvP_).lastX60gensym2083013311_ <= (*colonenvP_).colontmp10_.len)) goto LA48_;
 
 #line 407 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				nimln_(407, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				(*colonenvP_).firstX60gensym2083513513_ = (*colonenvP_).lastX60gensym2083513311_;				{
+				nimln_(407, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				(*colonenvP_).firstX60gensym2083013513_ = (*colonenvP_).lastX60gensym2083013311_;				{
 #line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 					nimln_(408, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");					while (1) {						NIM_BOOL T52_;						NI TM__kCumGAOn2jB9aScSIGdDsJg_29;
 #line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
@@ -3279,27 +3279,27 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 
 #line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-						T52_ = ((*colonenvP_).lastX60gensym2083513311_ < (*colonenvP_).colontmp10_.len);						if (!(T52_)) goto LA53_;
+						T52_ = ((*colonenvP_).lastX60gensym2083013311_ < (*colonenvP_).colontmp10_.len);						if (!(T52_)) goto LA53_;
 
 #line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 
 #line 408 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-						if ((NU)((*colonenvP_).lastX60gensym2083513311_) >= (NU)(*colonenvP_).colontmp10_.len){ raiseIndexError2((*colonenvP_).lastX60gensym2083513311_,(*colonenvP_).colontmp10_.len-1); goto LA1_;}						T52_ = !(((NU8)((*colonenvP_).colontmp10_.p->data[(*colonenvP_).lastX60gensym2083513311_]) == (NU8)(32)));						LA53_: ;
+						if ((NU)((*colonenvP_).lastX60gensym2083013311_) >= (NU)(*colonenvP_).colontmp10_.len){ raiseIndexError2((*colonenvP_).lastX60gensym2083013311_,(*colonenvP_).colontmp10_.len-1); goto LA1_;}						T52_ = !(((NU8)((*colonenvP_).colontmp10_.p->data[(*colonenvP_).lastX60gensym2083013311_]) == (NU8)(32)));						LA53_: ;
 						if (!T52_) goto LA51;
 
 #line 409 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-						nimln_(409, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");						if (nimAddInt((*colonenvP_).lastX60gensym2083513311_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_29)) { raiseOverflow(); goto LA1_;};						(*colonenvP_).lastX60gensym2083513311_ = (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_29);					} LA51: ;
+						nimln_(409, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");						if (nimAddInt((*colonenvP_).lastX60gensym2083013311_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_29)) { raiseOverflow(); goto LA1_;};						(*colonenvP_).lastX60gensym2083013311_ = (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_29);					} LA51: ;
 				}
 
 #line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 				nimln_(410, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				{
 #line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-					if (!((*colonenvP_).splitsX60gensym2083513412_ == ((NI) 0))) goto LA56_;
+					if (!((*colonenvP_).splitsX60gensym2083013412_ == ((NI) 0))) goto LA56_;
 
 #line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 
 #line 410 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-					(*colonenvP_).lastX60gensym2083513311_ = (*colonenvP_).colontmp10_.len;				}
+					(*colonenvP_).lastX60gensym2083013311_ = (*colonenvP_).colontmp10_.len;				}
 				LA56_: ;
 
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
@@ -3308,10 +3308,10 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				nimln_(177, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 411 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				nimln_(411, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				if (nimSubInt((*colonenvP_).lastX60gensym2083513311_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_30)) { raiseOverflow(); goto LA1_;};
+				nimln_(411, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");				if (nimSubInt((*colonenvP_).lastX60gensym2083013311_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_30)) { raiseOverflow(); goto LA1_;};
 #line 177 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 				nimln_(177, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
-"r.nim");				T58_.len = 0; T58_.p = NIM_NIL;				T58_ = substr__2yh9cer0ymNRHlOOg8P7IuA((*colonenvP_).colontmp10_, (*colonenvP_).firstX60gensym2083513513_, (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_30));
+"r.nim");				T58_.len = 0; T58_.p = NIM_NIL;				T58_ = substr__2yh9cer0ymNRHlOOg8P7IuA((*colonenvP_).colontmp10_, (*colonenvP_).firstX60gensym2083013513_, (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_30));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");				eqsink___aBBXmHFBEivKqERloP6zmA((&(*colonenvP_).linePart9), T58_);
 
@@ -3787,7 +3787,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 					T111_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;					T111_ = respondError__d6pATfvl9bhZSdB1hDgI45g((&(*T110_)), ((NI) 400));					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;					T112_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;					T112_ = &T111_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 					nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");					eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2842001714_, T112_);
+"im");					eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2841501714_, T112_);
 					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 					(*colonenvP_).colonstate_ = ((NI) 10);
@@ -3797,7 +3797,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 					nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-					eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2842001714_);
+					eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2841501714_);
 					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 					nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -3872,7 +3872,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2842001714_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2841501714_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 11);
@@ -3967,7 +3967,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 412 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
 			nimln_(412, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");			{
 #line 412 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-				if (!((*colonenvP_).splitsX60gensym2083513412_ == ((NI) 0))) goto LA116_;
+				if (!((*colonenvP_).splitsX60gensym2083013412_ == ((NI) 0))) goto LA116_;
 
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 14);
@@ -3977,9 +3977,9 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 			LA116_: ;
 
 #line 413 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-			nimln_(413, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");			if (nimSubInt((*colonenvP_).splitsX60gensym2083513412_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_57)) { raiseOverflow(); goto LA1_;};			(*colonenvP_).splitsX60gensym2083513412_ = (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_57);
+			nimln_(413, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");			if (nimSubInt((*colonenvP_).splitsX60gensym2083013412_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_57)) { raiseOverflow(); goto LA1_;};			(*colonenvP_).splitsX60gensym2083013412_ = (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_57);
 #line 414 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
-			nimln_(414, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");			if (nimAddInt((*colonenvP_).lastX60gensym2083513311_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_58)) { raiseOverflow(); goto LA1_;};			(*colonenvP_).lastX60gensym2083513311_ = (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_58);
+			nimln_(414, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim");			if (nimAddInt((*colonenvP_).lastX60gensym2083013311_, ((NI) 1), &TM__kCumGAOn2jB9aScSIGdDsJg_58)) { raiseOverflow(); goto LA1_;};			(*colonenvP_).lastX60gensym2083013311_ = (NI)(TM__kCumGAOn2jB9aScSIGdDsJg_58);
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 9);
 #line 464 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim"
@@ -4021,7 +4021,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				T124_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T124_ = recvLineInto__oM6RSAsSAZHNSzsm0Xjbbg((*(*colonenvP_).colonup_).client3, (*(*colonenvP_).colonup_).lineFut4, 2, ((NI) 8192));				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T125_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T125_ = &T124_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2842511915_, T125_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2842011915_, T125_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 16);
@@ -4031,7 +4031,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2842511915_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2842011915_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -4104,7 +4104,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2842511915_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2842011915_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 17);
@@ -4224,7 +4224,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				T138_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T138_ = respondError__d6pATfvl9bhZSdB1hDgI45g((&(*T137_)), ((NI) 413));				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T139_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T139_ = &T138_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2844001716_, T139_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2843501716_, T139_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 18);
@@ -4234,7 +4234,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2844001716_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2843501716_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -4307,7 +4307,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2844001716_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2843501716_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 19);
@@ -4478,7 +4478,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				T155_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T155_ = sendStatus__aliEDjT3myw2buffSdJfYg((*(*colonenvP_).colonup_).client3, TM__kCumGAOn2jB9aScSIGdDsJg_63);				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T156_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T156_ = &T155_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2846001719_, T156_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2845501719_, T156_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 21);
@@ -4488,7 +4488,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2846001719_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2845501719_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -4561,7 +4561,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2846001719_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2845501719_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 22);
@@ -4709,7 +4709,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 						T177_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;						T177_ = sendStatus__aliEDjT3myw2buffSdJfYg((*(*colonenvP_).colonup_).client3, TM__kCumGAOn2jB9aScSIGdDsJg_70);						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;						T178_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;						T178_ = &T177_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 						nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");						eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2849001720_, T178_);
+"im");						eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2848501720_, T178_);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 						(*colonenvP_).colonstate_ = ((NI) 24);
@@ -4719,7 +4719,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 						nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-						eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2849001720_);
+						eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2848501720_);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 						nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -4790,7 +4790,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 						T180_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;						T180_ = sendStatus__aliEDjT3myw2buffSdJfYg((*(*colonenvP_).colonup_).client3, TM__kCumGAOn2jB9aScSIGdDsJg_72);						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;						T181_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;						T181_ = &T180_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 						nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");						eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2849503621_, T181_);
+"im");						eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2849003621_, T181_);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 						(*colonenvP_).colonstate_ = ((NI) 25);
@@ -4800,7 +4800,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 						nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-						eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2849503621_);
+						eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2849003621_);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 						nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -4886,7 +4886,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2849001720_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2848501720_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 26);
@@ -4897,7 +4897,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2849503621_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2849003621_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 26);
@@ -4970,7 +4970,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 					T199_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;					T199_ = respond__tA4fbg9cx0zS1ZvSTtksr9bQ((&(*T198_)), ((NI) 400), TM__kCumGAOn2jB9aScSIGdDsJg_91, NIM_NIL);					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;					T200_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;					T200_ = &T199_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 					nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");					eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2851501723_, T200_);
+"im");					eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2851001723_, T200_);
 					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 					(*colonenvP_).colonstate_ = ((NI) 27);
@@ -4980,7 +4980,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 					nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-					eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2851501723_);
+					eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2851001723_);
 					if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 					nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -5062,7 +5062,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 						T207_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;						T207_ = respondError__d6pATfvl9bhZSdB1hDgI45g((&(*T206_)), ((NI) 413));						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;						T208_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;						T208_ = &T207_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 						nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");						eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2853001724_, T208_);
+"im");						eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2852501724_, T208_);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 						(*colonenvP_).colonstate_ = ((NI) 29);
@@ -5072,7 +5072,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 						nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-						eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2853001724_);
+						eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2852501724_);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 						nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -5169,7 +5169,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				T215_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T215_ = respond__tA4fbg9cx0zS1ZvSTtksr9bQ((&(*T214_)), ((NI) 411), TM__kCumGAOn2jB9aScSIGdDsJg_93, NIM_NIL);				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T216_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T216_ = &T215_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2857501725_, T216_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2857001725_, T216_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 36);
@@ -5179,7 +5179,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2857501725_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2857001725_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -5252,7 +5252,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2851501723_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2851001723_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 28);
@@ -5338,7 +5338,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2853001724_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2852501724_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 30);
@@ -5431,7 +5431,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 			T218_ = (tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw*)0;			T218_ = recv__FkEbi9aYiXeMwjF7Cdym9aDQ((*(*colonenvP_).colonup_).client3, (*colonenvP_).contentLength22, 2);			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;			T219_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;			T219_ = &T218_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 			nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");			eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2854001726_, T219_);
+"im");			eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2853501726_, T219_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 32);
@@ -5441,7 +5441,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 			nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-			eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2854001726_);
+			eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2853501726_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -5510,7 +5510,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			T221_.len = 0; T221_.p = NIM_NIL;			T221_ = read__S5Pgt6us40MmEQwQytOYLA(((tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2854001726_)));			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
+			T221_.len = 0; T221_.p = NIM_NIL;			T221_ = read__S5Pgt6us40MmEQwQytOYLA(((tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2853501726_)));			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");			eqsink___aBBXmHFBEivKqERloP6zmA((&(*T220_).body), T221_);
 
@@ -5548,7 +5548,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				T228_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;				T228_ = respond__tA4fbg9cx0zS1ZvSTtksr9bQ((&(*T227_)), ((NI) 400), TM__kCumGAOn2jB9aScSIGdDsJg_95, NIM_NIL);				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T229_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T229_ = &T228_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2856001727_, T229_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2855501727_, T229_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 34);
@@ -5558,7 +5558,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2856001727_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2855501727_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 				nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -5631,7 +5631,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2856001727_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2855501727_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 35);
@@ -5717,7 +5717,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2857501725_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2857001725_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 37);
@@ -5812,7 +5812,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 			T231_ = (tyObject_Request__1Wfxxtqzahm0R6lueM9aQmQ*)0;			T231_ = mget__OA2KZrU9ar1OnfKgVRZBGwQ((*(*colonenvP_).colonup_).req1);			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;			T232_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;			T232_ = (*(*colonenvP_).colonup_).callback7.ClE_0? (*(*colonenvP_).colonup_).callback7.ClP_0((&(*T231_)), (*(*colonenvP_).colonup_).callback7.ClE_0):((TM__kCumGAOn2jB9aScSIGdDsJg_96)((*(*colonenvP_).colonup_).callback7.ClP_0))((&(*T231_)));			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;			T233_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;			T233_ = &T232_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 			nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");			eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2858501728_, T233_);
+"im");			eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2858001728_, T233_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 39);
@@ -5822,7 +5822,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 			nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-			eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2858501728_);
+			eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2858001728_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -5884,7 +5884,7 @@ if (eqStrings((*colonenvP_).linePart9, TM__kCumGAOn2jB9aScSIGdDsJg_32)) goto LA6
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28250067X60gensym2858501728_)));
+			read__kYv5uOSTaUb7hZbxPjTMHA_3(((tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*) ((*colonenvP_).internalTmpFutureX60gensym28245067X60gensym2858001728_)));
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 40);
@@ -6336,7 +6336,7 @@ static N_INLINE(Exception*, getCurrentException)(void) {	Exception* result;	nimf
 	popFrame();	return result;}
 
 #line 245 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ)(void* ClE_0) {	tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* colonenvP_;	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* nextX60gensym28250063_;	NimStringV2 msgX60gensym28250064_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processRequestNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	colonenvP_ = (tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg*) ClE_0;	nextX60gensym28250063_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	msgX60gensym28250064_.len = 0; msgX60gensym28250064_.p = NIM_NIL;
+N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ)(void* ClE_0) {	tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* colonenvP_;	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* nextX60gensym28245063_;	NimStringV2 msgX60gensym28245064_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processRequestNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	colonenvP_ = (tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ*) ClE_0;	nextX60gensym28245063_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	msgX60gensym28245064_.len = 0; msgX60gensym28245064_.p = NIM_NIL;
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(22, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");	{		NIM_BOOL T5_;		tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* T8_;
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -6344,10 +6344,10 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T5_ = (NIM_BOOL)0;		T5_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym282500628_);		if (!!(T5_)) goto LA6_;
+		T5_ = (NIM_BOOL)0;		T5_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym282450628_);		if (!!(T5_)) goto LA6_;
 
 #line 23 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimln_(23, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		T8_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;		T8_ = (*colonenvP_).nameIterVarX60gensym282500628_.ClP_0((*colonenvP_).nameIterVarX60gensym282500628_.ClE_0);		if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		nextX60gensym28250063_ = T8_;		{
+		nimln_(23, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		T8_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;		T8_ = (*colonenvP_).nameIterVarX60gensym282450628_.ClP_0((*colonenvP_).nameIterVarX60gensym282450628_.ClE_0);		if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		nextX60gensym28245063_ = T8_;		{
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(25, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			while (1) {				NIM_BOOL T11_;				tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* T13_;
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -6355,29 +6355,29 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T11_ = !((nextX60gensym28250063_ == 0));				if (!(T11_)) goto LA12_;
+				T11_ = !((nextX60gensym28245063_ == 0));				if (!(T11_)) goto LA12_;
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T11_ = finished__Cn8FMZpHNs40shvQ9cZz69aA_2(nextX60gensym28250063_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				LA12_: ;
+				T11_ = finished__Cn8FMZpHNs40shvQ9cZz69aA_2(nextX60gensym28245063_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				LA12_: ;
 				if (!T11_) goto LA10;
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 26 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				nimln_(26, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				T13_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T13_ = (*colonenvP_).nameIterVarX60gensym282500628_.ClP_0((*colonenvP_).nameIterVarX60gensym282500628_.ClE_0);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
+				nimln_(26, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				T13_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T13_ = (*colonenvP_).nameIterVarX60gensym282450628_.ClP_0((*colonenvP_).nameIterVarX60gensym282450628_.ClE_0);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&nextX60gensym28250063_, T13_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&nextX60gensym28245063_, T13_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(27, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				{					NIM_BOOL T16_;
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-					T16_ = (NIM_BOOL)0;					T16_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym282500628_);					if (!T16_) goto LA17_;
+					T16_ = (NIM_BOOL)0;					T16_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym282450628_);					if (!T16_) goto LA17_;
 
 #line 28 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 					nimln_(28, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");					goto LA9;
@@ -6389,7 +6389,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 30 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 		nimln_(30, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		{
 #line 30 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			if (!(nextX60gensym28250063_ == NIM_NIL)) goto LA21_;
+			if (!(nextX60gensym28245063_ == NIM_NIL)) goto LA21_;
 
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(31, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			{				NIM_BOOL T25_;				tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ* T28_;
@@ -6398,14 +6398,14 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T25_ = (NIM_BOOL)0;				T25_ = finished__fwA9b5NfP9a1QL9cjd9cp9cEQgw((*colonenvP_).retFutUnownX60gensym282500619_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				if (!!(T25_)) goto LA26_;
+				T25_ = (NIM_BOOL)0;				T25_ = finished__fwA9b5NfP9a1QL9cjd9cp9cEQgw((*colonenvP_).retFutUnownX60gensym282450619_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				if (!!(T25_)) goto LA26_;
 
 #line 32 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				nimln_(32, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				msgX60gensym28250064_ = TM__kCumGAOn2jB9aScSIGdDsJg_112;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*)0;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*) nimNewObj(sizeof(tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ));				(*T28_).Sup.Sup.Sup.m_type = (&NTI__PtYxPmY5X0dorfvxAFbJpQ_);				(*T28_).Sup.Sup.name = "AssertionDefect";
+				nimln_(32, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				msgX60gensym28245064_ = TM__kCumGAOn2jB9aScSIGdDsJg_112;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*)0;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*) nimNewObj(sizeof(tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ));				(*T28_).Sup.Sup.Sup.m_type = (&NTI__PtYxPmY5X0dorfvxAFbJpQ_);				(*T28_).Sup.Sup.name = "AssertionDefect";
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(34, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				(*T28_).Sup.Sup.message = nsuFormatSingleElem(msgX60gensym28250064_, TM__kCumGAOn2jB9aScSIGdDsJg_113);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				(*T28_).Sup.Sup.parent = NIM_NIL;
+				(*T28_).Sup.Sup.message = nsuFormatSingleElem(msgX60gensym28245064_, TM__kCumGAOn2jB9aScSIGdDsJg_113);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				(*T28_).Sup.Sup.parent = NIM_NIL;
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				raiseExceptionEx((Exception*)T28_, "AssertionDefect", "processRequestNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim", 34);				goto LA2_;			}
 			LA26_: ;
@@ -6416,7 +6416,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 38 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(38, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			nimZeroMem((void*)(&T30_), sizeof(tyProc__HzVCwACFYM9cx9aV62PdjtuA));			T30_.ClP_0 = processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ; T30_.ClE_0 = colonenvP_;
 #line 38 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			addCallback__LPYaMz3j7An9cL9cbuTYEaOQ_2(nextX60gensym28250063_, T30_);
+			addCallback__LPYaMz3j7An9cL9cbuTYEaOQ_2(nextX60gensym28245063_, T30_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		}
 		LA19_: ;
 	}
@@ -6427,7 +6427,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 42 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 42 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T36_ = (NIM_BOOL)0;				T36_ = finished__fwA9b5NfP9a1QL9cjd9cp9cEQgw((*colonenvP_).retFutUnownX60gensym282500619_);				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;				if (!T36_) goto LA37_;
+				T36_ = (NIM_BOOL)0;				T36_ = finished__fwA9b5NfP9a1QL9cjd9cp9cEQgw((*colonenvP_).retFutUnownX60gensym282450619_);				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;				if (!T36_) goto LA37_;
 
 #line 45 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(45, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				reraiseException();				goto LA32_;			}
@@ -6441,7 +6441,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				T40_ = (Exception*)0;				T40_ = getCurrentException();
 #line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				fail__jxN9bUJkdb5lnzElz9bnP49bg((*colonenvP_).retFutUnownX60gensym282500619_, T40_);
+				fail__jxN9bUJkdb5lnzElz9bnP49bg((*colonenvP_).retFutUnownX60gensym282450619_, T40_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;			}
 			LA34_: ;
 			popCurrentException();			LA32_:;		}
@@ -6451,28 +6451,28 @@ N_LIB_PRIVATE N_CLOSURE(void, processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&msgX60gensym28250064_));
+		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&msgX60gensym28245064_));
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 		nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-		eqdestroy___fLSV5a9byBEbWv3rkCuCFwQ(&nextX60gensym28250063_);
+		eqdestroy___fLSV5a9byBEbWv3rkCuCFwQ(&nextX60gensym28245063_);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();}
 
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*, processRequest__f9a10Eca1YKnGSdampx0naQ)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* req, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client, NimStringV2 address, tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw* lineFut, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback) {	tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* result;	tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg* colonenv_;	tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA* colonenv__2;	tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* T2_;	tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA* blitTmp;	tyProc__uz49bJm19cqLWB77G7nLz3FA T3_;	tyProc__HzVCwACFYM9cx9aV62PdjtuA T4_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processRequest", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
-"r.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*)0;	colonenv_ = (tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg*)0;	colonenv__2 = (tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA*)0;
+N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*, processRequest__f9a10Eca1YKnGSdampx0naQ)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, tyObject_FuturecolonObjectType___YVkcX59bQnfZuy8DRYGTKTw* req, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client, NimStringV2 address, tyObject_FuturecolonObjectType___DytvWkqCHojL9aGfYktbFPw* lineFut, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback) {	tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* result;	tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ* colonenv_;	tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ* colonenv__2;	tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA* T2_;	tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ* blitTmp;	tyProc__uz49bJm19cqLWB77G7nLz3FA T3_;	tyProc__HzVCwACFYM9cx9aV62PdjtuA T4_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processRequest", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
+"r.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*)0;	colonenv_ = (tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ*)0;	colonenv__2 = (tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ*)0;
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(135, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eqdestroy___59aaHmRqq1RcZa79cOX4r30w(&colonenv_);
+	eqdestroy___SUQNs9aQaGXOvOad9cMP6aeQ(&colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv_ = (tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg*) nimNewObj(sizeof(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg));	(*colonenv_).Sup.m_type = (&NTI__xBVSKYqqvD09aPggIj28FSg_);
+	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv_ = (tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ*) nimNewObj(sizeof(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ));	(*colonenv_).Sup.m_type = (&NTI__9bd5QXnTk7rvzbJKNe729cAQ_);
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(65, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
@@ -6522,20 +6522,20 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA
 #line 107 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 
 #line 107 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-	eq___s9cfI8X7b55ZgziAeyTH2YQ_2(&(*colonenv_).retFutUnownX60gensym282500619_, (*colonenv_).retFuture5);
+	eq___s9cfI8X7b55ZgziAeyTH2YQ_2(&(*colonenv_).retFutUnownX60gensym282450619_, (*colonenv_).retFuture5);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	eqdestroy___Q0tqKrGLMEbqoBfDrTIkoQ(&colonenv__2);
+	eqdestroy___lAg89bxCSTy89bmzSZwAJCzg(&colonenv__2);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv__2 = (tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA*) nimNewObj(sizeof(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA));	(*colonenv__2).Sup.m_type = (&NTI__VELQqa064fUzQzSuskXBnA_);
+	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv__2 = (tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ*) nimNewObj(sizeof(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ));	(*colonenv__2).Sup.m_type = (&NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_);
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(135, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eq___DPyQeH6HWoOT89bKgwEB7ng(&(*colonenv__2).colonup_, colonenv_);
+	eq___tCU39aIXUwOtmqMepxtSQkQ(&(*colonenv__2).colonup_, colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 2351 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
 	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");
@@ -6544,7 +6544,7 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	colonenv__2 = 0;	nimZeroMem((void*)(&T3_), sizeof(tyProc__uz49bJm19cqLWB77G7nLz3FA));	T3_.ClP_0 = processRequestIter__9bFW7o03uH9aU8ZP0CEQpILA_3; T3_.ClE_0 = blitTmp;
 #line 2351 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	eqsink___qFCY9cDCItk3PpsKistRZ1Q((&(*colonenv_).nameIterVarX60gensym282500628_), T3_);
+	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	eqsink___qFCY9cDCItk3PpsKistRZ1Q((&(*colonenv_).nameIterVarX60gensym282450628_), T3_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");	nimZeroMem((void*)(&T4_), sizeof(tyProc__HzVCwACFYM9cx9aV62PdjtuA));	T4_.ClP_0 = processRequestNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ; T4_.ClE_0 = colonenv_;	T4_.ClE_0? T4_.ClP_0(T4_.ClE_0):((TM__kCumGAOn2jB9aScSIGdDsJg_114)(T4_.ClP_0))();
@@ -6561,32 +6561,32 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	eqdestroy___Q0tqKrGLMEbqoBfDrTIkoQ(&colonenv__2);
+	eqdestroy___lAg89bxCSTy89bmzSZwAJCzg(&colonenv__2);
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(135, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eqdestroy___59aaHmRqq1RcZa79cOX4r30w(&colonenv_);
+	eqdestroy___SUQNs9aQaGXOvOad9cMP6aeQ(&colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	goto BeforeRet_;
 	{		LA1_:;	}
 	{		oldNimErrFin1_ = *nimErr_; *nimErr_ = NIM_FALSE;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 		nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		eqdestroy___Q0tqKrGLMEbqoBfDrTIkoQ(&colonenv__2);
+		eqdestroy___lAg89bxCSTy89bmzSZwAJCzg(&colonenv__2);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 		nimln_(135, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 135 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-		eqdestroy___59aaHmRqq1RcZa79cOX4r30w(&colonenv_);
+		eqdestroy___SUQNs9aQaGXOvOad9cMP6aeQ(&colonenv_);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();	return result;}
 
 #line 205 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, processClientIter__9bFW7o03uH9aU8ZP0CEQpILA_2)(void* ClE_0) {	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result;	tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg* colonenvP_;NIM_BOOL* nimErr_;	nimfr_("processClientIter", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	colonenvP_ = (tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg*) ClE_0;
+N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, processClientIter__9bFW7o03uH9aU8ZP0CEQpILA_2)(void* ClE_0) {	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result;	tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ* colonenvP_;NIM_BOOL* nimErr_;	nimfr_("processClientIter", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	colonenvP_ = (tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ*) ClE_0;
 #line 284 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(284, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");	while (1) {		if (!1) goto LA1;
@@ -6693,7 +6693,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				T17_ = (tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*)0;				T17_ = processRequest__f9a10Eca1YKnGSdampx0naQ((*(*colonenvP_).colonup_).server2, (*colonenvP_).request1, (*(*colonenvP_).colonup_).client1, (*(*colonenvP_).colonup_).address3, (*colonenvP_).lineFut2, (*(*colonenvP_).colonup_).callback4);				if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;				T18_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T18_ = &T17_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28650269X60gensym286606704_, T18_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28645269X60gensym286556704_, T18_);
 				if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 2);
@@ -6703,7 +6703,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28650269X60gensym286606704_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28645269X60gensym286556704_);
 				if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;				goto BeforeRet_;
 			}
 			goto LA12_;
@@ -6721,7 +6721,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 			nimln_(291, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			T20_ = (NIM_BOOL)0;			T20_ = read__fwA9b5NfP9a1QL9cjd9cp9cEQgw_2(((tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*) ((*colonenvP_).internalTmpFutureX60gensym28650269X60gensym286606704_)));			if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;			(*colonenvP_).retry6 = T20_;
+			nimln_(273, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			T20_ = (NIM_BOOL)0;			T20_ = read__fwA9b5NfP9a1QL9cjd9cp9cEQgw_2(((tyObject_FuturecolonObjectType___MoyhMJWEHe6l39ajVP2YSWA*) ((*colonenvP_).internalTmpFutureX60gensym28645269X60gensym286556704_)));			if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;			(*colonenvP_).retry6 = T20_;
 #line 0 "\?\?\?"
 			(*colonenvP_).colonstate_ = ((NI) 3);
 #line 291 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
@@ -6768,7 +6768,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 	popFrame();	return result;}
 
 #line 245 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_2)(void* ClE_0) {	tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* colonenvP_;	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* nextX60gensym28650265_;	NimStringV2 msgX60gensym28650266_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processClientNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	colonenvP_ = (tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw*) ClE_0;	nextX60gensym28650265_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	msgX60gensym28650266_.len = 0; msgX60gensym28650266_.p = NIM_NIL;
+N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_2)(void* ClE_0) {	tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* colonenvP_;	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* nextX60gensym28645265_;	NimStringV2 msgX60gensym28645266_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processClientNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	colonenvP_ = (tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA*) ClE_0;	nextX60gensym28645265_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	msgX60gensym28645266_.len = 0; msgX60gensym28645266_.p = NIM_NIL;
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(22, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");	{		NIM_BOOL T5_;		tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* T8_;
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -6776,10 +6776,10 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T5_ = (NIM_BOOL)0;		T5_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286502646_);		if (!!(T5_)) goto LA6_;
+		T5_ = (NIM_BOOL)0;		T5_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286452646_);		if (!!(T5_)) goto LA6_;
 
 #line 23 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimln_(23, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		T8_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;		T8_ = (*colonenvP_).nameIterVarX60gensym286502646_.ClP_0((*colonenvP_).nameIterVarX60gensym286502646_.ClE_0);		if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		nextX60gensym28650265_ = T8_;		{
+		nimln_(23, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		T8_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;		T8_ = (*colonenvP_).nameIterVarX60gensym286452646_.ClP_0((*colonenvP_).nameIterVarX60gensym286452646_.ClE_0);		if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		nextX60gensym28645265_ = T8_;		{
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(25, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			while (1) {				NIM_BOOL T11_;				tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* T13_;
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -6787,29 +6787,29 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T11_ = !((nextX60gensym28650265_ == 0));				if (!(T11_)) goto LA12_;
+				T11_ = !((nextX60gensym28645265_ == 0));				if (!(T11_)) goto LA12_;
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T11_ = finished__Cn8FMZpHNs40shvQ9cZz69aA_2(nextX60gensym28650265_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				LA12_: ;
+				T11_ = finished__Cn8FMZpHNs40shvQ9cZz69aA_2(nextX60gensym28645265_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				LA12_: ;
 				if (!T11_) goto LA10;
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 26 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				nimln_(26, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				T13_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T13_ = (*colonenvP_).nameIterVarX60gensym286502646_.ClP_0((*colonenvP_).nameIterVarX60gensym286502646_.ClE_0);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
+				nimln_(26, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				T13_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T13_ = (*colonenvP_).nameIterVarX60gensym286452646_.ClP_0((*colonenvP_).nameIterVarX60gensym286452646_.ClE_0);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&nextX60gensym28650265_, T13_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&nextX60gensym28645265_, T13_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(27, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				{					NIM_BOOL T16_;
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-					T16_ = (NIM_BOOL)0;					T16_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286502646_);					if (!T16_) goto LA17_;
+					T16_ = (NIM_BOOL)0;					T16_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286452646_);					if (!T16_) goto LA17_;
 
 #line 28 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 					nimln_(28, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");					goto LA9;
@@ -6821,7 +6821,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 30 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 		nimln_(30, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		{
 #line 30 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			if (!(nextX60gensym28650265_ == NIM_NIL)) goto LA21_;
+			if (!(nextX60gensym28645265_ == NIM_NIL)) goto LA21_;
 
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(31, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			{				NIM_BOOL T25_;				tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ* T28_;
@@ -6830,14 +6830,14 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T25_ = (NIM_BOOL)0;				T25_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286502637_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				if (!!(T25_)) goto LA26_;
+				T25_ = (NIM_BOOL)0;				T25_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286452637_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				if (!!(T25_)) goto LA26_;
 
 #line 32 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				nimln_(32, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				msgX60gensym28650266_ = TM__kCumGAOn2jB9aScSIGdDsJg_117;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*)0;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*) nimNewObj(sizeof(tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ));				(*T28_).Sup.Sup.Sup.m_type = (&NTI__PtYxPmY5X0dorfvxAFbJpQ_);				(*T28_).Sup.Sup.name = "AssertionDefect";
+				nimln_(32, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				msgX60gensym28645266_ = TM__kCumGAOn2jB9aScSIGdDsJg_117;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*)0;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*) nimNewObj(sizeof(tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ));				(*T28_).Sup.Sup.Sup.m_type = (&NTI__PtYxPmY5X0dorfvxAFbJpQ_);				(*T28_).Sup.Sup.name = "AssertionDefect";
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(34, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				(*T28_).Sup.Sup.message = nsuFormatSingleElem(msgX60gensym28650266_, TM__kCumGAOn2jB9aScSIGdDsJg_118);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				(*T28_).Sup.Sup.parent = NIM_NIL;
+				(*T28_).Sup.Sup.message = nsuFormatSingleElem(msgX60gensym28645266_, TM__kCumGAOn2jB9aScSIGdDsJg_118);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				(*T28_).Sup.Sup.parent = NIM_NIL;
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				raiseExceptionEx((Exception*)T28_, "AssertionDefect", "processClientNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim", 34);				goto LA2_;			}
 			LA26_: ;
@@ -6848,7 +6848,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 38 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(38, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			nimZeroMem((void*)(&T30_), sizeof(tyProc__HzVCwACFYM9cx9aV62PdjtuA));			T30_.ClP_0 = processClientNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_2; T30_.ClE_0 = colonenvP_;
 #line 38 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			addCallback__LPYaMz3j7An9cL9cbuTYEaOQ_2(nextX60gensym28650265_, T30_);
+			addCallback__LPYaMz3j7An9cL9cbuTYEaOQ_2(nextX60gensym28645265_, T30_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		}
 		LA19_: ;
 	}
@@ -6859,7 +6859,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 42 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 42 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T36_ = (NIM_BOOL)0;				T36_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286502637_);				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;				if (!T36_) goto LA37_;
+				T36_ = (NIM_BOOL)0;				T36_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286452637_);				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;				if (!T36_) goto LA37_;
 
 #line 45 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(45, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				reraiseException();				goto LA32_;			}
@@ -6873,7 +6873,7 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				T40_ = (Exception*)0;				T40_ = getCurrentException();
 #line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				fail__KP9b34veEV0ehqMJglv63VQ((*colonenvP_).retFutUnownX60gensym286502637_, T40_);
+				fail__KP9b34veEV0ehqMJglv63VQ((*colonenvP_).retFutUnownX60gensym286452637_, T40_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;			}
 			LA34_: ;
 			popCurrentException();			LA32_:;		}
@@ -6883,28 +6883,28 @@ N_LIB_PRIVATE N_CLOSURE(void, processClientNimAsyncContinue__0f5XHRBN20CBOjiT69c
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&msgX60gensym28650266_));
+		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&msgX60gensym28645266_));
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 		nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-		eqdestroy___fLSV5a9byBEbWv3rkCuCFwQ(&nextX60gensym28650265_);
+		eqdestroy___fLSV5a9byBEbWv3rkCuCFwQ(&nextX60gensym28645265_);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();}
 
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*, processClient__joQh6FjMH3k00E4frDo5bA)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client, NimStringV2 address, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback) {	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* result;	tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw* colonenv_;	tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg* colonenv__2;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* T2_;	tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg* blitTmp;	tyProc__uz49bJm19cqLWB77G7nLz3FA T3_;	tyProc__HzVCwACFYM9cx9aV62PdjtuA T4_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processClient", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
-"r.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colonenv_ = (tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw*)0;	colonenv__2 = (tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg*)0;
+N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*, processClient__joQh6FjMH3k00E4frDo5bA)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* client, NimStringV2 address, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback) {	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* result;	tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA* colonenv_;	tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ* colonenv__2;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* T2_;	tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ* blitTmp;	tyProc__uz49bJm19cqLWB77G7nLz3FA T3_;	tyProc__HzVCwACFYM9cx9aV62PdjtuA T4_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("processClient", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
+"r.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colonenv_ = (tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA*)0;	colonenv__2 = (tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ*)0;
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(281, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eqdestroy___aWoMpZgcKA7WNVATkT69abA(&colonenv_);
+	eqdestroy___CuaXL1DymsPISA07Ns1oUA(&colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv_ = (tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw*) nimNewObj(sizeof(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw));	(*colonenv_).Sup.m_type = (&NTI__eKRPksfhVOH1Lb9aPVdw3Gw_);
+	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv_ = (tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA*) nimNewObj(sizeof(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA));	(*colonenv_).Sup.m_type = (&NTI__z9bMReBhhMUbzPG7IPa6vVA_);
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(65, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
@@ -6942,20 +6942,20 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-	eq___ldMjcNJxoGs4TI2BzBMsVQ(&(*colonenv_).retFutUnownX60gensym286502637_, (*colonenv_).retFuture5);
+	eq___ldMjcNJxoGs4TI2BzBMsVQ(&(*colonenv_).retFutUnownX60gensym286452637_, (*colonenv_).retFuture5);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	eqdestroy___ZIixYK200o8GHJVksNptSw(&colonenv__2);
+	eqdestroy___6oLYg7HYahm107oqDmIm9cg(&colonenv__2);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv__2 = (tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg*) nimNewObj(sizeof(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg));	(*colonenv__2).Sup.m_type = (&NTI__NN9c9c4Ajiia37T7fga8eLhg_);
+	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv__2 = (tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ*) nimNewObj(sizeof(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ));	(*colonenv__2).Sup.m_type = (&NTI__pf9bPNVy3dI37jrrRoquOlQ_);
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(281, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eq___OXL49cFJoN8Ipc5tV1SRavA(&(*colonenv__2).colonup_, colonenv_);
+	eq___1iVHP5rloc5wHJRYo2xiAw(&(*colonenv__2).colonup_, colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 2351 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
 	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");
@@ -6964,7 +6964,7 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	colonenv__2 = 0;	nimZeroMem((void*)(&T3_), sizeof(tyProc__uz49bJm19cqLWB77G7nLz3FA));	T3_.ClP_0 = processClientIter__9bFW7o03uH9aU8ZP0CEQpILA_2; T3_.ClE_0 = blitTmp;
 #line 2351 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	eqsink___qFCY9cDCItk3PpsKistRZ1Q((&(*colonenv_).nameIterVarX60gensym286502646_), T3_);
+	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	eqsink___qFCY9cDCItk3PpsKistRZ1Q((&(*colonenv_).nameIterVarX60gensym286452646_), T3_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");	nimZeroMem((void*)(&T4_), sizeof(tyProc__HzVCwACFYM9cx9aV62PdjtuA));	T4_.ClP_0 = processClientNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_2; T4_.ClE_0 = colonenv_;	T4_.ClE_0? T4_.ClP_0(T4_.ClE_0):((TM__kCumGAOn2jB9aScSIGdDsJg_119)(T4_.ClP_0))();
@@ -6981,32 +6981,32 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	eqdestroy___ZIixYK200o8GHJVksNptSw(&colonenv__2);
+	eqdestroy___6oLYg7HYahm107oqDmIm9cg(&colonenv__2);
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(281, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eqdestroy___aWoMpZgcKA7WNVATkT69abA(&colonenv_);
+	eqdestroy___CuaXL1DymsPISA07Ns1oUA(&colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	goto BeforeRet_;
 	{		LA1_:;	}
 	{		oldNimErrFin1_ = *nimErr_; *nimErr_ = NIM_FALSE;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 		nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		eqdestroy___ZIixYK200o8GHJVksNptSw(&colonenv__2);
+		eqdestroy___6oLYg7HYahm107oqDmIm9cg(&colonenv__2);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 		nimln_(281, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 281 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-		eqdestroy___aWoMpZgcKA7WNVATkT69abA(&colonenv_);
+		eqdestroy___CuaXL1DymsPISA07Ns1oUA(&colonenv_);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();	return result;}
 
 #line 205 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, serveIter__9bFW7o03uH9aU8ZP0CEQpILA)(void* ClE_0) {	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result;	tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw* colonenvP_;	tyTuple__O5pdIMCwdzZuqrzSnslnMg colontmp_;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("serveIter", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	colonenvP_ = (tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw*) ClE_0;	nimZeroMem((void*)(&colontmp_), sizeof(tyTuple__O5pdIMCwdzZuqrzSnslnMg));	colontmpD_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;
+N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*, serveIter__9bFW7o03uH9aU8ZP0CEQpILA)(void* ClE_0) {	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* result;	tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA* colonenvP_;	tyTuple__O5pdIMCwdzZuqrzSnslnMg colontmp_;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* colontmpD_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("serveIter", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	colonenvP_ = (tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA*) ClE_0;	nimZeroMem((void*)(&colontmp_), sizeof(tyTuple__O5pdIMCwdzZuqrzSnslnMg));	colontmpD_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;
 #line 299 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(299, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");	while (1) {		if (!1) goto LA2;
@@ -7093,7 +7093,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				T18_ = (tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg*)0;				T18_ = acceptAddr__zW9bp7BFHJ9bFK3QaYOmZFIQ((*(*(*colonenvP_).colonup_).server1).socket, 2, NIM_FALSE);				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;				T19_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T19_ = &T18_->Sup;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28695073X60gensym287000422_, T19_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&(*colonenvP_).internalTmpFutureX60gensym28690073X60gensym286950422_, T19_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 0 "\?\?\?"
 				(*colonenvP_).colonstate_ = ((NI) 2);
@@ -7103,7 +7103,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28695073X60gensym287000422_);
+				eq___ANG79cPfZ9aF0EzkBrohSSEw_2(&result, (*colonenvP_).internalTmpFutureX60gensym28690073X60gensym286950422_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 
@@ -7129,7 +7129,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			nimZeroMem((void*)(&T21_), sizeof(tyTuple__O5pdIMCwdzZuqrzSnslnMg));			read__yhIK2ge0FYBVC4vfDnCKTw(((tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg*) ((*colonenvP_).internalTmpFutureX60gensym28695073X60gensym287000422_)), (&T21_));
+			nimZeroMem((void*)(&T21_), sizeof(tyTuple__O5pdIMCwdzZuqrzSnslnMg));			read__yhIK2ge0FYBVC4vfDnCKTw(((tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg*) ((*colonenvP_).internalTmpFutureX60gensym28690073X60gensym286950422_)), (&T21_));
 			colontmp_.Field0 = T21_.Field0;			colontmp_.Field1 = T21_.Field1;			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
@@ -7201,7 +7201,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 	popFrame();	return result;}
 
 #line 245 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(void* ClE_0) {	tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* colonenvP_;	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* nextX60gensym28695069_;	NimStringV2 msgX60gensym28695070_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("serveNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	colonenvP_ = (tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA*) ClE_0;	nextX60gensym28695069_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	msgX60gensym28695070_.len = 0; msgX60gensym28695070_.p = NIM_NIL;
+N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(void* ClE_0) {	tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* colonenvP_;	tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* nextX60gensym28690069_;	NimStringV2 msgX60gensym28690070_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("serveNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");{nimErr_ = nimErrorFlag();	colonenvP_ = (tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g*) ClE_0;	nextX60gensym28690069_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;	msgX60gensym28690070_.len = 0; msgX60gensym28690070_.p = NIM_NIL;
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(22, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");	{		NIM_BOOL T5_;		tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* T8_;
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -7209,10 +7209,10 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 22 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		T5_ = (NIM_BOOL)0;		T5_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286950686_);		if (!!(T5_)) goto LA6_;
+		T5_ = (NIM_BOOL)0;		T5_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286900686_);		if (!!(T5_)) goto LA6_;
 
 #line 23 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		nimln_(23, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		T8_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;		T8_ = (*colonenvP_).nameIterVarX60gensym286950686_.ClP_0((*colonenvP_).nameIterVarX60gensym286950686_.ClE_0);		if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		nextX60gensym28695069_ = T8_;		{
+		nimln_(23, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		T8_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;		T8_ = (*colonenvP_).nameIterVarX60gensym286900686_.ClP_0((*colonenvP_).nameIterVarX60gensym286900686_.ClE_0);		if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		nextX60gensym28690069_ = T8_;		{
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(25, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			while (1) {				NIM_BOOL T11_;				tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA* T13_;
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
@@ -7220,29 +7220,29 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T11_ = !((nextX60gensym28695069_ == 0));				if (!(T11_)) goto LA12_;
+				T11_ = !((nextX60gensym28690069_ == 0));				if (!(T11_)) goto LA12_;
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 25 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T11_ = finished__Cn8FMZpHNs40shvQ9cZz69aA_2(nextX60gensym28695069_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				LA12_: ;
+				T11_ = finished__Cn8FMZpHNs40shvQ9cZz69aA_2(nextX60gensym28690069_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				LA12_: ;
 				if (!T11_) goto LA10;
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 26 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				nimln_(26, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				T13_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T13_ = (*colonenvP_).nameIterVarX60gensym286950686_.ClP_0((*colonenvP_).nameIterVarX60gensym286950686_.ClE_0);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
+				nimln_(26, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				T13_ = (tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9a9bwA*)0;				T13_ = (*colonenvP_).nameIterVarX60gensym286900686_.ClP_0((*colonenvP_).nameIterVarX60gensym286900686_.ClE_0);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 				nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&nextX60gensym28695069_, T13_);
+"im");				eqsink___ANG79cPfZ9aF0EzkBrohSSEw(&nextX60gensym28690069_, T13_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(27, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				{					NIM_BOOL T16_;
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 27 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-					T16_ = (NIM_BOOL)0;					T16_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286950686_);					if (!T16_) goto LA17_;
+					T16_ = (NIM_BOOL)0;					T16_ = finished__SDzjUskCcAHghx1ZNCiJfwsystem((*colonenvP_).nameIterVarX60gensym286900686_);					if (!T16_) goto LA17_;
 
 #line 28 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 					nimln_(28, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");					goto LA9;
@@ -7254,7 +7254,7 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 30 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 		nimln_(30, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");		{
 #line 30 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			if (!(nextX60gensym28695069_ == NIM_NIL)) goto LA21_;
+			if (!(nextX60gensym28690069_ == NIM_NIL)) goto LA21_;
 
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(31, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			{				NIM_BOOL T25_;				tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ* T28_;
@@ -7263,14 +7263,14 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 31 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T25_ = (NIM_BOOL)0;				T25_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286950677_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				if (!!(T25_)) goto LA26_;
+				T25_ = (NIM_BOOL)0;				T25_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286900677_);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				if (!!(T25_)) goto LA26_;
 
 #line 32 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				nimln_(32, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				msgX60gensym28695070_ = TM__kCumGAOn2jB9aScSIGdDsJg_122;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*)0;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*) nimNewObj(sizeof(tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ));				(*T28_).Sup.Sup.Sup.m_type = (&NTI__PtYxPmY5X0dorfvxAFbJpQ_);				(*T28_).Sup.Sup.name = "AssertionDefect";
+				nimln_(32, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				msgX60gensym28690070_ = TM__kCumGAOn2jB9aScSIGdDsJg_122;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*)0;				T28_ = (tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ*) nimNewObj(sizeof(tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ));				(*T28_).Sup.Sup.Sup.m_type = (&NTI__PtYxPmY5X0dorfvxAFbJpQ_);				(*T28_).Sup.Sup.name = "AssertionDefect";
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(34, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				(*T28_).Sup.Sup.message = nsuFormatSingleElem(msgX60gensym28695070_, TM__kCumGAOn2jB9aScSIGdDsJg_123);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				(*T28_).Sup.Sup.parent = NIM_NIL;
+				(*T28_).Sup.Sup.message = nsuFormatSingleElem(msgX60gensym28690070_, TM__kCumGAOn2jB9aScSIGdDsJg_123);				if (NIM_UNLIKELY(*nimErr_)) goto LA2_;				(*T28_).Sup.Sup.parent = NIM_NIL;
 #line 34 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				raiseExceptionEx((Exception*)T28_, "AssertionDefect", "serveNimAsyncContinue", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim", 34);				goto LA2_;			}
 			LA26_: ;
@@ -7281,7 +7281,7 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 38 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 			nimln_(38, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");			nimZeroMem((void*)(&T30_), sizeof(tyProc__HzVCwACFYM9cx9aV62PdjtuA));			T30_.ClP_0 = serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3; T30_.ClE_0 = colonenvP_;
 #line 38 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			addCallback__LPYaMz3j7An9cL9cbuTYEaOQ_2(nextX60gensym28695069_, T30_);
+			addCallback__LPYaMz3j7An9cL9cbuTYEaOQ_2(nextX60gensym28690069_, T30_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA2_;		}
 		LA19_: ;
 	}
@@ -7292,7 +7292,7 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 42 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 42 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				T36_ = (NIM_BOOL)0;				T36_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286950677_);				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;				if (!T36_) goto LA37_;
+				T36_ = (NIM_BOOL)0;				T36_ = finished__zLPHIdTAe2mgu9c9c1y5dGIQ((*colonenvP_).retFutUnownX60gensym286900677_);				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;				if (!T36_) goto LA37_;
 
 #line 45 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				nimln_(45, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");				reraiseException();				goto LA32_;			}
@@ -7306,7 +7306,7 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 				T40_ = (Exception*)0;				T40_ = getCurrentException();
 #line 47 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-				fail__KP9b34veEV0ehqMJglv63VQ((*colonenvP_).retFutUnownX60gensym286950677_, T40_);
+				fail__KP9b34veEV0ehqMJglv63VQ((*colonenvP_).retFutUnownX60gensym286900677_, T40_);
 				if (NIM_UNLIKELY(*nimErr_)) goto LA32_;			}
 			LA34_: ;
 			popCurrentException();			LA32_:;		}
@@ -7316,28 +7316,28 @@ N_LIB_PRIVATE N_CLOSURE(void, serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3)(
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
-		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&msgX60gensym28695070_));
+		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&msgX60gensym28690070_));
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 		nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
 "im");
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-		eqdestroy___fLSV5a9byBEbWv3rkCuCFwQ(&nextX60gensym28695069_);
+		eqdestroy___fLSV5a9byBEbWv3rkCuCFwQ(&nextX60gensym28690069_);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();}
 
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*, serve__PCNVS7VCLMlzsJOLb7Qi9bg)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, NU16 port, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback, NimStringV2 address) {	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* result;	tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA* colonenv_;	tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw* colonenv__2;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* T2_;	tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw* blitTmp;	tyProc__uz49bJm19cqLWB77G7nLz3FA T3_;	tyProc__HzVCwACFYM9cx9aV62PdjtuA T4_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("serve", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
-"r.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colonenv_ = (tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA*)0;	colonenv__2 = (tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw*)0;
+N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*, serve__PCNVS7VCLMlzsJOLb7Qi9bg)(tyObject_AsyncHttpServercolonObjectType___9blhbIPPCWUB8g9b1PZ6GMnw* server, NU16 port, tyProc__czO9bLH6rWgTeb5AIcTKy5g callback, NimStringV2 address) {	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* result;	tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g* colonenv_;	tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA* colonenv__2;	tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* T2_;	tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA* blitTmp;	tyProc__uz49bJm19cqLWB77G7nLz3FA T3_;	tyProc__HzVCwACFYM9cx9aV62PdjtuA T4_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("serve", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
+"r.nim");{nimErr_ = nimErrorFlag();	result = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;	colonenv_ = (tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g*)0;	colonenv__2 = (tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA*)0;
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(296, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eqdestroy___340QxwvC1Vq1fWkniNwgxA(&colonenv_);
+	eqdestroy___E9cr0YvW9bHtDrJDl6aHehtA(&colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv_ = (tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA*) nimNewObj(sizeof(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA));	(*colonenv_).Sup.m_type = (&NTI__cRdXvkgWpGRWS39aV0zZGGA_);
+	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv_ = (tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g*) nimNewObj(sizeof(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g));	(*colonenv_).Sup.m_type = (&NTI__jX1guhaoKAk5SkkP9bos20g_);
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(65, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
@@ -7373,20 +7373,20 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
-	eq___ldMjcNJxoGs4TI2BzBMsVQ(&(*colonenv_).retFutUnownX60gensym286950677_, (*colonenv_).retFuture5);
+	eq___ldMjcNJxoGs4TI2BzBMsVQ(&(*colonenv_).retFutUnownX60gensym286900677_, (*colonenv_).retFuture5);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	eqdestroy___v9asVVOr5au22Z7SmS6ofiw(&colonenv__2);
+	eqdestroy___e9c9b9ajkGTsfMM2rtL2j3AGA(&colonenv__2);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv__2 = (tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw*) nimNewObj(sizeof(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw));	(*colonenv__2).Sup.m_type = (&NTI__71jwUfUa5QLzfeh1nEgHdw_);
+	nimln_(235, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	colonenv__2 = (tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA*) nimNewObj(sizeof(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA));	(*colonenv__2).Sup.m_type = (&NTI__lfDu4jBQ85cbCNruvP36OA_);
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(296, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eq___EE9cyF2OI9chPZlkU9cBHvVkQ(&(*colonenv__2).colonup_, colonenv_);
+	eq___EAJKetzkVwASL9bB9cU85bVA(&(*colonenv__2).colonup_, colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 2351 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
 	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");
@@ -7395,7 +7395,7 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	colonenv__2 = 0;	nimZeroMem((void*)(&T3_), sizeof(tyProc__uz49bJm19cqLWB77G7nLz3FA));	T3_.ClP_0 = serveIter__9bFW7o03uH9aU8ZP0CEQpILA; T3_.ClE_0 = blitTmp;
 #line 2351 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	eqsink___qFCY9cDCItk3PpsKistRZ1Q((&(*colonenv_).nameIterVarX60gensym286950686_), T3_);
+	nimln_(2351, "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim");	eqsink___qFCY9cDCItk3PpsKistRZ1Q((&(*colonenv_).nameIterVarX60gensym286900686_), T3_);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");	nimZeroMem((void*)(&T4_), sizeof(tyProc__HzVCwACFYM9cx9aV62PdjtuA));	T4_.ClP_0 = serveNimAsyncContinue__0f5XHRBN20CBOjiT69cdDnQ_3; T4_.ClE_0 = colonenv_;	T4_.ClE_0? T4_.ClP_0(T4_.ClE_0):((TM__kCumGAOn2jB9aScSIGdDsJg_124)(T4_.ClP_0))();
@@ -7412,26 +7412,26 @@ N_LIB_PRIVATE N_NIMCALL(tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 	nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-	eqdestroy___v9asVVOr5au22Z7SmS6ofiw(&colonenv__2);
+	eqdestroy___e9c9b9ajkGTsfMM2rtL2j3AGA(&colonenv__2);
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(296, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-	eqdestroy___340QxwvC1Vq1fWkniNwgxA(&colonenv_);
+	eqdestroy___E9cr0YvW9bHtDrJDl6aHehtA(&colonenv_);
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	goto BeforeRet_;
 	{		LA1_:;	}
 	{		oldNimErrFin1_ = *nimErr_; *nimErr_ = NIM_FALSE;
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 		nimln_(246, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim");
 #line 246 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-		eqdestroy___v9asVVOr5au22Z7SmS6ofiw(&colonenv__2);
+		eqdestroy___e9c9b9ajkGTsfMM2rtL2j3AGA(&colonenv__2);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 		nimln_(296, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-		eqdestroy___340QxwvC1Vq1fWkniNwgxA(&colonenv_);
+		eqdestroy___E9cr0YvW9bHtDrJDl6aHehtA(&colonenv_);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();	return result;}
@@ -7569,11 +7569,11 @@ N_LIB_PRIVATE N_NIMCALL(void, stdlib_asynchttpserverDatInit000)(void) {
 #line 999999 "generated_not_to_break_here"
 
 /* section: NIM_merge_TYPE_INIT3 */
-NTI__cRdXvkgWpGRWS39aV0zZGGA_.destructor = (void*)eqdestroy___aGgmexI9cFtoBSuI4nOOz1A; NTI__cRdXvkgWpGRWS39aV0zZGGA_.size = sizeof(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA); NTI__cRdXvkgWpGRWS39aV0zZGGA_.align = NIM_ALIGNOF(tyObject_Env_asynchttpserverdotnim___cRdXvkgWpGRWS39aV0zZGGA); NTI__cRdXvkgWpGRWS39aV0zZGGA_.name = "|stdlib.asynchttpserver.Env_asynchttpserver.nim|RootObj|";
-; NTI__cRdXvkgWpGRWS39aV0zZGGA_.traceImpl = (void*)NIM_NIL; NTI__cRdXvkgWpGRWS39aV0zZGGA_.disposeImpl = (void*)NIM_NIL;NTI__71jwUfUa5QLzfeh1nEgHdw_.destructor = (void*)eqdestroy___vTf7JvLiS314PtiaxScldw; NTI__71jwUfUa5QLzfeh1nEgHdw_.size = sizeof(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw); NTI__71jwUfUa5QLzfeh1nEgHdw_.align = NIM_ALIGNOF(tyObject_Env_asyncmacrodotnim___71jwUfUa5QLzfeh1nEgHdw); NTI__71jwUfUa5QLzfeh1nEgHdw_.name = "|stdlib.asynchttpserver.Env_asyncmacro.nim|RootObj|";
-; NTI__71jwUfUa5QLzfeh1nEgHdw_.traceImpl = (void*)NIM_NIL; NTI__71jwUfUa5QLzfeh1nEgHdw_.disposeImpl = (void*)NIM_NIL;NTI__eKRPksfhVOH1Lb9aPVdw3Gw_.destructor = (void*)eqdestroy___furgb7QK9a9aXdxQ0cSB5Rgg; NTI__eKRPksfhVOH1Lb9aPVdw3Gw_.size = sizeof(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw); NTI__eKRPksfhVOH1Lb9aPVdw3Gw_.align = NIM_ALIGNOF(tyObject_Env_asynchttpserverdotnim___eKRPksfhVOH1Lb9aPVdw3Gw); NTI__eKRPksfhVOH1Lb9aPVdw3Gw_.name = "|stdlib.asynchttpserver.Env_asynchttpserver.nim|RootObj|";
-; NTI__eKRPksfhVOH1Lb9aPVdw3Gw_.traceImpl = (void*)NIM_NIL; NTI__eKRPksfhVOH1Lb9aPVdw3Gw_.disposeImpl = (void*)NIM_NIL;NTI__NN9c9c4Ajiia37T7fga8eLhg_.destructor = (void*)eqdestroy___azm1Lm4JC0lXSvTNbzUM0A; NTI__NN9c9c4Ajiia37T7fga8eLhg_.size = sizeof(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg); NTI__NN9c9c4Ajiia37T7fga8eLhg_.align = NIM_ALIGNOF(tyObject_Env_asyncmacrodotnim___NN9c9c4Ajiia37T7fga8eLhg); NTI__NN9c9c4Ajiia37T7fga8eLhg_.name = "|stdlib.asynchttpserver.Env_asyncmacro.nim|RootObj|";
-; NTI__NN9c9c4Ajiia37T7fga8eLhg_.traceImpl = (void*)NIM_NIL; NTI__NN9c9c4Ajiia37T7fga8eLhg_.disposeImpl = (void*)NIM_NIL;NTI__xBVSKYqqvD09aPggIj28FSg_.destructor = (void*)eqdestroy___4ET5t7DZalc78zPP9clw5gA; NTI__xBVSKYqqvD09aPggIj28FSg_.size = sizeof(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg); NTI__xBVSKYqqvD09aPggIj28FSg_.align = NIM_ALIGNOF(tyObject_Env_asynchttpserverdotnim___xBVSKYqqvD09aPggIj28FSg); NTI__xBVSKYqqvD09aPggIj28FSg_.name = "|stdlib.asynchttpserver.Env_asynchttpserver.nim|RootObj|";
-; NTI__xBVSKYqqvD09aPggIj28FSg_.traceImpl = (void*)NIM_NIL; NTI__xBVSKYqqvD09aPggIj28FSg_.disposeImpl = (void*)NIM_NIL;NTI__VELQqa064fUzQzSuskXBnA_.destructor = (void*)eqdestroy___h9blXOX4VGKLdNfTbX79c9aLQ; NTI__VELQqa064fUzQzSuskXBnA_.size = sizeof(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA); NTI__VELQqa064fUzQzSuskXBnA_.align = NIM_ALIGNOF(tyObject_Env_asyncmacrodotnim___VELQqa064fUzQzSuskXBnA); NTI__VELQqa064fUzQzSuskXBnA_.name = "|stdlib.asynchttpserver.Env_asyncmacro.nim|RootObj|";
-; NTI__VELQqa064fUzQzSuskXBnA_.traceImpl = (void*)NIM_NIL; NTI__VELQqa064fUzQzSuskXBnA_.disposeImpl = (void*)NIM_NIL;}
+NTI__jX1guhaoKAk5SkkP9bos20g_.destructor = (void*)eqdestroy___9cxSAAbImtx3xBT37uZTPAw; NTI__jX1guhaoKAk5SkkP9bos20g_.size = sizeof(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g); NTI__jX1guhaoKAk5SkkP9bos20g_.align = NIM_ALIGNOF(tyObject_Env_asynchttpserverdotnim___jX1guhaoKAk5SkkP9bos20g); NTI__jX1guhaoKAk5SkkP9bos20g_.name = "|stdlib.asynchttpserver.Env_asynchttpserver.nim|RootObj|";
+; NTI__jX1guhaoKAk5SkkP9bos20g_.traceImpl = (void*)NIM_NIL; NTI__jX1guhaoKAk5SkkP9bos20g_.disposeImpl = (void*)NIM_NIL;NTI__lfDu4jBQ85cbCNruvP36OA_.destructor = (void*)eqdestroy___EQhDn6PWAOM1DhpG2v3nKA; NTI__lfDu4jBQ85cbCNruvP36OA_.size = sizeof(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA); NTI__lfDu4jBQ85cbCNruvP36OA_.align = NIM_ALIGNOF(tyObject_Env_asyncmacrodotnim___lfDu4jBQ85cbCNruvP36OA); NTI__lfDu4jBQ85cbCNruvP36OA_.name = "|stdlib.asynchttpserver.Env_asyncmacro.nim|RootObj|";
+; NTI__lfDu4jBQ85cbCNruvP36OA_.traceImpl = (void*)NIM_NIL; NTI__lfDu4jBQ85cbCNruvP36OA_.disposeImpl = (void*)NIM_NIL;NTI__z9bMReBhhMUbzPG7IPa6vVA_.destructor = (void*)eqdestroy___QQVikUR9cxS9crCYJ6R6xQ4g; NTI__z9bMReBhhMUbzPG7IPa6vVA_.size = sizeof(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA); NTI__z9bMReBhhMUbzPG7IPa6vVA_.align = NIM_ALIGNOF(tyObject_Env_asynchttpserverdotnim___z9bMReBhhMUbzPG7IPa6vVA); NTI__z9bMReBhhMUbzPG7IPa6vVA_.name = "|stdlib.asynchttpserver.Env_asynchttpserver.nim|RootObj|";
+; NTI__z9bMReBhhMUbzPG7IPa6vVA_.traceImpl = (void*)NIM_NIL; NTI__z9bMReBhhMUbzPG7IPa6vVA_.disposeImpl = (void*)NIM_NIL;NTI__pf9bPNVy3dI37jrrRoquOlQ_.destructor = (void*)eqdestroy___wNLoKXd1ybWsnE69c889cJKw; NTI__pf9bPNVy3dI37jrrRoquOlQ_.size = sizeof(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ); NTI__pf9bPNVy3dI37jrrRoquOlQ_.align = NIM_ALIGNOF(tyObject_Env_asyncmacrodotnim___pf9bPNVy3dI37jrrRoquOlQ); NTI__pf9bPNVy3dI37jrrRoquOlQ_.name = "|stdlib.asynchttpserver.Env_asyncmacro.nim|RootObj|";
+; NTI__pf9bPNVy3dI37jrrRoquOlQ_.traceImpl = (void*)NIM_NIL; NTI__pf9bPNVy3dI37jrrRoquOlQ_.disposeImpl = (void*)NIM_NIL;NTI__9bd5QXnTk7rvzbJKNe729cAQ_.destructor = (void*)eqdestroy___UJvW9cINQW5y1GZ5sMskhLw; NTI__9bd5QXnTk7rvzbJKNe729cAQ_.size = sizeof(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ); NTI__9bd5QXnTk7rvzbJKNe729cAQ_.align = NIM_ALIGNOF(tyObject_Env_asynchttpserverdotnim___9bd5QXnTk7rvzbJKNe729cAQ); NTI__9bd5QXnTk7rvzbJKNe729cAQ_.name = "|stdlib.asynchttpserver.Env_asynchttpserver.nim|RootObj|";
+; NTI__9bd5QXnTk7rvzbJKNe729cAQ_.traceImpl = (void*)NIM_NIL; NTI__9bd5QXnTk7rvzbJKNe729cAQ_.disposeImpl = (void*)NIM_NIL;NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_.destructor = (void*)eqdestroy___wQofCr9akMstrTfxV9a9bcUow; NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_.size = sizeof(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ); NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_.align = NIM_ALIGNOF(tyObject_Env_asyncmacrodotnim___AzMRKz64QnrsHLf6Rz9b9cXQ); NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_.name = "|stdlib.asynchttpserver.Env_asyncmacro.nim|RootObj|";
+; NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_.traceImpl = (void*)NIM_NIL; NTI__AzMRKz64QnrsHLf6Rz9b9cXQ_.disposeImpl = (void*)NIM_NIL;}
 

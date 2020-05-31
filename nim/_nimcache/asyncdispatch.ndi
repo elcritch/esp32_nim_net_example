@@ -105,8 +105,8 @@ newList	newList	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.n
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	99	24
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	99	24
 fdData	fdData	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1217	31
-fdi`gensym25480194	fdiX60gensym25480194_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	435	8
-i`gensym25480195	iX60gensym25480195_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	436	8
+fdi`gensym25475194	fdiX60gensym25475194_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	435	8
+i`gensym25475195	iX60gensym25475195_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	436	8
 =	eq___xuIBhEfzu5nsFxRRutsd7g	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	649	8
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	649	8
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	649	8
@@ -127,8 +127,8 @@ value	value	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	94	28
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	80	18
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	80	18
 fdData	fdData_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1240	31
-fdi`gensym25515225	fdiX60gensym25515225_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	451	10
-i`gensym25515226	iX60gensym25515226_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	452	10
+fdi`gensym25510225	fdiX60gensym25510225_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	451	10
+i`gensym25510226	iX60gensym25510226_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	452	10
 x	x	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	1564	15
 y	y	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	1564	18
 =sink	eqsink___LtK09bsZP2LZjrTuV5bzjZw_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	80	18
@@ -154,7 +154,7 @@ future	future	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	
 =sink	eqsink___qFCY9cDCItk3PpsKistRZ1Q	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2351	26
 createAsyncNativeSocket	createAsyncNativeSocket__NgKzVA24ehDxdq7TCJuoPQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1632	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1632	0
-handle`gensym25830222	handleX60gensym25830222_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1618	6
+handle`gensym25825222	handleX60gensym25825222_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1618	6
 domain	domain	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	226	25
 sockType	sockType	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	227	25
 protocol	protocol	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	228	25
@@ -186,8 +186,8 @@ cb	cb	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1175	29
 p	p	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1176	8
 newEvents	newEvents	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1177	8
 adata	adata	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1178	42
-fdi`gensym25400045	fdiX60gensym25400045_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	451	10
-i`gensym25400046	iX60gensym25400046_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	452	10
+fdi`gensym25395045	fdiX60gensym25395045_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	451	10
+i`gensym25395046	iX60gensym25395046_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	452	10
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1179	25
 cb	cb__6CzX7BaoGuBkQvY0U4PlKg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1513	9
 sock	sock	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1513	12
@@ -282,8 +282,8 @@ cb	cb	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1186	30
 p	p	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1187	8
 newEvents	newEvents	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1188	8
 adata	adata	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1189	42
-fdi`gensym25440346	fdiX60gensym25440346_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	451	10
-i`gensym25440347	iX60gensym25440347_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	452	10
+fdi`gensym25435346	fdiX60gensym25435346_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	451	10
+i`gensym25435347	iX60gensym25435347_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	452	10
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1190	26
 cb	cb__6CzX7BaoGuBkQvY0U4PlKg_3	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1424	9
 sock	sock	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1424	12

@@ -8,7 +8,6 @@
 
 #include "nimbase.h"
 #include <stdio.h>
-#include <fcntl.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -154,7 +153,7 @@ static N_INLINE(void, popFrame)(void) {
 #line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
 
-#line 707 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 709 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0) {	int T5_;	int T6_;	nimfr_("echoBinSafe", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");{	{		NimStringV2* s;		NI i;		NI n;		s = (NimStringV2*)0;
 #line 16 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 		nimln_(16, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
@@ -170,15 +169,15 @@ N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0) {	in
 #line 18 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 				if (!(i < n)) goto LA3;
 
-#line 721 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-				nimln_(721, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");				if ((NU)(i) >= (NU)(argsLen_0)){ raiseIndexError2(i,argsLen_0-1); goto BeforeRet_;}				s = (&args[i]);
-#line 725 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-				nimln_(725, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 725 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 723 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+				nimln_(723, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");				if ((NU)(i) >= (NU)(argsLen_0)){ raiseIndexError2(i,argsLen_0-1); goto BeforeRet_;}				s = (&args[i]);
+#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+				nimln_(727, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 
-#line 725 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 
-#line 725 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 				T4_ = (int)0;				T4_ = fwrite(((void*) (nimToCStringConv((*s)))), ((size_t) ((*s).len)), ((size_t) 1), stdout);				(void)(T4_);
 
 #line 20 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
@@ -187,64 +186,23 @@ N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0) {	in
 		}
 	}
 
-#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(727, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 729 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(729, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 729 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 
-#line 727 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 729 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 	T5_ = (int)0;	T5_ = fwrite(((void*) ("\012")), ((size_t) 1), ((size_t) 1), stdout);	(void)(T5_);
 
-#line 728 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(728, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 728 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 730 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(730, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
+#line 730 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 
-#line 728 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+#line 730 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 	T6_ = (int)0;	T6_ = fflush(stdout);	(void)(T6_);
 	}BeforeRet_: ;
 	popFrame();}
 
 #line 326 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, setInheritable__avyDiy1HdQrfaD3Ql9b63EQ)(int f, NIM_BOOL inheritable) {	NIM_BOOL result;	int flags;	int T10_;	nimfr_("setInheritable", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");{	result = (NIM_BOOL)0;
+N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, setInheritable__avyDiy1HdQrfaD3Ql9b63EQ)(int f, NIM_BOOL inheritable) {	NIM_BOOL result;	nimfr_("setInheritable", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = (NIM_BOOL)0;
 #line 336 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(336, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 336 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	flags = fcntl(f, F_GETFD);
-#line 337 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(337, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	{
-#line 337 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		if (!(flags == ((NI32) -1))) goto LA3_;
-
-#line 338 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		nimln_(338, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 338 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		result = NIM_FALSE;		goto BeforeRet_;
-	}
-	LA3_: ;
-
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(339, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	{		if (!inheritable) goto LA7_;
-
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		flags = (NI32)(flags & (NI32)((NU32) ~(FD_CLOEXEC)));	}
-	goto LA5_;
-	LA7_: ;
-	{
-#line 339 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-		flags = (NI32)(flags | FD_CLOEXEC);	}
-	LA5_: ;
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(340, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-
-#line 340 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	T10_ = (int)0;	T10_ = fcntl(f, F_SETFD, flags);	result = !((T10_ == ((NI32) -1)));	}BeforeRet_: ;
-	popFrame();	return result;}
+	nimln_(336, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = NIM_FALSE;	popFrame();	return result;}
