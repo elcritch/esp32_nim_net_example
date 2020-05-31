@@ -14,7 +14,7 @@ all: nim
 nim: clean
 	nim c \
 		-d:debug \
-		-d:use_malloc \
+		-d:useMalloc \
 		--os:freertos \
 		--no_main \
 		--cpu:$(NIM_CPU) \
