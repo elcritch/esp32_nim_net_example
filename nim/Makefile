@@ -8,12 +8,13 @@ all: nim
 
 		# -d:traceArc \
 		# -d:use_malloc
+		#--gc:refc \
 
 
 
 nim: clean
 	nim c \
-		--gc:refc \
+		--gc:arc \
 		-d:debug \
 		-d:useMalloc \
 		--os:freertos \

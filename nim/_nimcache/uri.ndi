@@ -1,5 +1,8 @@
+=sink	eqsink___OydxUV9ad0I3qVcqasXV7RQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	214	14
 initUri	initUri__zcwd3ynrfDQcP9c8k9cEeg9aQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	205	5
+result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	205	0
 parseUri	parseUri__2Afz5k9c4YIkP0o0kpbe9cvQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	224	5
+authority	authority	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	262	8
 resetUri	resetUri__6wZ9cdrNwSrw8xkgtsNgsVQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	217	5
 uri	uri	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	217	14
 i	i	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	238	6
@@ -28,4 +31,3 @@ validChars	validChars	/home/elcritch/.asdf/installs/nim/devel/lib/pure/parseutil
 start	start	/home/elcritch/.asdf/installs/nim/devel/lib/pure/parseutils.nim	370	17
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/parseutils.nim	369	0
 i	i	/home/elcritch/.asdf/installs/nim/devel/lib/pure/parseutils.nim	380	6
-authority	authority	/home/elcritch/.asdf/installs/nim/devel/lib/pure/uri.nim	262	8
