@@ -16,7 +16,6 @@ nim: clean
 		-d:debug \
 		-d:use_malloc \
 		--os:freertos \
-		-d:StandaloneHeapSize:100000 \
 		--no_main \
 		--cpu:$(NIM_CPU) \
 		--nim_cache:"$(NIMCACHE)" \
