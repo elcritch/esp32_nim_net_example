@@ -205,4 +205,4 @@ N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0) {	in
 #line 326 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
 N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, setInheritable__avyDiy1HdQrfaD3Ql9b63EQ)(int f, NIM_BOOL inheritable) {	NIM_BOOL result;	nimfr_("setInheritable", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = (NIM_BOOL)0;
 #line 336 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
-	nimln_(336, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = NIM_FALSE;	popFrame();	return result;}
+	nimln_(336, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = NIM_TRUE;	popFrame();	return result;}
