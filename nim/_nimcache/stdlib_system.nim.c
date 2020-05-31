@@ -11,6 +11,7 @@
                           #include <pthread.h>
 #include <string.h>
 #include <setjmp.h>
+#include <sys/mman.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -301,7 +302,6 @@ tyObject_Env_systemdotnim___diB2NTuAIWY0FO9c5IUJRGg* Field1;
 };
 struct tyObject_Env_systemdotnim___diB2NTuAIWY0FO9c5IUJRGg {  RootObj Sup;};
 typedef N_NIMCALL_PTR(void, tyProc__W6IXMh2CA4X1rFYGjUb4yg) (NimStringDesc* msg);
-typedef NF tyArray__EifVq3LLR7sq8zDRyaqz3A[12500];
 typedef tyProc__T4eqaYlFJYZUv9aG9b1TV0bQ tyArray__9aTRall1siQT9bXabu2aKXUg[3500];
 struct tyObject_IndexDefect__n6tGEPHKkh7E1AP9bj30WrQ {  tyObject_Defect__LbeSGvgPzGzXnW9caIkJqMA Sup;};
 struct tyObject_AssertionDefect__PtYxPmY5X0dorfvxAFbJpQ {  tyObject_Defect__LbeSGvgPzGzXnW9caIkJqMA Sup;};
@@ -943,8 +943,6 @@ N_LIB_PRIVATE NIM_THREADVAR TSafePoint* excHandler__rqLlY5bs9atDw2OXYqJEn5g;
 N_LIB_PRIVATE NIM_THREADVAR Exception* currException__9bVPeDJlYTi9bQApZpfH8wjg;
 N_LIB_PRIVATE NIM_THREADVAR GcFrameHeader* gcFramePtr__ot48iojqko9aFxGhyjjjVaA;
 N_LIB_PRIVATE tyProc__W6IXMh2CA4X1rFYGjUb4yg onUnhandledException__bFrawQlTKZhLweDD36j9b8g;
-N_LIB_PRIVATE tyArray__EifVq3LLR7sq8zDRyaqz3A theHeap__XZKeHlqIPZnC9cnPDuLOhug;
-N_LIB_PRIVATE NI bumpPointer__4oJE8o5HnhzaiuWX19bgtiw;
 N_LIB_PRIVATE NIM_THREADVAR tyObject_GcHeap__1TRH1TZMaVZTnLNcIHuNFQ gch__IcYaEuuWivYAS86vFMTS3Q;
 N_LIB_PRIVATE tyObject_MemRegion__x81NhDv59b8ercDZ9bi85jyg sharedHeap__R3bhvQCN0d6AYpkvxfT9aGw;
 N_LIB_PRIVATE pthread_mutex_t heapLock__Cm9aJxbMhUuv7Cj8trffHQw;
@@ -1837,30 +1835,33 @@ N_LIB_PRIVATE N_NOINLINE(void, raiseOutOfMem__mMRdr4sgmnykA9aWeM9aDZlw_2)(void) 
 	exit(((NI) 1));
 	popFrame();}
 
-#line 289 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 229 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
 static N_INLINE(void*, osAllocPages__HMOhWrY1QMa49a2BcJwSDZQsystem)(NI size) {	void* result;	nimfr_("osAllocPages", "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	result = (void*)0;
-#line 290 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-	nimln_(290, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	{
-#line 290 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 230 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(230, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 231 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(231, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 231 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
 
-#line 290 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 230 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(230, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	result = mmap(NIM_NIL, ((size_t) (size)), ((int) 3), (NI32)((NI32)(MAP_ANONYMOUS | MAP_PRIVATE) | ((NI32) 0)), ((int) -1), ((NI) 0));
+#line 232 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(232, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	{		NIM_BOOL T3_;
+#line 232 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+		T3_ = (NIM_BOOL)0;
+#line 232 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+		T3_ = (result == NIM_NIL);		if (T3_) goto LA4_;
 
-#line 290 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		if (!((NI)(size + bumpPointer__4oJE8o5HnhzaiuWX19bgtiw) < (NI)(((NI) (ptrdiff_t) (theHeap__XZKeHlqIPZnC9cnPDuLOhug)) + ((NI) 100000)))) goto LA3_;
+#line 232 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+		T3_ = (result == ((void*) (((NI) -1))));		LA4_: ;
+		if (!T3_) goto LA5_;
 
-#line 291 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		nimln_(291, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");		result = ((void*) (bumpPointer__4oJE8o5HnhzaiuWX19bgtiw));
-#line 292 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		nimln_(292, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");		bumpPointer__4oJE8o5HnhzaiuWX19bgtiw += size;	}
-	goto LA1_;
-	LA3_: ;
-	{
-#line 294 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		nimln_(294, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
-#line 294 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 233 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+		nimln_(233, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 233 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
 		raiseOutOfMem__mMRdr4sgmnykA9aWeM9aDZlw_2();
 	}
-	LA1_: ;
+	LA5_: ;
 	popFrame();	return result;}
 
 #line 233 "/home/elcritch/.asdf/installs/nim/devel/lib/system/alloc.nim"
@@ -2436,18 +2437,14 @@ static N_INLINE(void, decCurrMem__JPUl8p4328ZL9bXnEtbaZcA_2system)(tyObject_MemR
 #line 238 "/home/elcritch/.asdf/installs/nim/devel/lib/system/alloc.nim"
 	nimln_(238, "/home/elcritch/.asdf/installs/nim/devel/lib/system/alloc.nim");	(*a).currMem -= bytes;	popFrame();}
 
-#line 301 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-static N_INLINE(void, osDeallocPages__dRMEutPSAkbR9b9blNmTzvoQsystem)(void* p, NI size) {	nimfr_("osDeallocPages", "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
-#line 302 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-	nimln_(302, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	{
-#line 302 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 240 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+static N_INLINE(void, osDeallocPages__dRMEutPSAkbR9b9blNmTzvoQsystem)(void* p, NI size) {	int T1_;	nimfr_("osDeallocPages", "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 241 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(241, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 241 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
 
-#line 302 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		if (!((NI)(bumpPointer__4oJE8o5HnhzaiuWX19bgtiw - size) == ((NI) (ptrdiff_t) (p)))) goto LA3_;
-
-#line 303 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		nimln_(303, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");		bumpPointer__4oJE8o5HnhzaiuWX19bgtiw -= size;	}
-	LA3_: ;
+#line 241 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	T1_ = (int)0;	T1_ = munmap(p, ((size_t) (size)));	(void)(T1_);
 	popFrame();}
 
 #line 626 "/home/elcritch/.asdf/installs/nim/devel/lib/system/alloc.nim"
@@ -6956,21 +6953,23 @@ static N_INLINE(tyObject_BigChunk__Rv9c70Uhp2TytkX7eH78qEg*, findSuitableBlock__
 	LA1_: ;
 	popFrame();	return result;}
 
-#line 296 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 235 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
 static N_INLINE(void*, osTryAllocPages__HMOhWrY1QMa49a2BcJwSDZQ_2system)(NI size) {	void* result;	nimfr_("osTryAllocPages", "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	result = (void*)0;
-#line 297 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-	nimln_(297, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	{
-#line 297 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 236 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(236, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 237 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(237, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");
+#line 237 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
 
-#line 297 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+#line 236 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(236, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	result = mmap(NIM_NIL, ((size_t) (size)), ((int) 3), (NI32)((NI32)(MAP_ANONYMOUS | MAP_PRIVATE) | ((NI32) 0)), ((int) -1), ((NI) 0));
+#line 238 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+	nimln_(238, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");	{
+#line 238 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+		if (!(result == ((void*) (((NI) -1))))) goto LA3_;
 
-#line 297 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		if (!((NI)(size + bumpPointer__4oJE8o5HnhzaiuWX19bgtiw) < (NI)(((NI) (ptrdiff_t) (theHeap__XZKeHlqIPZnC9cnPDuLOhug)) + ((NI) 100000)))) goto LA3_;
-
-#line 298 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		nimln_(298, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");		result = ((void*) (bumpPointer__4oJE8o5HnhzaiuWX19bgtiw));
-#line 299 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-		nimln_(299, "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim");		bumpPointer__4oJE8o5HnhzaiuWX19bgtiw += size;	}
+#line 238 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
+		result = NIM_NIL;	}
 	LA3_: ;
 	popFrame();	return result;}
 
@@ -9613,8 +9612,6 @@ N_LIB_PRIVATE N_NIMCALL(void, systemInit000)(void) {
 
 #line 74 "/home/elcritch/.asdf/installs/nim/devel/lib/system/threads.nim"
 	threadType__ut3Z9ak4M9c28LWYBg3LZISw = ((tyEnum_ThreadType__H77H4LSuveAOpXr9bJRsUtw) 1);
-#line 287 "/home/elcritch/.asdf/installs/nim/devel/lib/system/osalloc.nim"
-	bumpPointer__4oJE8o5HnhzaiuWX19bgtiw = ((NI) (ptrdiff_t) (theHeap__XZKeHlqIPZnC9cnPDuLOhug));
 #line 1069 "/home/elcritch/.asdf/installs/nim/devel/lib/system/alloc.nim"
 
 #line 1069 "/home/elcritch/.asdf/installs/nim/devel/lib/system/alloc.nim"
