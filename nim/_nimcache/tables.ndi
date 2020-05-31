@@ -81,5 +81,15 @@ result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/table
 t	t	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	364	17
 key	key	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	364	37
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	364	0
-hc`gensym24280414	hcX60gensym24280414_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	257	6
-index`gensym24280415	indexX60gensym24280415_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	258	6
+hc`gensym24520414	hcX60gensym24520414_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	257	6
+index`gensym24520415	indexX60gensym24520415_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	258	6
+=trace	eqtrace___RHcedK7oceGcKZDLXASTFg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	338	26
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	338	26
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	338	26
+=trace	eqtrace___Bw6rkbisohGssVnyybEBXw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim	129	10
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim	129	10
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim	129	10
+=dispose	eqdispose___niuAxNwqyG9a9a74kbKT3Jvg_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	338	26
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim	338	26
+=dispose	eqdispose___rVMSIO7FeB1qXZmZBVjm9bA_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim	129	10
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim	129	10

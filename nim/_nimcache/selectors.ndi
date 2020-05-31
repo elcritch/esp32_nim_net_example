@@ -1,4 +1,5 @@
 =destroy	eqdestroy___KyxTVF9awrmEe9aiEoFp2MNw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	99	24
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	99	24
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	649	8
 =sink	eqsink___AatyilZWoNC5mWgbjzbd9aA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	99	24
 newSelector	newSelector__yb0zUxamNOUP9ang11E8gLg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/ioselects/ioselectors_select.nim	93	5
@@ -28,6 +29,11 @@ msg	msg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	272	8
 err	err	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	8
 errorCode	errorCode	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim	18	17
 =destroy	eqdestroy___8IqTkIhvDjSOkW7fXZpdKA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
+=trace	eqtrace___snjFG1p39c2yNgPYnb9aDbjg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
+=dispose	eqdispose___8IqTkIhvDjSOkW7fXZpdKA_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	26
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	279	49
 blitTmp	blitTmp_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/selectors.nim	280	4

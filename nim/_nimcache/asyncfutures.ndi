@@ -25,6 +25,11 @@ chars	chars	/home/elcritch/.asdf/installs/nim/devel/lib/pure/strutils.nim	2826	1
 x	x	/home/elcritch/.asdf/installs/nim/devel/lib/system/dollars.nim	144	13
 =destroy	eqdestroy___4PfyRhukirTaeTKtkixbTA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
+=trace	eqtrace___3k0PvmvQFDOxHxLsHrCCWQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
+=dispose	eqdispose___4PfyRhukirTaeTKtkixbTA_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	28
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	155	42
 =sink	eqsink___ANG79cPfZ9aF0EzkBrohSSEw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	156	18
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	156	18
@@ -44,6 +49,9 @@ dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	175	
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	175	8
 =destroy	eqdestroy___TL9asWKsKme9c0i87Ye7mhvQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	175	8
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	175	8
+=trace	eqtrace___HxzptC46fZ83lwPBHhAewQ	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	862	7
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	862	7
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	862	7
 callSoon	callSoon__59aAW5mR4py7a24tTI1dxTg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	94	5
 cbproc	cbproc	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	94	15
 =sink	eqsink___8lTSXMReFdheMpkFojyuaA_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	175	8
@@ -144,6 +152,9 @@ callback=	callbackeq___rndFwZXwc9bzKn41XW9b7New	/home/elcritch/.asdf/installs/ni
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	292	5
 =destroy	eqdestroy___mnf9bt1vLNJniS8Y4Ktud2A	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	292	5
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	292	5
+=trace	eqtrace___z1aAoRkh6KvylxK8ZOTVlg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	292	5
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	292	5
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	292	5
 =	eq___HBPnVqC7eBnDkhnS2gvqpw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	293	4
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	293	4
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	293	4
@@ -210,6 +221,9 @@ asyncCheck	asyncCheck__kYv5uOSTaUb7hZbxPjTMHA_5	/home/elcritch/.asdf/installs/ni
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	419	5
 =destroy	eqdestroy___PgskrSBw88TO9aQBCQPYE9aQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	419	5
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	419	5
+=trace	eqtrace___Xaa35S9c27F0QRfy00RdQGQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	419	5
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	419	5
+env	env	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	419	5
 asyncCheckCallback	asyncCheckCallback__MN9arTQq9bY9b1kq7Q44vu10g_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	428	7
 :envP	colonenvP_	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	428	7
 =sink	eqsink___EIjEYrV9bORq83jogSIatew	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim	404	20
