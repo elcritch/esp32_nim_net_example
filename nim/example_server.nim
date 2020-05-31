@@ -14,7 +14,7 @@ proc foo*(x: int): int =
 proc bar*(y: int): int =
     return y * 2
 
-proc main*() =
+proc run_http_server*() {.exportc.} =
   let arguments = commandLineParams()
   var node_name: string = $arguments[0]
   echo("starting: " )
@@ -63,4 +63,4 @@ proc main*() =
 
 
 when isMainModule:
-  main()
+  run_http_server()
