@@ -7010,7 +7010,7 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 299 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 	nimln_(299, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");	while (1) {		if (!1) goto LA2;
-		{			tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* T4_;			tyTuple__O5pdIMCwdzZuqrzSnslnMg T21_;			tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* T22_;			switch ((*colonenvP_).colonstate_) {
+		{			tyObject_AsyncSocketDesc__D7quBEmo0QGfBsms9bXpWfg* T4_;			tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w* T21_;			switch ((*colonenvP_).colonstate_) {
 			case -1:
 
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
@@ -7129,8 +7129,8 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
 
 #line 273 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncmacro.nim"
-			nimZeroMem((void*)(&T21_), sizeof(tyTuple__O5pdIMCwdzZuqrzSnslnMg));			read__yhIK2ge0FYBVC4vfDnCKTw(((tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg*) ((*colonenvP_).internalTmpFutureX60gensym28690073X60gensym286950422_)), (&T21_));
-			colontmp_.Field0 = T21_.Field0;			colontmp_.Field1 = T21_.Field1;			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
+			read__yhIK2ge0FYBVC4vfDnCKTw(((tyObject_FuturecolonObjectType___8sXoZmXroqILavOTNarvjg*) ((*colonenvP_).internalTmpFutureX60gensym28690073X60gensym286950422_)), (&colontmp_));
+			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 			nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
@@ -7157,10 +7157,10 @@ N_LIB_PRIVATE N_CLOSURE(tyObject_FutureBasecolonObjectType___NMMT5akQkfNlmjYrVF9
 			nimln_(313, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
 "r.nim");
 #line 313 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
-			T22_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;			T22_ = processClient__joQh6FjMH3k00E4frDo5bA((*(*colonenvP_).colonup_).server1, (*colonenvP_).client5, (*colonenvP_).address4, (*(*colonenvP_).colonup_).callback4);			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
+			T21_ = (tyObject_FuturecolonObjectType___te3W2Tqi7xuJ7rlPtg9al5w*)0;			T21_ = processClient__joQh6FjMH3k00E4frDo5bA((*(*colonenvP_).colonup_).server1, (*colonenvP_).client5, (*colonenvP_).address4, (*(*colonenvP_).colonup_).callback4);			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 156 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.nim"
 			nimln_(156, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncfutures.n"
-"im");			eqsink___ldMjcNJxoGs4TI2BzBMsVQ_2(&colontmpD_, T22_);
+"im");			eqsink___ldMjcNJxoGs4TI2BzBMsVQ_2(&colontmpD_, T21_);
 			if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 313 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserver.nim"
 			nimln_(313, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/asynchttpserve"
