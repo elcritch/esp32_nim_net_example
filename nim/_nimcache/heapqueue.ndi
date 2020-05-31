@@ -1,6 +1,4 @@
 =destroy	eqdestroy___6249b6bLN3qXx9bLdBAZTdsA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1140	8
-=trace	eqtrace___kLEUiLoDcS19atuouP8VfDw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1140	8
-=dispose	eqdispose___6249b6bLN3qXx9bLdBAZTdsA_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/asyncdispatch.nim	1140	8
 clear	clear__uwU9c2lsLU9ak4QmYnE6XQuA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/heapqueue.nim	157	5
 s	s	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	940	16
 newlen	newlen	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	940	31
