@@ -35,36 +35,10 @@
   #  define nimln_(n, file) \
       FR_.line = n; FR_.filename = file;
   
-/* section: NIM_merge_FORWARD_TYPES */
-typedef struct TNimType TNimType;
-typedef struct TNimNode TNimNode;
-
 /* section: NIM_merge_TYPES */
 typedef NU8 tyEnum_SOBool__SDlZUtKctfhvUZ58547HWQ;
-typedef NU8 tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg;
-typedef NU8 tyEnum_TNimKind__jIBKr1ejBgsfM33Kxw4j7A;
-typedef NU8 tySet_tyEnum_TNimTypeFlag__v8QUszD1sWlSIWZz7mC4bQ;
-typedef N_NIMCALL_PTR(void, tyProc__ojoeKfW4VYIm36I9cpDTQIg) (void* p, NI op);
-typedef N_NIMCALL_PTR(void*, tyProc__WSm2xU5ARYv9aAR4l0z9c9auQ) (void* p);
-struct TNimType {NI size;
-NI align;
-tyEnum_TNimKind__jIBKr1ejBgsfM33Kxw4j7A kind;
-tySet_tyEnum_TNimTypeFlag__v8QUszD1sWlSIWZz7mC4bQ flags;
-TNimType* base;
-TNimNode* node;
-void* finalizer;
-tyProc__ojoeKfW4VYIm36I9cpDTQIg marker;
-tyProc__WSm2xU5ARYv9aAR4l0z9c9auQ deepcopy;
-};
 typedef NU8 tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg;
-typedef NU8 tyEnum_TNimNodeKind__unfNsxrcATrufDZmpBq4HQ;
-struct TNimNode {tyEnum_TNimNodeKind__unfNsxrcATrufDZmpBq4HQ kind;
-NI offset;
-TNimType* typ;
-NCSTRING name;
-NI len;
-TNimNode** sons;
-};
+typedef NU8 tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg;
 
 /* section: NIM_merge_PROC_HEADERS */
 static N_INLINE(void, nimFrame)(TFrame* s);
@@ -73,9 +47,6 @@ static N_INLINE(void, popFrame)(void);
 N_LIB_PRIVATE N_NOINLINE(void, raiseRangeErrorI)(NI64 i, NI64 a, NI64 b);
 static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 N_LIB_PRIVATE N_NOINLINE(void, raiseOverflow)(void);
-
-/* section: NIM_merge_DATA */
-N_LIB_PRIVATE TNimType NTI__4xio0cAXR7XG4pF9bVcpxEg_;
 
 /* section: NIM_merge_VARS */
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
@@ -220,13 +191,13 @@ static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	NI 
 	return result;}
 
 #line 194 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-N_LIB_PRIVATE N_NIMCALL(int, toOSFlags__o0FbRanOjUQrx1x33AiBQA)(tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg socketFlags) {	int result;	nimfr_("toOSFlags", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");	result = (int)0;	{		tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg f;		NI i;		f = (tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg)0;
+N_LIB_PRIVATE N_NIMCALL(int, toOSFlags__o0FbRanOjUQrx1x33AiBQA)(tySet_tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg socketFlags) {	int result;	nimfr_("toOSFlags", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");{	result = (int)0;	{		tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg f;		NI i;		f = (tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg)0;
 #line 62 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 		nimln_(62, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
 "m");		i = ((NI) 0);		{
 #line 63 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 			nimln_(63, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
-"m");			while (1) {				NI TM__XqsrSBxhOTPgLQ9cX4MmV4A_5;
+"m");			while (1) {				NI TM__XqsrSBxhOTPgLQ9cX4MmV4A_2;
 #line 63 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 				if (!(i <= ((NI) 1))) goto LA3;
 
@@ -234,10 +205,10 @@ N_LIB_PRIVATE N_NIMCALL(int, toOSFlags__o0FbRanOjUQrx1x33AiBQA)(tySet_tyEnum_Soc
 				nimln_(64, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
 "m");				{
 #line 64 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
-					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); }					if (!((socketFlags &(1U<<((NU)(((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i)))&7U)))!=0)) goto LA6_;
+					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); goto BeforeRet_;}					if (!((socketFlags &(1U<<((NU)(((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i)))&7U)))!=0)) goto LA6_;
 
 #line 196 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-					nimln_(196, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); }					f = ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i));					{
+					nimln_(196, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");					if ((i) < ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0) || (i) > ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)){ raiseRangeErrorI(i, ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0), ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 1)); goto BeforeRet_;}					f = ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) (i));					{
 #line 197 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 						nimln_(197, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim");						switch (f) {
 						case ((tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg) 0):
@@ -260,34 +231,8 @@ N_LIB_PRIVATE N_NIMCALL(int, toOSFlags__o0FbRanOjUQrx1x33AiBQA)(tySet_tyEnum_Soc
 
 #line 65 "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.nim"
 				nimln_(65, "/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators.ni"
-"m");				if (nimAddInt(i, ((NI) 1), &TM__XqsrSBxhOTPgLQ9cX4MmV4A_5)) { raiseOverflow(); };				i = (NI)(TM__XqsrSBxhOTPgLQ9cX4MmV4A_5);			} LA3: ;
+"m");				if (nimAddInt(i, ((NI) 1), &TM__XqsrSBxhOTPgLQ9cX4MmV4A_2)) { raiseOverflow(); goto BeforeRet_;};				i = (NI)(TM__XqsrSBxhOTPgLQ9cX4MmV4A_2);			} LA3: ;
 		}
 	}
+	}BeforeRet_: ;
 	popFrame();	return result;}
-N_LIB_PRIVATE N_NIMCALL(void, stdlib_netDatInit000)(void) {
-
-#line 999999 "generated_not_to_break_here"
-
-/* section: NIM_merge_TYPE_INIT1 */
-static TNimNode* TM__XqsrSBxhOTPgLQ9cX4MmV4A_2_2[2];
-NI TM__XqsrSBxhOTPgLQ9cX4MmV4A_4;
-static char* NIM_CONST TM__XqsrSBxhOTPgLQ9cX4MmV4A_3[2] = {
-"Peek", 
-"SafeDisconn"};
-static TNimNode TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[3];
-/* section: NIM_merge_TYPE_INIT3 */
-NTI__4xio0cAXR7XG4pF9bVcpxEg_.size = sizeof(tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg);
-NTI__4xio0cAXR7XG4pF9bVcpxEg_.align = NIM_ALIGNOF(tyEnum_SocketFlag__4xio0cAXR7XG4pF9bVcpxEg);
-NTI__4xio0cAXR7XG4pF9bVcpxEg_.kind = 14;
-NTI__4xio0cAXR7XG4pF9bVcpxEg_.base = 0;
-NTI__4xio0cAXR7XG4pF9bVcpxEg_.flags = 3;
-for (TM__XqsrSBxhOTPgLQ9cX4MmV4A_4 = 0; TM__XqsrSBxhOTPgLQ9cX4MmV4A_4 < 2; TM__XqsrSBxhOTPgLQ9cX4MmV4A_4++) {
-TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[TM__XqsrSBxhOTPgLQ9cX4MmV4A_4+0].kind = 1;
-TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[TM__XqsrSBxhOTPgLQ9cX4MmV4A_4+0].offset = TM__XqsrSBxhOTPgLQ9cX4MmV4A_4;
-TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[TM__XqsrSBxhOTPgLQ9cX4MmV4A_4+0].name = TM__XqsrSBxhOTPgLQ9cX4MmV4A_3[TM__XqsrSBxhOTPgLQ9cX4MmV4A_4];
-TM__XqsrSBxhOTPgLQ9cX4MmV4A_2_2[TM__XqsrSBxhOTPgLQ9cX4MmV4A_4] = &TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[TM__XqsrSBxhOTPgLQ9cX4MmV4A_4+0];
-}
-TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[2].len = 2; TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[2].kind = 2; TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[2].sons = &TM__XqsrSBxhOTPgLQ9cX4MmV4A_2_2[0];
-NTI__4xio0cAXR7XG4pF9bVcpxEg_.node = &TM__XqsrSBxhOTPgLQ9cX4MmV4A_0[2];
-}
-

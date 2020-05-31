@@ -37,8 +37,8 @@ setSockOptInt	setSockOptInt__EjxaD4yB3b9a9anuNz5h25Og	/home/elcritch/.asdf/insta
 value	value	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	589	6
 getAddrInfo	getAddrInfo__ANf7QnbfE8nyIlFuWroDcQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	266	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	266	0
-hints	hints	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	272	6
 socketPort	socketPort	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	285	6
+hints	hints	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	272	6
 x	x	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	294	10
 gaiResult	gaiResult	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	286	6
 bindAddr	bindAddr__aQyfo03zPWPcHE65m8j1pw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	252	5
