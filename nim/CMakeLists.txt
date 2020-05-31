@@ -1,7 +1,7 @@
 
 idf_component_register(SRC_DIRS "_nimcache"
                     INCLUDE_DIRS ""
-                    REQUIRES lwip newlib erl_interface)
+                    REQUIRES lwip erl_interface)
 
 # set(C_COMPILE_OPTIONS "${C_COMPILE_OPTIONS} -Wno-error=unused-label")
 # list(APPEND C_COMPILE_OPTIONS "-Wno-error=unused-label ")
