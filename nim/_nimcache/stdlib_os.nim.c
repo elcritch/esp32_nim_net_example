@@ -8,7 +8,8 @@
 
 #include "nimbase.h"
 #include <string.h>
-#include <freertos/task.h>
+#include <FreeRTOS.h>
+                                                     #include <freertos/task.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -466,13 +467,13 @@ static N_INLINE(NIM_BOOL, nimDivInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	res
 	LA1_: ;
 	return result;}
 
-#line 3017 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
+#line 3019 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
 N_LIB_PRIVATE N_NIMCALL(void, nossleep)(NI milsecs) {	NI TM__yu6cxgKBBXbNsTkT9cyMd4g_14;	nimfr_("sleep", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim");{
-#line 3022 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-	nimln_(3022, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim");
-#line 3022 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
+#line 3024 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
+	nimln_(3024, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim");
+#line 3024 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
 	if (((NI) (portTICK_PERIOD_MS)) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimDivInt(milsecs, ((NI) (portTICK_PERIOD_MS)), &TM__yu6cxgKBBXbNsTkT9cyMd4g_14)) { raiseOverflow(); goto BeforeRet_;};
-#line 3022 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-	vTaskDelay(((TickType_t) ((NI)(TM__yu6cxgKBBXbNsTkT9cyMd4g_14))));
+#line 3024 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
+	TickType_t(((TickType_t) ((NI)(TM__yu6cxgKBBXbNsTkT9cyMd4g_14))));
 	}BeforeRet_: ;
 	popFrame();}
