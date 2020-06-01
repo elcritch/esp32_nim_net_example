@@ -8,6 +8,12 @@ import einode/src/einode
 const
   BUFSIZE* = 1000
 
+# int gethostname(char *__name, size_t __len);
+var node_name = "cnode"
+
+proc gethostname*(name: cstring, len: csize): cint {.exportc.} =
+  copyMem(name, node_name.cstring, len(node_name))
+
 # proc ei_malloc(size: clong): pointer
 proc foo*(x: int): int =
     return x + 1

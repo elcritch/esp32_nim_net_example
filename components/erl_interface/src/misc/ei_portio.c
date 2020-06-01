@@ -20,58 +20,14 @@
 
  */
 
-#include "eidef.h"
-
-#ifdef __WIN32__
-#include <winsock2.h>
-#include <windows.h>
-#include <winbase.h>
-#include <process.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdarg.h>
-#include <time.h>
-#include <errno.h>
-
-static unsigned long param_zero = 0;
-static unsigned long param_one = 1;
-#define SET_BLOCKING(Sock) ioctlsocket((Sock),FIONBIO,&param_zero)
-#define SET_NONBLOCKING(Sock) ioctlsocket((Sock),FIONBIO,&param_one)
-
-#define MEANS_SOCKET_ERROR(Ret) ((Ret == SOCKET_ERROR))
-#define IS_INVALID_SOCKET(Sock) ((Sock) == INVALID_SOCKET)
-
-#elif VXWORKS
-#include <vxWorks.h>
-#include <hostLib.h>
-#include <ifLib.h>
-#include <sockLib.h>
-#include <taskLib.h>
-#include <inetLib.h>
-#include <selectLib.h>
-#include <ioLib.h>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netinet/tcp.h> 
-#include <timers.h>
-
-static unsigned long param_zero = 0;
-static unsigned long param_one = 1;
-#define SET_BLOCKING(Sock) ioctl((Sock),FIONBIO,(int)&param_zero)
-#define SET_NONBLOCKING(Sock) ioctl((Sock),FIONBIO,(int)&param_one)
-#define MEANS_SOCKET_ERROR(Ret) ((Ret) == ERROR)
-#define IS_INVALID_SOCKET(Sock) ((Sock) < 0)
-
-#else /* other unix */
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h> 
+// #include <netinet/tcp.h>
+// #include <lwip/tcp.h>
 #include <arpa/inet.h>
 #include <netdb.h>
 
@@ -81,8 +37,6 @@ static unsigned long param_one = 1;
 				  fcntl((fd), F_GETFL, 0) | O_NONBLOCK)
 #define MEANS_SOCKET_ERROR(Ret) ((Ret) < 0)
 #define IS_INVALID_SOCKET(Sock) ((Sock) < 0)
-
-#endif
 
 /* common includes */
 

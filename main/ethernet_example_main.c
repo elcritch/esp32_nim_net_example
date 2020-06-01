@@ -126,10 +126,13 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_eth_start(eth_handle));
 
     printf("ethernet setup!\n");
-
     vTaskDelay(10000 / portTICK_PERIOD_MS);
 
     printf("Wait for Ethernet\n");
+    uint8_t mac_addr[6] = {0};
+    esp_efuse_mac_get_default(mac_addr);
+    ESP_LOGI(TAG, "Ethernet HW Addr %02x:%02x:%02x:%02x:%02x:%02x",
+                  mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
 
     NimMain();
     printf("NimMain!\n");

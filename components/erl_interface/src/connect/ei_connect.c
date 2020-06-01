@@ -46,7 +46,6 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h> 
 #include <timers.h> 
 
 #define getpid() taskIdSelf()
@@ -68,10 +67,9 @@
 
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h> 
+#include <lwip/tcp.h> 
 #include <arpa/inet.h>
 #include <netdb.h>
-#include <sys/utsname.h>  /* for gen_challenge (NEED FIX?) */
 #include <time.h>
 #endif
 
@@ -907,58 +905,61 @@ int ei_connect_tmo(ei_cnode* ec, char *nodename, unsigned ms)
 	alivename[hostname - nodename] = 0x0;
 	hostname++;
     }
-    
+
+
 #ifndef __WIN32__
-    hp = dyn_gethostbyname_r(hostname,&host,&buf,sizeof(buffer),&ei_h_errno);
-    if (hp == NULL) {
-	char thishostname[EI_MAXHOSTNAMELEN+1];
-        /* gethostname requies len to be max(hostname) + 1*/
-	if (gethostname(thishostname,EI_MAXHOSTNAMELEN+1) < 0) {
-	    EI_TRACE_ERR0("ei_connect_tmo",
-			  "Failed to get name of this host");
-	    erl_errno = EHOSTUNREACH;
-	    return ERL_ERROR;
-	} else {
-	    char *ct;
-	    /* We use a short node name */    
-	    if ((ct = strchr(thishostname, '.')) != NULL) *ct = '\0';
-	}
-	if (strcmp(hostname,thishostname) == 0)
-	    /* Both nodes on same standalone host, use loopback */
-	    hp = dyn_gethostbyname_r("localhost",&host,&buf,sizeof(buffer),&ei_h_errno);
-	if (hp == NULL) {
-	    EI_TRACE_ERR2("ei_connect",
-			  "Can't find host for %s: %d\n",nodename,ei_h_errno);
-	    erl_errno = EHOSTUNREACH;
-	    return ERL_ERROR;
-	}
+    // int lwip_gethostbyname_r(const char *name, struct hostent *ret, char *buf,
+                            //  size_t buflen, struct hostent **result, int *h_errnop);
+    int result = gethostbyname_r(hostname,&host,buf,sizeof(buffer),&hp, &ei_h_errno);
+    if (result < 0) {
+        char thishostname[EI_MAXHOSTNAMELEN+1];
+            /* gethostname requies len to be max(hostname) + 1*/
+        if (gethostname(thishostname,EI_MAXHOSTNAMELEN+1) < 0) {
+            EI_TRACE_ERR0("ei_connect_tmo",
+                "Failed to get name of this host");
+            erl_errno = EHOSTUNREACH;
+            return ERL_ERROR;
+        } else {
+            char *ct;
+            /* We use a short node name */    
+            if ((ct = strchr(thishostname, '.')) != NULL) *ct = '\0';
+        }
+        if (strcmp(hostname,thishostname) == 0)
+            /* Both nodes on same standalone host, use loopback */
+            result = gethostbyname_r("localhost",&host,buf,sizeof(buffer),&hp, &ei_h_errno);
+        if (result < 0) {
+            EI_TRACE_ERR2("ei_connect",
+                "Can't find host for %s: %d\n",nodename,ei_h_errno);
+            erl_errno = EHOSTUNREACH;
+            return ERL_ERROR;
+        }
     }
 #else /* __WIN32__ */
     if ((hp = ei_gethostbyname(hostname)) == NULL) {
-	char thishostname[EI_MAXHOSTNAMELEN+1];
-        /* gethostname requires len to be max(hostname) + 1 */
-	if (gethostname(thishostname,EI_MAXHOSTNAMELEN+1) < 0) {
-	    EI_TRACE_ERR1("ei_connect_tmo",
-			  "Failed to get name of this host: %d", 
-			  WSAGetLastError());
-	    erl_errno = EHOSTUNREACH;
-	    return ERL_ERROR;
-	} else {
-	    char *ct;
-	    /* We use a short node name */    
-	    if ((ct = strchr(thishostname, '.')) != NULL) *ct = '\0';
-	}
-	if (strcmp(hostname,thishostname) == 0)
-	    /* Both nodes on same standalone host, use loopback */
-	    hp = ei_gethostbyname("localhost");
-	if (hp == NULL) {
-	    char reason[1024];
-	    win32_error(reason,sizeof(reason));
-	    EI_TRACE_ERR2("ei_connect",
-			  "Can't find host for %s: %s",nodename,reason);
-	    erl_errno = EHOSTUNREACH;
-	    return ERL_ERROR;
-	}
+        char thishostname[EI_MAXHOSTNAMELEN+1];
+            /* gethostname requires len to be max(hostname) + 1 */
+        if (gethostname(thishostname,EI_MAXHOSTNAMELEN+1) < 0) {
+            EI_TRACE_ERR1("ei_connect_tmo",
+                "Failed to get name of this host: %d", 
+                WSAGetLastError());
+            erl_errno = EHOSTUNREACH;
+            return ERL_ERROR;
+        } else {
+            char *ct;
+            /* We use a short node name */    
+            if ((ct = strchr(thishostname, '.')) != NULL) *ct = '\0';
+        }
+        if (strcmp(hostname,thishostname) == 0)
+            /* Both nodes on same standalone host, use loopback */
+            hp = ei_gethostbyname("localhost");
+        if (hp == NULL) {
+            char reason[1024];
+            win32_error(reason,sizeof(reason));
+            EI_TRACE_ERR2("ei_connect",
+                "Can't find host for %s: %s",nodename,reason);
+            erl_errno = EHOSTUNREACH;
+            return ERL_ERROR;
+        }
     }
 #endif /* win32 */
 
@@ -1615,65 +1616,19 @@ static unsigned int md_32(char* string, int length)
     return (digest.x[0] ^ digest.x[1] ^ digest.x[2] ^ digest.x[3]);
 }
 
-#if defined(__WIN32__)
-unsigned int gen_challenge(void)
-{
-    struct {
-	SYSTEMTIME tv;
-	DWORD cpu;
-	int pid;
-    } s;
-    GetSystemTime(&s.tv);
-    s.cpu  = GetTickCount();
-    s.pid  = getpid();
-    return md_32((char*) &s, sizeof(s));
-}
-
-#elif  defined(VXWORKS)
-
 static unsigned int gen_challenge(void)
 {
     struct {
-	struct timespec tv;
-	clock_t cpu;
-	int pid;
+        struct timespec tv;
+        clock_t cpu;
+        int pid;
     } s;
     s.cpu  = clock();
     clock_gettime(CLOCK_REALTIME, &s.tv);
-    s.pid = getpid();
+    s.pid = 1;
     return md_32((char*) &s, sizeof(s));
 }
 
-#else  /* some unix */
-
-static unsigned int gen_challenge(void)
-{
-    struct {
-	struct timeval tv;
-	clock_t cpu;
-	pid_t pid;
-	u_long hid;
-	uid_t uid;
-	gid_t gid;
-	struct utsname name;
-    } s;
-
-    memset(&s, 0, sizeof(s));
-    gettimeofday(&s.tv, 0);
-    uname(&s.name);
-    s.cpu  = clock();
-    s.pid  = getpid();
-#ifndef __ANDROID__
-    s.hid  = gethostid();
-#else
-    s.hid  = 0;
-#endif
-    s.uid  = getuid();
-    s.gid  = getgid();
-
-    return md_32((char*) &s, sizeof(s));
-}
-#endif
 
 static void gen_digest(unsigned challenge, char cookie[], 
 		       unsigned char digest[16])

@@ -55,7 +55,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h> 
+#include <lwip/tcp.h> 
 #include <timers.h> 
 
 #define getpid() taskIdSelf()
@@ -79,10 +79,9 @@ extern int h_errno;
 
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h> 
+#include <lwip/tcp.h> 
 #include <arpa/inet.h>
 #include <netdb.h>
-#include <sys/utsname.h>  /* for gen_challenge (NEED FIX?) */
 #endif
 
 /* FIXME remove duplicate defintions */
