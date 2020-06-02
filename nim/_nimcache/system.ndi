@@ -14,7 +14,7 @@ excHandler	excHandler__rqLlY5bs9atDw2OXYqJEn5g	/home/elcritch/.asdf/installs/nim
 gcFramePtr	gcFramePtr__ot48iojqko9aFxGhyjjjVaA	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	68	2
 onUnhandledException	onUnhandledException__bFrawQlTKZhLweDD36j9b8g	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	347	4
 nimInErrorMode	nimInErrorMode__759bT87luu8XGcbkw13FUjA	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	422	6
-sysFatal	sysFatal__BVaWgkQV7bsZ7qgkYxa9a0Asystem	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	7
+sysFatal	sysFatal__hS39cHxXy8HTQIYRwfPrH3gsystem	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	7
 message	message	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	35
 size	size_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim	82	15
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim	82	0
@@ -145,11 +145,6 @@ newCap	newCap	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	59	
 resize	resize__cOCDWr16YD4j3dBrbbH3yQsystem	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	34	5
 old	old	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	34	12
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	34	0
-sysFatal	sysFatal__hS39cHxXy8HTQIYRwfPrH3gsystem	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	7
-message	message	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	35
-=destroy	eqdestroy___BO2qxEc1Yf80x0M89aiw9cAQ	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
-dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
-blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29
 a	a	/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim	115	12
 b	b	/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim	115	15
 res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim	115	21
@@ -266,6 +261,11 @@ s	s_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	76	22
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	76	0
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29
 orig	orig	/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim	87	8
+=destroy	eqdestroy___BO2qxEc1Yf80x0M89aiw9cAQ	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29
+sysFatal	sysFatal__BVaWgkQV7bsZ7qgkYxa9a0Asystem	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	7
+message	message	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	35
 =destroy	eqdestroy___qRVWt3jIAyom1VkyIWI7tA	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29

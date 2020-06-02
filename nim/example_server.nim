@@ -4,6 +4,7 @@ import net
 import os
 import einode/src/einode
 import einode/src/publish
+import system/ansi_c
 
 const
   BUFSIZE* = 1000
@@ -22,7 +23,7 @@ proc bar*(y: int): int =
     return y * 2
 
 proc run_http_server*() {.exportc.} =
-  echo("starting: " )
+  cprintf("starting: " )
   # vTaskDelay(2000 / portTICK_PERIOD_MS);
   os.sleep(1_000)
 
