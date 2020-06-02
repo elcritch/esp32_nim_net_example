@@ -1244,6 +1244,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
         printf("ei_accept" "<- ACCEPT socket accept \n");
     }
 
+    printf("ei_accept" "<- get fd \n");
     err = EI_GET_FD__(cbs, ctx, &fd);
     if (err) {
         printf("ei_accept" "<- ACCEPT get fd failed: %s (%d)\n",
