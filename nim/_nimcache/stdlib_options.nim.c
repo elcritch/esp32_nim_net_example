@@ -204,27 +204,27 @@ static N_INLINE(NIM_BOOL*, nimErrorFlag)(void) {	NIM_BOOL* result;	result = (NIM
 #line 425 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	result = (&nimInErrorMode__759bT87luu8XGcbkw13FUjA);	return result;}
 
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___kvLTX9b1HW4y0sLltNVfUxQ)(tyObject_Option__4Ox0414yXzO1otjxx45C6A* dest, tyObject_Option__4Ox0414yXzO1otjxx45C6A src) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	{		NIM_BOOL T3_;
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 		T3_ = (NIM_BOOL)0;		T3_ = nimDecRefIsLast((*dest).val);		if (!T3_) goto LA4_;
 
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 		eqdestroy___1TCKL9aWTg3J2fdjyrLXdQw((*dest).val);
 		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 		nimRawDispose((*dest).val);
 	}
 	LA4_: ;
 
-#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim"
+#line 22 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	(*dest).val = src.val;	}BeforeRet_: ;
 }

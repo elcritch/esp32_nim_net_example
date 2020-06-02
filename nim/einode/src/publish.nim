@@ -13,11 +13,13 @@ import einode
 
 proc publishServer*(einode: var EiNode; address: string = "") =
 
+  echo("socket start: " )
   var socket: Socket = newSocket()
   socket.bindAddr(Port(einode.port), address=address) # bind all
   socket.setSockOpt(OptReuseAddr, true)
   socket.setSockOpt(OptKeepAlive, true)
   socket.listen()
+  echo("socket listening: " )
 
   einode.sock = some(socket)
   if ei_publish(einode.ec.addr, einode.port.cint) == -1:

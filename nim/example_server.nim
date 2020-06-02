@@ -3,13 +3,37 @@ import strutils
 import net
 import os
 import einode/src/einode
-import einode/src/publish
+# import einode/src/publish
 import system/ansi_c
 
 const
   BUFSIZE* = 1000
 
 proc delay*(milsecs: int) {.importc: "delay".}
+
+proc publishServer*(einode: var EiNode; address: string = "") =
+
+  echo("socket start: " )
+  var socket: Socket = newSocket()
+  socket.bindAddr(Port(einode.port), address=address) # bind all
+  socket.setSockOpt(OptReuseAddr, true)
+  socket.setSockOpt(OptKeepAlive, true)
+  socket.listen()
+  einode.sock = some(socket)
+  echo("socket listening: " )
+  delay(1_000)
+  echo("socket publish: " )
+  delay(1_000)
+
+  if ei_publish(einode.ec.addr, einode.port.cint) == -1:
+    raise newException(LibraryError, "ERROR: publishing on port $1" % [$(einode.port)])
+
+  var fd = ei_accept(einode.ec.addr,
+                     socket.getFd().cint,
+                     einode.conn.addr)
+
+  if fd == ERL_ERROR:
+    raise newException(LibraryError, "ERROR: erl_accept on listen socket " & repr(socket))
 
 # proc ei_malloc(size: clong): pointer
 proc new_ei_x_size(x: ptr EiBuff; size: int): cint =
