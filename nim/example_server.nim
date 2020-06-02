@@ -1,7 +1,7 @@
 ##  #include <erl_format.h>
 import strutils
-import posix
 import net
+import os
 import einode/src/einode
 import einode/src/publish
 
@@ -22,6 +22,11 @@ proc bar*(y: int): int =
     return y * 2
 
 proc run_http_server*() {.exportc.} =
+  echo("starting: " )
+  # vTaskDelay(2000 / portTICK_PERIOD_MS);
+  os.sleep(1_000)
+
+
   var node_name = "cnode1"
   var port = Port(5000)
 

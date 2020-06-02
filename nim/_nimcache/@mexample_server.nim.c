@@ -170,6 +170,7 @@ static N_INLINE(void, nimZeroMem)(void* p_0, NI size_0);
 static N_INLINE(void, nimSetMem__JE6t4x7Z3v2iVz27Nx0MRAmemory)(void* a, int v, NI size_0);
 static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
 N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0);
+N_LIB_PRIVATE N_NIMCALL(void, nossleep)(NI milsecs);
 N_LIB_PRIVATE N_NIMCALL(tyObject_EiNodecolonObjectType___alZFeXtmVkgSGjdnJX9a4PA*, newEiNode__9b0U7v1T0dIuxXetib4WR9cw)(NimStringV2 name, NimStringV2 ip, NimStringV2 cookie_0, NI port_0, NimStringV2 alivename);
 N_LIB_PRIVATE N_NIMCALL(void, initialize__bpVAYdS89a2bTdZIJLaDSZA)(tyObject_EiNodecolonObjectType___alZFeXtmVkgSGjdnJX9a4PA** einode);
 N_LIB_PRIVATE N_NIMCALL(void, publishServer__5KgQ32NtV8L39bhT5Bfd73g)(tyObject_EiNodecolonObjectType___alZFeXtmVkgSGjdnJX9a4PA** einode, NimStringV2 address);
@@ -233,14 +234,14 @@ N_LIB_PRIVATE N_NIMCALL(void, NimMainModule)(void);
 
 /* section: NIM_merge_DATA */
 static const struct {
-  NI cap; NIM_CHAR data[6+1];
-} TM__F2tqCOO6WDiND6xhXZOuUw_2 = { 6 | NIM_STRLIT_FLAG, "cnode1" };
-static const NimStringV2 TM__F2tqCOO6WDiND6xhXZOuUw_3 = {6, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_2};
-static const struct {
   NI cap; NIM_CHAR data[10+1];
-} TM__F2tqCOO6WDiND6xhXZOuUw_5 = { 10 | NIM_STRLIT_FLAG, "starting: " };
-static NIM_CONST tyArray__nHXaesL0DJZHyVS07ARPRA TM__F2tqCOO6WDiND6xhXZOuUw_4 = {{10, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_5}}
+} TM__F2tqCOO6WDiND6xhXZOuUw_3 = { 10 | NIM_STRLIT_FLAG, "starting: " };
+static NIM_CONST tyArray__nHXaesL0DJZHyVS07ARPRA TM__F2tqCOO6WDiND6xhXZOuUw_2 = {{10, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_3}}
 ;
+static const struct {
+  NI cap; NIM_CHAR data[6+1];
+} TM__F2tqCOO6WDiND6xhXZOuUw_4 = { 6 | NIM_STRLIT_FLAG, "cnode1" };
+static const NimStringV2 TM__F2tqCOO6WDiND6xhXZOuUw_5 = {6, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_4};
 static const struct {
   NI cap; NIM_CHAR data[9+1];
 } TM__F2tqCOO6WDiND6xhXZOuUw_6 = { 9 | NIM_STRLIT_FLAG, "127.0.0.1" };
@@ -714,50 +715,59 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 "m/example_server.nim");{nimErr_ = nimErrorFlag();	node_name.len = 0; node_name.p = NIM_NIL;	einode = (tyObject_EiNodecolonObjectType___alZFeXtmVkgSGjdnJX9a4PA*)0;	colontmpD_.len = 0; colontmpD_.p = NIM_NIL;	colontmpD__2.len = 0; colontmpD__2.p = NIM_NIL;	colontmpD__3.len = 0; colontmpD__3.p = NIM_NIL;	colontmpD__4.len = 0; colontmpD__4.p = NIM_NIL;	eterm = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;	colontmpD__5.len = 0; colontmpD__5.p = NIM_NIL;	colontmpD__6 = (int)0;	nimZeroMem((void*)(&colontmpD__7), sizeof(erlang_msg));	colontmpD__8 = (int)0;	nimZeroMem((void*)(&colontmpD__9), sizeof(erlang_msg));	colontmpD__10 = (int)0;	nimZeroMem((void*)(&colontmpD__11), sizeof(erlang_msg));	colontmpD__12.len = 0; colontmpD__12.p = NIM_NIL;	colontmpD__13.len = 0; colontmpD__13.p = NIM_NIL;	main_msg.len = 0; main_msg.p = NIM_NIL;	rpc_msg.len = 0; rpc_msg.p = NIM_NIL;	nimZeroMem((void*)(&msg_atom), sizeof(tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg));	colontmpD__14.len = 0; colontmpD__14.p = NIM_NIL;	colontmpD__15.len = 0; colontmpD__15.p = NIM_NIL;	colontmpD__16.len = 0; colontmpD__16.p = NIM_NIL;	colontmpD__17.len = 0; colontmpD__17.p = NIM_NIL;	colontmpD__18.len = 0; colontmpD__18.p = NIM_NIL;	colontmpD__19.len = 0; colontmpD__19.p = NIM_NIL;	colontmpD__20.len = 0; colontmpD__20.p = NIM_NIL;	colontmpD__21.len = 0; colontmpD__21.p = NIM_NIL;	rmsg = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;	colontmpD__22.len = 0; colontmpD__22.p = NIM_NIL;	colontmpD__23.len = 0; colontmpD__23.p = NIM_NIL;	colontmpD__24 = (int)0;	nimZeroMem((void*)(&colontmpD__25), sizeof(erlang_msg));	colontmpD__26 = (int)0;	nimZeroMem((void*)(&colontmpD__27), sizeof(erlang_msg));	colontmpD__28 = (int)0;	nimZeroMem((void*)(&colontmpD__29), sizeof(erlang_msg));	colontmpD__30.len = 0; colontmpD__30.p = NIM_NIL;	colontmpD__31.len = 0; colontmpD__31.p = NIM_NIL;	main_msg_2.len = 0; main_msg_2.p = NIM_NIL;	rpc_msg_2.len = 0; rpc_msg_2.p = NIM_NIL;	nimZeroMem((void*)(&msg_atom_2), sizeof(tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg));	colontmpD__32.len = 0; colontmpD__32.p = NIM_NIL;	colontmpD__33.len = 0; colontmpD__33.p = NIM_NIL;	colontmpD__34.len = 0; colontmpD__34.p = NIM_NIL;	colontmpD__35.len = 0; colontmpD__35.p = NIM_NIL;	colontmpD__36.len = 0; colontmpD__36.p = NIM_NIL;	colontmpD__37.len = 0; colontmpD__37.p = NIM_NIL;	colontmpD__38.len = 0; colontmpD__38.p = NIM_NIL;	colontmpD__39.len = 0; colontmpD__39.p = NIM_NIL;	rmsg_2 = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;	colontmpD__40.len = 0; colontmpD__40.p = NIM_NIL;	colontmpD__41.len = 0; colontmpD__41.p = NIM_NIL;	colontmpD__42.len = 0; colontmpD__42.p = NIM_NIL;
 #line 25 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	nimln_(25, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");	node_name = TM__F2tqCOO6WDiND6xhXZOuUw_3;
-#line 26 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(26, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");	port_1 = ((NU16) 5000);
-#line 28 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(28, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");	echoBinSafe(TM__F2tqCOO6WDiND6xhXZOuUw_4, 1);
-#line 29 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(29, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");	echoBinSafe(TM__F2tqCOO6WDiND6xhXZOuUw_2, 1);
+#line 27 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(27, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
+#line 27 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nossleep(((NI) 1000));
+	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 30 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	nimln_(30, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");	blitTmp = node_name;
-#line 30 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	node_name.len = 0; node_name.p = NIM_NIL;
-#line 29 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(29, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");	einode = newEiNode__9b0U7v1T0dIuxXetib4WR9cw(blitTmp, TM__F2tqCOO6WDiND6xhXZOuUw_7, TM__F2tqCOO6WDiND6xhXZOuUw_9, ((NI) 5000), TM__F2tqCOO6WDiND6xhXZOuUw_11);	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 37 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(37, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");	node_name = TM__F2tqCOO6WDiND6xhXZOuUw_5;
+#line 31 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(31, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");	port_1 = ((NU16) 5000);
+#line 33 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(33, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");	echoBinSafe(TM__F2tqCOO6WDiND6xhXZOuUw_2, 1);
+#line 34 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(34, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 37 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 35 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(35, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");	blitTmp = node_name;
+#line 35 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	node_name.len = 0; node_name.p = NIM_NIL;
+#line 34 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(34, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");	einode = newEiNode__9b0U7v1T0dIuxXetib4WR9cw(blitTmp, TM__F2tqCOO6WDiND6xhXZOuUw_7, TM__F2tqCOO6WDiND6xhXZOuUw_9, ((NI) 5000), TM__F2tqCOO6WDiND6xhXZOuUw_11);	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
+#line 42 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(42, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+"m/example_server.nim");
+#line 42 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	initialize__bpVAYdS89a2bTdZIJLaDSZA(&einode);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 40 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(40, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 45 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(45, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 40 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 45 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	publishServer__5KgQ32NtV8L39bhT5Bfd73g(&einode, TM__F2tqCOO6WDiND6xhXZOuUw_13);
 	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 43 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(43, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 48 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(48, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 43 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(43, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 48 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(48, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");	T3_.len = 0; T3_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 43 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(43, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 48 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(48, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 43 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 48 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	T4_.len = 0; T4_.p = NIM_NIL;	T4_ = dollar___RkX9btpg5sQIaP8yYXB6tbA(port_1);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD_), T4_);
@@ -765,18 +775,18 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__2), T3_);
 	T2_[0] = colontmpD__2;	echoBinSafe(T2_, 1);
-#line 44 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(44, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 49 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(49, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 44 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(44, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 49 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(49, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");	T6_.len = 0; T6_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 44 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(44, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 49 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(49, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");	T7_.len = 0; T7_.p = NIM_NIL;	T7_ = cstrToNimstr(((NCSTRING) ((&(*einode).conn.nodename[(((NI) 0))- 0]))));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__3), T7_);
@@ -784,12 +794,12 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 	eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__4), T6_);
 	T5_[0] = colontmpD__4;	echoBinSafe(T5_, 1);	nimZeroMem((void*)(&emsg), sizeof(ei_x_buff));
-#line 49 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-	nimln_(49, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 54 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+	nimln_(54, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 49 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 54 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 49 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 54 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	T8_ = (int)0;	T8_ = new_ei_x_size__cFVB65DDtnsXTA75a89cl4Q((&emsg), ((NI) 128));	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;	(void)(T8_);
 	{		int msgtype_1;		erlang_msg info;		int fd;		erlang_msg info_2;		ei_x_buff emsg_2;		void* T10_;		msgtype_1 = (int)0;		nimZeroMem((void*)(&info), sizeof(erlang_msg));
 #line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
@@ -879,8 +889,8 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 						goto LA27_;
 						LA29_: ;
 						{							tyTuple__Hk9c6TqAPH6ap5sSlq8LETQ T35_;							tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T36_;							tyTuple__Hk9c6TqAPH6ap5sSlq8LETQ T37_;							tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T38_;							tyTuple__Hk9c6TqAPH6ap5sSlq8LETQ T39_;							tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T40_;
-#line 54 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(54, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							nimZeroMem((void*)(&T35_), sizeof(tyTuple__Hk9c6TqAPH6ap5sSlq8LETQ));
 #line 113 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
 							nimln_(113, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
@@ -915,32 +925,32 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim"
 							nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim");							eq___Relw9cjk3pmQlM6XgQpZJjQ_2(&eterm, T39_.Field2);
 							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 55 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(55, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 60 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(60, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							switch (msgtype_1) {
 							case ((int) 6):
 							{								int res;								tyArray__nHXaesL0DJZHyVS07ARPRA T42_;								tyArray__nHXaesL0DJZHyVS07ARPRA T43_;								NimStringV2 T44_;								NimStringV2 T45_;								tySequence__auShGKKYMCafTpNetxtR7A T46_;								tySequence__auShGKKYMCafTpNetxtR7A T47_;								tySequence__auShGKKYMCafTpNetxtR7A T48_;								tySequence__auShGKKYMCafTpNetxtR7A T49_;								tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg T50_;								tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg T51_;								NI32 msg_arg;								tySequence__auShGKKYMCafTpNetxtR7A T74_;								tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T75_;								tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T76_;								tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T77_;
-#line 57 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(57, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 62 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(62, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								res = ((int) 0);
-#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 60 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(60, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 65 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(65, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T44_.len = 0; T44_.p = NIM_NIL;								T44_ = nimIntToStr(info.msgtype);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__12), T44_);
 								T43_[0] = colontmpD__12;
-#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T45_.len = 0; T45_.p = NIM_NIL;								T45_ = nsuFormatOpenArray(TM__F2tqCOO6WDiND6xhXZOuUw_23, T43_, 1);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__13), T45_);
@@ -948,10 +958,10 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 								nimln_(92, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/einode/src/einode/codec.nim");
-#line 62 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(62, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 67 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(67, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T46_.len = 0; T46_.p = NIM_NIL;								T46_.len = 0; T46_.p = (tySequence__auShGKKYMCafTpNetxtR7A_Content*) newSeqPayload(0, sizeof(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*), NIM_ALIGNOF(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*));
-#line 62 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 67 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T47_.len = 0; T47_.p = NIM_NIL;								T47_ = getTuple__5djTZ9afVPVm9cj5Ya9a8DrYQ(eterm, T46_);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 								nimln_(92, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
@@ -959,10 +969,10 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 
-#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								if ((NU)(((NI) 2)) >= (NU)main_msg.len){ raiseIndexError2(((NI) 2),main_msg.len-1); goto LA1_;}								T48_.len = 0; T48_.p = NIM_NIL;								T48_.len = 0; T48_.p = (tySequence__auShGKKYMCafTpNetxtR7A_Content*) newSeqPayload(0, sizeof(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*), NIM_ALIGNOF(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*));
-#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T49_.len = 0; T49_.p = NIM_NIL;								T49_ = getTuple__5djTZ9afVPVm9cj5Ya9a8DrYQ(main_msg.p->data[((NI) 2)], T48_);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 								nimln_(92, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
@@ -971,38 +981,38 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 17 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 								nimln_(17, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/einode/src/einode/codec.nim");
-#line 65 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(65, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(70, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								if ((NU)(((NI) 0)) >= (NU)rpc_msg.len){ raiseIndexError2(((NI) 0),rpc_msg.len-1); goto LA1_;}								nimZeroMem((void*)(&T50_), sizeof(tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg));								T50_.n = TM__F2tqCOO6WDiND6xhXZOuUw_25;
-#line 65 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T51_ = getAtom__LBrMW02kJYAJ9a9bn9bwli2Xw(rpc_msg.p->data[((NI) 0)], T50_);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 17 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 								nimln_(17, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/einode/src/einode/codec.nim");								eqsink___DDMj3A8miWoRR889cYOyR9cg((&msg_atom), T51_);
 								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 66 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(66, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 71 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(71, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								if ((NU)(((NI) 1)) >= (NU)rpc_msg.len){ raiseIndexError2(((NI) 1),rpc_msg.len-1); goto LA1_;}
-#line 66 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 71 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								msg_arg = getInt32__Ytchs6vu9bmjrEURwpv1KFg(rpc_msg.p->data[((NI) 1)], ((NI32) 0));								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 68 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(68, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(73, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								{									tyArray__nHXaesL0DJZHyVS07ARPRA T56_;									NimStringV2 T57_;									NimStringV2 T58_;									NI T59_;
-#line 68 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 									if (!eqStrings(msg_atom.n, TM__F2tqCOO6WDiND6xhXZOuUw_27)) goto LA54_;
 
-#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 74 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(74, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 74 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(74, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T57_.len = 0; T57_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 74 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(74, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T58_.len = 0; T58_.p = NIM_NIL;									T58_ = nimIntToStr(((NI) (msg_arg)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__14), T58_);
@@ -1010,32 +1020,32 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__15), T57_);
 									T56_[0] = colontmpD__15;									echoBinSafe(T56_, 1);
-#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(70, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 									T59_ = (NI)0;									T59_ = foo__tBLoWT5j8CB9bWEfiYLkr9cw(((NI) (msg_arg)));									if (NIM_UNLIKELY(*nimErr_)) goto LA1_;									res = ((int) (T59_));								}
 								goto LA52_;
 								LA54_: ;
 								{									tyArray__nHXaesL0DJZHyVS07ARPRA T63_;									NimStringV2 T64_;									NimStringV2 T65_;									NI T66_;
-#line 71 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(71, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									if (!eqStrings(msg_atom.n, TM__F2tqCOO6WDiND6xhXZOuUw_32)) goto LA61_;
 
-#line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 77 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(77, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 77 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(77, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T64_.len = 0; T64_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 77 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(77, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T65_.len = 0; T65_.p = NIM_NIL;									T65_ = nimIntToStr(((NI) (msg_arg)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__16), T65_);
@@ -1043,28 +1053,28 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__17), T64_);
 									T63_[0] = colontmpD__17;									echoBinSafe(T63_, 1);
-#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(73, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(78, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 									T66_ = (NI)0;									T66_ = bar__RqfSGhNGltymVvco2hVdpg(((NI) (msg_arg)));									if (NIM_UNLIKELY(*nimErr_)) goto LA1_;									res = ((int) (T66_));								}
 								goto LA52_;
 								LA61_: ;
 								{									tyArray__nHXaesL0DJZHyVS07ARPRA T68_;									NimStringV2 T69_;									NimStringV2 T70_;									tyArray__nHXaesL0DJZHyVS07ARPRA T71_;									NimStringV2 T72_;									NimStringV2 T73_;
-#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T69_.len = 0; T69_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T70_.len = 0; T70_.p = NIM_NIL;									T70_ = nimIntToStr(((NI) (msg_arg)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__18), T70_);
@@ -1072,20 +1082,20 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__19), T69_);
 									T68_[0] = colontmpD__19;									echoBinSafe(T68_, 1);
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(81, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(81, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");									T72_.len = 0; T72_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-									nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+									nimln_(81, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 									T73_.len = 0; T73_.p = NIM_NIL;									T73_ = dollar___kWi9bERrQxTksBhMbBjIOgw(msg_atom);									if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 									nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");									eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__20), T73_);
@@ -1097,47 +1107,47 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim"
 								nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim");
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(78, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(83, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T74_.len = 0; T74_.p = NIM_NIL;								T74_.len = 2; T74_.p = (tySequence__auShGKKYMCafTpNetxtR7A_Content*) newSeqPayload(2, sizeof(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*), NIM_ALIGNOF(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*));
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T75_ = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;								T75_ = newEAtom__d6fGgp4DLWi56R3BqrWnYQ_2(TM__F2tqCOO6WDiND6xhXZOuUw_41);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;								T74_.p->data[0] = T75_;
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T76_ = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;								T76_ = newETerm__MiMEwRhSqLDr9b3lL5EAygg(res);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;								T74_.p->data[1] = T76_;
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T77_ = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;								T77_ = newETuple__SG9cQB7pvmEiTW1GgvDQG1Q(T74_);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim"
 								nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim");								eqsink___Relw9cjk3pmQlM6XgQpZJjQ(&rmsg, T77_);
 								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 85 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(85, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 85 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								send__5jeIoLHcBvtGb3uK9cIpxYA(&einode, info.from, &rmsg);
 								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;							}
 							break;
 							default:
 							{								tyArray__nHXaesL0DJZHyVS07ARPRA T79_;								NimStringV2 T80_;								NimStringV2 T81_;
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(82, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(87, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(82, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(87, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T80_.len = 0; T80_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(82, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(87, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T81_.len = 0; T81_.p = NIM_NIL;								T81_ = dollar___KYrIimviN8dOUrL8Ne8pEQ(msgtype_1);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__22), T81_);
@@ -1159,8 +1169,8 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 114 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
 						T83_ = (NIM_BOOL)0;						T83_ = eqeq___a89b2C3VWxlbZL6R9b5SVw1Q(mtype, ((int) 1));						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;						if (!T83_) goto LA84_;
 
-#line 54 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-						nimln_(54, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+						nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");						nimZeroMem((void*)(&T86_), sizeof(tyTuple__Hk9c6TqAPH6ap5sSlq8LETQ));
 #line 116 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
 						nimln_(116, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
@@ -1195,32 +1205,32 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim"
 						nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim");						eq___Relw9cjk3pmQlM6XgQpZJjQ_2(&eterm, T90_.Field2);
 						if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 55 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-						nimln_(55, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 60 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+						nimln_(60, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");						switch (msgtype_1) {
 						case ((int) 6):
 						{							int res_2;							tyArray__nHXaesL0DJZHyVS07ARPRA T93_;							tyArray__nHXaesL0DJZHyVS07ARPRA T94_;							NimStringV2 T95_;							NimStringV2 T96_;							tySequence__auShGKKYMCafTpNetxtR7A T97_;							tySequence__auShGKKYMCafTpNetxtR7A T98_;							tySequence__auShGKKYMCafTpNetxtR7A T99_;							tySequence__auShGKKYMCafTpNetxtR7A T100_;							tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg T101_;							tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg T102_;							NI32 msg_arg_2;							tySequence__auShGKKYMCafTpNetxtR7A T125_;							tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T126_;							tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T127_;							tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* T128_;
-#line 57 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(57, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 62 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(62, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							res_2 = ((int) 0);
-#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 60 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(60, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 65 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(65, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							T95_.len = 0; T95_.p = NIM_NIL;							T95_ = nimIntToStr(info.msgtype);
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");							eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__30), T95_);
 							T94_[0] = colontmpD__30;
-#line 59 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(59, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							T96_.len = 0; T96_.p = NIM_NIL;							T96_ = nsuFormatOpenArray(TM__F2tqCOO6WDiND6xhXZOuUw_44, T94_, 1);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");							eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__31), T96_);
@@ -1228,10 +1238,10 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 							nimln_(92, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/einode/src/einode/codec.nim");
-#line 62 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(62, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 67 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(67, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							T97_.len = 0; T97_.p = NIM_NIL;							T97_.len = 0; T97_.p = (tySequence__auShGKKYMCafTpNetxtR7A_Content*) newSeqPayload(0, sizeof(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*), NIM_ALIGNOF(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*));
-#line 62 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 67 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T98_.len = 0; T98_.p = NIM_NIL;							T98_ = getTuple__5djTZ9afVPVm9cj5Ya9a8DrYQ(eterm, T97_);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 							nimln_(92, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
@@ -1239,10 +1249,10 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 
-#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(64, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							if ((NU)(((NI) 2)) >= (NU)main_msg_2.len){ raiseIndexError2(((NI) 2),main_msg_2.len-1); goto LA1_;}							T99_.len = 0; T99_.p = NIM_NIL;							T99_.len = 0; T99_.p = (tySequence__auShGKKYMCafTpNetxtR7A_Content*) newSeqPayload(0, sizeof(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*), NIM_ALIGNOF(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*));
-#line 64 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T100_.len = 0; T100_.p = NIM_NIL;							T100_ = getTuple__5djTZ9afVPVm9cj5Ya9a8DrYQ(main_msg_2.p->data[((NI) 2)], T99_);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 92 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 							nimln_(92, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
@@ -1251,38 +1261,38 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 17 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 							nimln_(17, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/einode/src/einode/codec.nim");
-#line 65 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(65, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(70, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							if ((NU)(((NI) 0)) >= (NU)rpc_msg_2.len){ raiseIndexError2(((NI) 0),rpc_msg_2.len-1); goto LA1_;}							nimZeroMem((void*)(&T101_), sizeof(tyObject_ErlAtom__t6hV8SpIfWfiC1BTRRbNxg));							T101_.n = TM__F2tqCOO6WDiND6xhXZOuUw_45;
-#line 65 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T102_ = getAtom__LBrMW02kJYAJ9a9bn9bwli2Xw(rpc_msg_2.p->data[((NI) 0)], T101_);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 17 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
 							nimln_(17, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/einode/src/einode/codec.nim");							eqsink___DDMj3A8miWoRR889cYOyR9cg((&msg_atom_2), T102_);
 							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 66 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(66, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 71 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(71, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							if ((NU)(((NI) 1)) >= (NU)rpc_msg_2.len){ raiseIndexError2(((NI) 1),rpc_msg_2.len-1); goto LA1_;}
-#line 66 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 71 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							msg_arg_2 = getInt32__Ytchs6vu9bmjrEURwpv1KFg(rpc_msg_2.p->data[((NI) 1)], ((NI32) 0));							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 68 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(68, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(73, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							{								tyArray__nHXaesL0DJZHyVS07ARPRA T107_;								NimStringV2 T108_;								NimStringV2 T109_;								NI T110_;
-#line 68 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								if (!eqStrings(msg_atom_2.n, TM__F2tqCOO6WDiND6xhXZOuUw_46)) goto LA105_;
 
-#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 74 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(74, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 74 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(74, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T108_.len = 0; T108_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 69 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(69, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 74 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(74, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T109_.len = 0; T109_.p = NIM_NIL;								T109_ = nimIntToStr(((NI) (msg_arg_2)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__32), T109_);
@@ -1290,32 +1300,32 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__33), T108_);
 								T107_[0] = colontmpD__33;								echoBinSafe(T107_, 1);
-#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(70, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T110_ = (NI)0;								T110_ = foo__tBLoWT5j8CB9bWEfiYLkr9cw(((NI) (msg_arg_2)));								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;								res_2 = ((int) (T110_));							}
 							goto LA103_;
 							LA105_: ;
 							{								tyArray__nHXaesL0DJZHyVS07ARPRA T114_;								NimStringV2 T115_;								NimStringV2 T116_;								NI T117_;
-#line 71 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(71, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								if (!eqStrings(msg_atom_2.n, TM__F2tqCOO6WDiND6xhXZOuUw_48)) goto LA112_;
 
-#line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 77 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(77, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 77 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(77, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T115_.len = 0; T115_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 77 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(77, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T116_.len = 0; T116_.p = NIM_NIL;								T116_ = nimIntToStr(((NI) (msg_arg_2)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__34), T116_);
@@ -1323,28 +1333,28 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__35), T115_);
 								T114_[0] = colontmpD__35;								echoBinSafe(T114_, 1);
-#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(73, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(78, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 73 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T117_ = (NI)0;								T117_ = bar__RqfSGhNGltymVvco2hVdpg(((NI) (msg_arg_2)));								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;								res_2 = ((int) (T117_));							}
 							goto LA103_;
 							LA112_: ;
 							{								tyArray__nHXaesL0DJZHyVS07ARPRA T119_;								NimStringV2 T120_;								NimStringV2 T121_;								tyArray__nHXaesL0DJZHyVS07ARPRA T122_;								NimStringV2 T123_;								NimStringV2 T124_;
-#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T120_.len = 0; T120_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 75 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(75, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T121_.len = 0; T121_.p = NIM_NIL;								T121_ = nimIntToStr(((NI) (msg_arg_2)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__36), T121_);
@@ -1352,20 +1362,20 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__37), T120_);
 								T119_[0] = colontmpD__37;								echoBinSafe(T119_, 1);
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(81, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(81, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");								T123_.len = 0; T123_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-								nimln_(76, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+								nimln_(81, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 76 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 81 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 								T124_.len = 0; T124_.p = NIM_NIL;								T124_ = dollar___kWi9bERrQxTksBhMbBjIOgw(msg_atom_2);								if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 								nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");								eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__38), T124_);
@@ -1377,47 +1387,47 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim"
 							nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim");
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(78, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(83, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T125_.len = 0; T125_.p = NIM_NIL;							T125_.len = 2; T125_.p = (tySequence__auShGKKYMCafTpNetxtR7A_Content*) newSeqPayload(2, sizeof(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*), NIM_ALIGNOF(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*));
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T126_ = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;							T126_ = newEAtom__d6fGgp4DLWi56R3BqrWnYQ_2(TM__F2tqCOO6WDiND6xhXZOuUw_52);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;							T125_.p->data[0] = T126_;
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T127_ = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;							T127_ = newETerm__MiMEwRhSqLDr9b3lL5EAygg(res_2);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;							T125_.p->data[1] = T127_;
-#line 78 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 83 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T128_ = (tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw*)0;							T128_ = newETuple__SG9cQB7pvmEiTW1GgvDQG1Q(T125_);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 80 "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim"
 							nimln_(80, "/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim");							eqsink___Relw9cjk3pmQlM6XgQpZJjQ(&rmsg_2, T128_);
 							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(80, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 85 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(85, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 80 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 85 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							send__5jeIoLHcBvtGb3uK9cIpxYA(&einode, info.from, &rmsg_2);
 							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;						}
 						break;
 						default:
 						{							tyArray__nHXaesL0DJZHyVS07ARPRA T130_;							NimStringV2 T131_;							NimStringV2 T132_;
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(82, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(87, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(82, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(87, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");							T131_.len = 0; T131_.p = NIM_NIL;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
-							nimln_(82, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+							nimln_(87, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");
-#line 82 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
+#line 87 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 							T132_.len = 0; T132_.p = NIM_NIL;							T132_ = dollar___KYrIimviN8dOUrL8Ne8pEQ(msgtype_1);							if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 							nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");							eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__40), T132_);
