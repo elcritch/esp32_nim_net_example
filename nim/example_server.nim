@@ -24,6 +24,10 @@ proc bar*(y: int): int =
 
 proc run_http_server*() {.exportc.} =
   cprintf("starting: " )
+  for i in 1..10:
+    echo("starting: " & $i)
+
+  echo("done: ")
 
 proc other_run_http_server*() {.exportc.} =
   cprintf("starting: " )
