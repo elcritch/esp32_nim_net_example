@@ -1,9 +1,9 @@
 # ##  #include <erl_format.h>
-# import strutils
+import strutils
 # # import os
 # # import posix
-# import net
-# import einode/src/einode
+import net
+import einode/src/einode
 
 # const
 #   BUFSIZE* = 1000

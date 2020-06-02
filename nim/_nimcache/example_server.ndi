@@ -5,10 +5,10 @@ dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	80	18
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	80	41
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/memalloc.nim	9	16
 source	source	/home/elcritch/.asdf/installs/nim/devel/lib/system/memalloc.nim	9	22
-size	size	/home/elcritch/.asdf/installs/nim/devel/lib/system/memalloc.nim	9	39
+size	size_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/memalloc.nim	9	39
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim	11	17
 source	source	/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim	11	23
-size	size	/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim	11	40
+size	size_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim	11	40
 a	a	/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim	45	14
 b	b	/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim	45	17
 res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim	45	23

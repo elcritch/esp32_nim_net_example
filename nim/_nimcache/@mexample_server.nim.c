@@ -51,21 +51,22 @@ typedef NimStringV2 tyArray__nHXaesL0DJZHyVS07ARPRA[1];
 N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void);
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___aBBXmHFBEivKqERloP6zmA)(NimStringV2* dest, NimStringV2 src);
 static N_INLINE(void, appendString)(NimStringV2* dest, NimStringV2 src);
-static N_INLINE(void, copyMem__M04YC71iJg1N7gBF3HZTngsystem)(void* dest, void* source, NI size);
-static N_INLINE(void, nimCopyMem)(void* dest, void* source, NI size);
+static N_INLINE(void, copyMem__M04YC71iJg1N7gBF3HZTngsystem)(void* dest, void* source, NI size_0);
+static N_INLINE(void, nimCopyMem)(void* dest, void* source, NI size_0);
 static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 N_LIB_PRIVATE N_NOINLINE(void, raiseOverflow)(void);
-N_LIB_PRIVATE N_NOINLINE(void, raiseRangeErrorI)(NI64 i, NI64 a, NI64 b);
+N_LIB_PRIVATE N_NOINLINE(void, raiseRangeErrorI)(NI64 i_0, NI64 a, NI64 b);
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, rawNewString)(NI space);
 N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0);
 N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ)(NimStringV2* dest);
 static N_INLINE(NIM_BOOL*, nimErrorFlag)(void);
-static N_INLINE(void, nimFrame)(TFrame* s);
+static N_INLINE(void, nimFrame)(TFrame* s_0);
 N_LIB_PRIVATE N_NOINLINE(void, callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw)(void);
 static N_INLINE(void, popFrame)(void);
 N_LIB_PRIVATE N_NIMCALL(void, nimTestErrorFlag)(void);
 static N_INLINE(void, initStackBottomWith)(void* locals);
 N_LIB_PRIVATE N_NIMCALL(void, systemDatInit000)(void);
+N_LIB_PRIVATE N_NIMCALL(void, stdlib_nativesocketsInit000)(void);
 N_LIB_PRIVATE N_NIMCALL(void, NimMainModule)(void);
 
 /* section: NIM_merge_DATA */
@@ -90,18 +91,18 @@ extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 /* section: NIM_merge_PROCS */
 
 #line 11 "/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim"
-static N_INLINE(void, nimCopyMem)(void* dest, void* source, NI size) {	void* T1_;
+static N_INLINE(void, nimCopyMem)(void* dest, void* source, NI size_0) {	void* T1_;
 #line 13 "/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim"
 
 #line 13 "/home/elcritch/.asdf/installs/nim/devel/lib/system/memory.nim"
-	T1_ = (void*)0;	T1_ = memcpy(dest, source, ((size_t) (size)));}
+	T1_ = (void*)0;	T1_ = memcpy(dest, source, ((size_t) (size_0)));}
 
 #line 2138 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-static N_INLINE(void, copyMem__M04YC71iJg1N7gBF3HZTngsystem)(void* dest, void* source, NI size) {
+static N_INLINE(void, copyMem__M04YC71iJg1N7gBF3HZTngsystem)(void* dest, void* source, NI size_0) {
 #line 2139 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
 
 #line 2139 "/home/elcritch/.asdf/installs/nim/devel/lib/system.nim"
-	nimCopyMem(dest, source, size);
+	nimCopyMem(dest, source, size_0);
 }
 
 #line 52 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
@@ -161,31 +162,31 @@ static N_INLINE(NIM_BOOL*, nimErrorFlag)(void) {	NIM_BOOL* result;	result = (NIM
 	result = (&nimInErrorMode__759bT87luu8XGcbkw13FUjA);	return result;}
 
 #line 549 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-static N_INLINE(void, nimFrame)(TFrame* s) {
+static N_INLINE(void, nimFrame)(TFrame* s_0) {
 #line 550 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	{
 #line 550 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 		if (!(framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw == NIM_NIL)) goto LA3_;
 
 #line 551 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		(*s).calldepth = ((NI16) 0);	}
+		(*s_0).calldepth = ((NI16) 0);	}
 	goto LA1_;
 	LA3_: ;
 	{
 #line 554 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 
 #line 554 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		(*s).calldepth = (NI16)((*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).calldepth + ((NI16) 1));	}
+		(*s_0).calldepth = (NI16)((*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).calldepth + ((NI16) 1));	}
 	LA1_: ;
 
 #line 556 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	(*s).prev = framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
+	(*s_0).prev = framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
 #line 557 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = s;
+	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = s_0;
 #line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 	{
 #line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		if (!((*s).calldepth == ((NI16) 2000))) goto LA8_;
+		if (!((*s_0).calldepth == ((NI16) 2000))) goto LA8_;
 
 #line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
 
@@ -235,6 +236,7 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	Ni
 static N_INLINE(void, initStackBottomWith)(void* locals) {}
 
 N_LIB_PRIVATE void PreMainInner(void) {
+	stdlib_nativesocketsInit000();
 }
 
 N_LIB_PRIVATE int cmdCount;
