@@ -13,8 +13,7 @@ result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	76	
 i	i_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	31	22
 a	a	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	31	25
 b	b	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	31	28
-arguments	arguments	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	24	6
-node_name	node_name	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	25	6
+node_name	node_name	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	24	6
 einode	einode	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	27	6
 server_node	server_node	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	32	6
 eterm	eterm	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	40	22
@@ -26,8 +25,6 @@ main_msg	main_msg_2	/home/elcritch/projects/pt/third-party/esp32_nim_net_example
 rpc_msg	rpc_msg_2	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	50	10
 msg_atom	msg_atom_2	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	51	10
 rmsg	rmsg_2	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	64	10
-i	i_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	22	22
-n	n_0	/home/elcritch/.asdf/installs/nim/devel/lib/system/chcks.nim	22	25
 args	args	/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim	709	19
 name	name	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	28	4
 ip	ip	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	29	4
@@ -36,7 +33,7 @@ port	port_0	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/ein
 alivename	alivename	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	32	4
 blitTmp	blitTmp	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	27	25
 einode	einode	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	42	17
-connected`gensym25876248	connectedX60gensym25876248_	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	64	6
+connected`gensym25876246	connectedX60gensym25876246_	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	64	6
 milsecs	milsecs	/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim	3019	12
 msgtype	msgtype_1	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	40	7
 info	info	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	40	16
@@ -92,5 +89,4 @@ msg	msg	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/
 e	e	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/ei.nim	89	10
 res	res_2	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	43	10
 msg_arg	msg_arg_2	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	52	10
-dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2166	12
 locals	locals	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2113	29

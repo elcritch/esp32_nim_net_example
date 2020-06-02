@@ -21,9 +21,9 @@ proc bar*(y: int): int =
     return y * 2
 
 proc run_http_server*() {.exportc.} =
-  let arguments = commandLineParams()
-  var node_name: string = $arguments[0]
+  var node_name: string = "enode"
   echo("starting: " )
+
   var einode = newEiNode(node_name, "127.0.0.1", cookie = "secretcookie", port = 8181)
 
   einode.initialize()

@@ -259,13 +259,10 @@ dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	52	4
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29
 x	x	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	283	19
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	283	0
-add	add__dK9ajFgX5RSWQx0eHjjpjSQ	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	94	5
-oldLen	oldLen	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	101	6
-xu	xu	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	102	6
-=destroy	eqdestroy___qRVWt3jIAyom1VkyIWI7tA	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
-dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 sysFatal	sysFatal__BVaWgkQV7bsZ7qgkYxa9a0Asystem	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	7
 message	message	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	48	35
+=destroy	eqdestroy___qRVWt3jIAyom1VkyIWI7tA	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29
 =	eq___aBBXmHFBEivKqERloP6zmA_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 a	a	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	117	18
@@ -341,7 +338,6 @@ x	x	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	72	16
 newLen	newLen	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	72	31
 oldLen	oldLen	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	117	10
 xu	xu	/home/elcritch/.asdf/installs/nim/devel/lib/system/seqs_v2.nim	119	10
-=destroy	eqdestroy___0RiuPw9cXhtLB9a2rQ2jA69cg	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2166	12
 reportUnhandledError	reportUnhandledError__na8C8pUZ9cLQWVwk35l5vfw_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	403	5
 e	e	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	403	26
 reportUnhandledErrorAux	reportUnhandledErrorAux__na8C8pUZ9cLQWVwk35l5vfw_3	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	354	5
