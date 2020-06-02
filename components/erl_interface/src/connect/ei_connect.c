@@ -1235,17 +1235,21 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
      */
     err = ei_accept_ctx_t__(cbs, &ctx, (void *) &addr, &addr_len, tmo);
     if (err) {
-	printf("ei_accept" "<- ACCEPT socket accept failed: %s (%d)\n",
+        printf("ei_accept" "<- ACCEPT socket accept failed: %s (%d)\n",
                       estr(err), err);
         EI_CONN_SAVE_ERRNO__(err);
         return ERL_ERROR;
+    } else {
+        printf("ei_accept" "<- ACCEPT socket accept \n");
     }
 
     err = EI_GET_FD__(cbs, ctx, &fd);
     if (err) {
-	printf("ei_accept" "<- ACCEPT get fd failed: %s (%d)\n",
+        printf("ei_accept" "<- ACCEPT get fd failed: %s (%d)\n",
                       estr(err), err);
         EI_CONN_SAVE_ERRNO__(err);
+    } else {
+        printf("ei_accept" "<- ACCEPT get fd : \n");
     }
 
     if (addr_len != sizeof(struct sockaddr_in)) {
