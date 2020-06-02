@@ -10,6 +10,7 @@ const
   BUFSIZE* = 1000
 
 var ei_tracelevel* {.importc: "ei_tracelevel".}: cint
+var erl_errno* {.importc: "erl_errno".}: cint
 proc delay*(milsecs: int) {.importc: "delay".}
 
 proc publishServer*(einode: var EiNode; address: string = "") =
@@ -27,8 +28,10 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   echo("socket publish: " )
   delay(1_000)
 
-  if ei_publish(einode.ec.addr, einode.port.cint) == -1:
-    echo("publish error: " )
+  var published_ret = ei_publish(einode.ec.addr, einode.port.cint)
+  if published_ret < 0:
+    echo("publish error: " & $published_ret )
+    echo("publish erl_errno: " & $erl_errno )
     delay(1_000)
     raise newException(LibraryError, "ERROR: publishing on port " & $(einode.port))
 
@@ -44,14 +47,7 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   if fd == ERL_ERROR:
     raise newException(LibraryError, "ERROR: erl_accept on listen socket " & repr(socket))
 
-# proc ei_malloc(size: clong): pointer
-proc new_ei_x_size(x: ptr EiBuff; size: int): cint =
-  # x.buff = cast[cstring](ei_malloc(size))
-  x.buff = cast[cstring](alloc(size))
-  x.buffsz = size.cint
-  x.index = 0
-  return if x.buff != nil: 0 else: -1
-
+# example procs
 proc foo*(x: int): int =
     return x + 1
 proc bar*(y: int): int =
