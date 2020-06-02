@@ -20,6 +20,7 @@
 /*
  * Purpose: Connect to any node at any host. (EI version)
  */
+#define __DYNAMIC_REENT__
 
 #include "eidef.h"
 
@@ -27,30 +28,10 @@
 #include <sys/types.h>
 #include <fcntl.h>
 
-#ifdef __WIN32__
-#include <winsock2.h>
-#include <windows.h>
-#include <winbase.h>
+#include <freertos/FreeRTOS.h>
 
-#elif VXWORKS
-#include <vxWorks.h>
-#include <hostLib.h>
-#include <selectLib.h>
-#include <ifLib.h>
-#include <sockLib.h>
-#include <taskLib.h>
-#include <inetLib.h>
+#define getpid() (1)
 
-#include <unistd.h>
-#include <sys/times.h>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <timers.h> 
-
-#define getpid() taskIdSelf()
-
-#else /* some other unix */
 #include <unistd.h>
 #include <sys/times.h>
 
@@ -71,7 +52,6 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <time.h>
-#endif
 
 /* common includes */
 #include <stdio.h>
@@ -93,6 +73,8 @@
 #include "ei_resolve.h"
 #include "ei_epmd.h"
 #include "ei_internal.h"
+
+#undef _REENTRANT
 
 static int ei_connect_initialized = 0;
 int ei_tracelevel = 0;
