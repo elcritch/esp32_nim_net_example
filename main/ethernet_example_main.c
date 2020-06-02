@@ -136,10 +136,9 @@ void app_main(void)
     // ESP_LOGI(TAG, "Ethernet HW Addr %02x:%02x:%02x:%02x:%02x:%02x",
                 //   mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
 
-    vTaskDelay(2000 / portTICK_PERIOD_MS);
-    printf("NimMain!\n");
+    printf("run http server!\n");
     vTaskDelay(2000 / portTICK_PERIOD_MS);
 
-    // run_http_server();
+    run_http_server();
     // printf("run_http_server\n");
 }
