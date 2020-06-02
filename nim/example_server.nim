@@ -28,6 +28,11 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   if ei_publish(einode.ec.addr, einode.port.cint) == -1:
     raise newException(LibraryError, "ERROR: publishing on port $1" % [$(einode.port)])
 
+  echo("socket published: " )
+  delay(1_000)
+  echo("socket accept: " )
+  delay(1_000)
+
   var fd = ei_accept(einode.ec.addr,
                      socket.getFd().cint,
                      einode.conn.addr)
