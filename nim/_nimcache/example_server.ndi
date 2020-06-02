@@ -10,4 +10,6 @@ port	port_0	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/ein
 alivename	alivename	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	33	4
 blitTmp	blitTmp	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim	47	4
 einode	einode	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	43	17
+einode	einode	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim	14	20
+address	address	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/publish.nim	14	40
 locals	locals	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2113	29

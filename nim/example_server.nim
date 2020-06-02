@@ -56,8 +56,10 @@ proc run_http_server*() {.exportc.} =
   delay(1_000)
 
   # ##  Listen socket
-  # einode.publishServer(address="") 
+  einode.publishServer(address="") 
 
+  echo("published..." )
+  delay(1_000)
   # # var conn: ErlConnect
   # echo("listening on port: $1" & $port)
   # echo("Connected to `$1`" & $(cast[cstring](einode.conn.nodename[0].addr)))
