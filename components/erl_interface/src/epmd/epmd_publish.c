@@ -72,6 +72,8 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   ssize_t dlen;
   unsigned tmo = ms == 0 ? EI_SCLBK_INF_TMO : ms;
 
+  printf("ei_epmd_r4_publish: \n");
+
   if (len > sizeof(buf)-2)
   {
     erl_errno = ERANGE;
