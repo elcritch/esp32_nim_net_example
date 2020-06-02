@@ -107,7 +107,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
       return -1;
   }
 
-  EI_TRACE_CONN6("ei_epmd_r4_publish",
+  printf(
 		 "-> ALIVE2_REQ alive=%s port=%d ntype=%d "
 		 "proto=%d dist-high=%d dist-low=%d",
 		 alive,port,'H',EI_MYPROTO,EI_DIST_HIGH,EI_DIST_LOW);
@@ -118,7 +118,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   if (!err && n != 4)
       err = EIO;
   if (err) {
-    EI_TRACE_ERR0("ei_epmd_r4_publish","<- CLOSE");
+    printf("ei_epmd_r4_publish" "<- CLOSE");
     ei_close__(fd);
     EI_CONN_SAVE_ERRNO__(err);
     return -2;			/* version mismatch */
@@ -127,17 +127,17 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   /* Don't close fd here! It keeps us registered with epmd */
   s = buf;
   if (((res=get8(s)) != EI_EPMD_ALIVE2_RESP)) {  /* response */
-    EI_TRACE_ERR1("ei_epmd_r4_publish","<- unknown (%d)",res);
-    EI_TRACE_ERR0("ei_epmd_r4_publish","-> CLOSE");
+    printf("ei_epmd_r4_publish" "<- unknown (%d)",res);
+    printf("ei_epmd_r4_publish" "-> CLOSE");
     ei_close__(fd);
     erl_errno = EIO;
     return -1;
   }
 
-  EI_TRACE_CONN0("ei_epmd_r4_publish","<- ALIVE2_RESP");
+  printf("ei_epmd_r4_publish" "<- ALIVE2_RESP");
 
   if (((res=get8(s)) != 0)) {           /* 0 == success */
-      EI_TRACE_ERR1("ei_epmd_r4_publish"," result=%d (fail)",res);
+      printf("ei_epmd_r4_publish" " result=%d (fail)",res);
     ei_close__(fd);
     erl_errno = EIO;
     return -1;
@@ -145,7 +145,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
 
   creation = get16be(s);
 
-  EI_TRACE_CONN2("ei_epmd_r4_publish",
+  printf("ei_epmd_r4_publish"
 		 " result=%d (ok) creation=%d",res,creation);
 
   /* probably should save fd so we can close it later... */
