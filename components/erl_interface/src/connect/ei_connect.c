@@ -77,7 +77,7 @@
 #undef _REENTRANT
 
 static int ei_connect_initialized = 0;
-int ei_tracelevel = 0;
+int ei_tracelevel = 5;
 
 #define COOKIE_FILE "/.erlang.cookie"
 #define EI_MAX_HOME_PATH 1024

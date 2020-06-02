@@ -23,7 +23,7 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   socket.setSockOpt(OptKeepAlive, true)
   socket.listen()
   einode.sock = some(socket)
-  echo("socket listening: " & $repr(socket) )
+  echo("socket listening: " & $repr(socket.getFd()) )
   delay(1_000)
   echo("socket publish: " )
   delay(1_000)
