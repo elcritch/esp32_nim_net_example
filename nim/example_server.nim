@@ -9,6 +9,8 @@ import system/ansi_c
 const
   BUFSIZE* = 1000
 
+proc delay*(milsecs: int) {.importc: "delay".}
+
 # proc ei_malloc(size: clong): pointer
 proc new_ei_x_size(x: ptr EiBuff; size: int): cint =
   # x.buff = cast[cstring](ei_malloc(size))
@@ -26,7 +28,7 @@ proc run_http_server*() {.exportc.} =
   cprintf("starting: \n")
   for i in 1..10:
     echo("starting: " & $i)
-    os.sleep(2_000)
+    delay(2_000)
     echo("\n")
 
   echo("done: ")
@@ -34,7 +36,7 @@ proc run_http_server*() {.exportc.} =
 proc other_run_http_server*() {.exportc.} =
   cprintf("starting: " )
   # vTaskDelay(2000 / portTICK_PERIOD_MS);
-  os.sleep(1_000)
+  delay(1_000)
 
 
   var node_name = "cnode1"

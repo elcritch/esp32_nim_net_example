@@ -71,6 +71,11 @@ void run_http_server();
 //#define GPIO_OUTPUT_PIN_SEL  ((1ULL<<GPIO_OUTPUT_IO_5) | (1ULL<<GPIO_OUTPUT_IO_4))
 #define GPIO_OUTPUT_PIN_SEL  ( (1ULL<<GPIO_OUTPUT_IO_4))
 
+void delay(int milsecs)
+{
+    vTaskDelay(milsecs / portTICK_PERIOD_MS);
+}
+
 void app_main(void)
 {
     vTaskDelay(2000 / portTICK_PERIOD_MS);
