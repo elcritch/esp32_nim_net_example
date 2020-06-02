@@ -11,6 +11,13 @@ const
 # int gethostname(char *__name, size_t __len);
 var node_name = "cnode"
 
+type TickType* {.importc: "TickType_t", header: """#include <freertos/FreeRTOS.h>
+                                                    #include <freertos/task.h>""".} = distinct uint32
+var portTICK_PERIOD_MS* {.importc: "portTICK_PERIOD_MS", header: """#include <freertos/FreeRTOS.h>
+                                                    #include <freertos/task.h>""".}: cint
+proc vTaskDelay*(ticks: TickType) {.importc: "TickType_t", header: """#include <freertos/FreeRTOS.h>
+                                                    #include <freertos/task.h>""".}
+
 proc gethostname*(name: cstring, len: csize): cint {.exportc.} =
   copyMem(name, node_name.cstring, len(node_name))
 
@@ -32,7 +39,11 @@ proc run_http_server*() {.exportc.} =
   var server_node = "e1@127.0.0.1"
   einode.connectServer(server_node):
     echo("Warning: unable to connect to node: " & server_node)
-    os.sleep(1_000)
+    # os.sleep(1_000)
+    var t:TickType = (1_000 div portTICK_PERIOD_MS).TickType
+    vTaskDelay(t)
+
+
     
   echo("Connected to: " & server_node);
 

@@ -7,8 +7,6 @@
 /* section: NIM_merge_HEADERS */
 
 #include "nimbase.h"
-#include <freertos/FreeRTOS.h>
-                                                     #include <freertos/task.h>
 #undef LANGUAGE_C
 #undef MIPSEB
 #undef MIPSEL
@@ -24,17 +22,9 @@
 #undef unix
 
 /* section: NIM_merge_FRAME_DEFINES */
-  #  define nimfr_(proc, file) \
-      TFrame FR_; \
-      FR_.procname = proc; FR_.filename = file; FR_.line = 0; FR_.len = 0; nimFrame(&FR_);
+#define nimfr_(x, y)
+#define nimln_(x, y)
 
-  #  define nimfrs_(proc, file, slots, length) \
-      struct {TFrame* prev;NCSTRING procname;NI line;NCSTRING filename; NI len; VarSlot s[slots];} FR_; \
-      FR_.procname = proc; FR_.filename = file; FR_.line = 0; FR_.len = length; nimFrame((TFrame*)&FR_);
-
-  #  define nimln_(n, file) \
-      FR_.line = n; FR_.filename = file;
-  
 /* section: NIM_merge_FORWARD_TYPES */
 typedef struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ tySequence__sM4lkSb7zS6F7OVMvW9cffQ;
 typedef struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content;
@@ -59,103 +49,9 @@ struct tySequence__sM4lkSb7zS6F7OVMvW9cffQ_Content { NI cap; NimStringV2 data[SE
 #endif
 
       
-/* section: NIM_merge_PROC_HEADERS */
-N_LIB_PRIVATE N_NOINLINE(void, raiseDivByZero)(void);
-static N_INLINE(NIM_BOOL, nimDivInt)(NI a, NI b, NI* res);
-N_LIB_PRIVATE N_NOINLINE(void, raiseOverflow)(void);
-static N_INLINE(void, nimFrame)(TFrame* s_0);
-N_LIB_PRIVATE N_NOINLINE(void, callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw)(void);
-static N_INLINE(void, popFrame)(void);
-
 /* section: NIM_merge_VARS */
 N_LIB_PRIVATE NIM_THREADVAR tySequence__sM4lkSb7zS6F7OVMvW9cffQ environment__mlhK49b6YMgc9cgrcYkKq9a3g;
 N_LIB_PRIVATE NIM_THREADVAR NIM_BOOL envComputed__LLyFo9bsdu1ZXMDvAe8DhrQ;
 extern NCSTRING* environ;
 extern int cmdCount;
 extern NCSTRING* cmdLine;
-extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-
-/* section: NIM_merge_PROCS */
-
-#line 122 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-static N_INLINE(NIM_BOOL, nimDivInt)(NI a, NI b, NI* res) {	NIM_BOOL result;	result = (NIM_BOOL)0;
-#line 117 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-	{		NIM_BOOL T3_;
-#line 117 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-		T3_ = (NIM_BOOL)0;
-#line 117 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-		T3_ = (a == ((NI) (-2147483647 -1)));		if (!(T3_)) goto LA4_;
-
-#line 117 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-		T3_ = (b == ((NI) -1));		LA4_: ;
-		if (!T3_) goto LA5_;
-
-#line 118 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-		result = NIM_TRUE;	}
-	goto LA1_;
-	LA5_: ;
-	{
-#line 120 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-
-#line 120 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"
-		(*res) = (NI)(a / b);	}
-	LA1_: ;
-	return result;}
-
-#line 549 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-static N_INLINE(void, nimFrame)(TFrame* s_0) {
-#line 550 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	{
-#line 550 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		if (!(framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw == NIM_NIL)) goto LA3_;
-
-#line 551 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		(*s_0).calldepth = ((NI16) 0);	}
-	goto LA1_;
-	LA3_: ;
-	{
-#line 554 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-
-#line 554 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		(*s_0).calldepth = (NI16)((*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).calldepth + ((NI16) 1));	}
-	LA1_: ;
-
-#line 556 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	(*s_0).prev = framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
-#line 557 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = s_0;
-#line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	{
-#line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		if (!((*s_0).calldepth == ((NI16) 2000))) goto LA8_;
-
-#line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-
-#line 558 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-		callDepthLimitReached__mMRdr4sgmnykA9aWeM9aDZlw();
-	}
-	LA8_: ;
-}
-
-#line 85 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-static N_INLINE(void, popFrame)(void) {
-#line 86 "/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim"
-	framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw = (*framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw).prev;}
-
-#line 3019 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-N_LIB_PRIVATE N_NIMCALL(void, nossleep)(NI milsecs) {	NU32 t;	NI TM__yu6cxgKBBXbNsTkT9cyMd4g_2;	nimfr_("sleep", "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim");{
-#line 3024 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-	nimln_(3024, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim");
-#line 3024 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-	if (((NI) (portTICK_PERIOD_MS)) == 0){ raiseDivByZero(); goto BeforeRet_;}	if (nimDivInt(milsecs, ((NI) (portTICK_PERIOD_MS)), &TM__yu6cxgKBBXbNsTkT9cyMd4g_2)) { raiseOverflow(); goto BeforeRet_;};	t = ((NU32) ((NI)(TM__yu6cxgKBBXbNsTkT9cyMd4g_2)));
-#line 3025 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-	nimln_(3025, "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim");
-#line 3025 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/os.nim"
-	TickType_t(t);
-	}BeforeRet_: ;
-	popFrame();}
