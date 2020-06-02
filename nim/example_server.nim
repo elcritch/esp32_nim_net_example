@@ -24,6 +24,9 @@ proc bar*(y: int): int =
 
 proc run_http_server*() {.exportc.} =
   cprintf("starting: " )
+
+proc other_run_http_server*() {.exportc.} =
+  cprintf("starting: " )
   # vTaskDelay(2000 / portTICK_PERIOD_MS);
   os.sleep(1_000)
 
