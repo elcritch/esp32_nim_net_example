@@ -308,12 +308,6 @@ nn	nn	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	304	10
 half	half	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	310	8
 t	t	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	312	8
 res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	77	10
-substr	substr__2yh9cer0ymNRHlOOg8P7IuA	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2950	5
-result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2950	0
-first	first_2	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2965	6
-L	L	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2966	6
-i	i_1	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2968	6
-res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	77	10
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	287	0
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	290	0
 reportUnhandledError	reportUnhandledError__na8C8pUZ9cLQWVwk35l5vfw_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	403	5

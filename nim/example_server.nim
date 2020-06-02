@@ -26,7 +26,9 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   delay(1_000)
 
   if ei_publish(einode.ec.addr, einode.port.cint) == -1:
-    raise newException(LibraryError, "ERROR: publishing on port $1" % [$(einode.port)])
+    echo("publish error: " )
+    delay(1_000)
+    raise newException(LibraryError, "ERROR: publishing on port " & $(einode.port))
 
   echo("socket published: " )
   delay(1_000)
