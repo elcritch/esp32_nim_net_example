@@ -10,13 +10,12 @@ all: nim
 		# -d:use_malloc
 		#--gc:refc \
 
-
-
 nim: clean
 	nim c \
 		--gc:arc \
 		-d:debug \
 		-d:useMalloc \
+		--exceptions:goto \
 		--os:freertos \
 		--no_main \
 		--cpu:$(NIM_CPU) \

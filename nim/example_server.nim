@@ -10,7 +10,7 @@ const
   BUFSIZE* = 1000
 
 var ei_tracelevel* {.importc: "ei_tracelevel".}: cint
-var erl_errno* {.importc: "erl_errno".}: cint
+var erl_errno* {.importc: "__erl_errno", volatile.}: cint
 proc delay*(milsecs: int) {.importc: "delay".}
 
 proc publishServer*(einode: var EiNode; address: string = "") =

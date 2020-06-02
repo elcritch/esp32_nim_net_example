@@ -275,7 +275,7 @@ static NIM_CONST tyArray__nHXaesL0DJZHyVS07ARPRA TM__F2tqCOO6WDiND6xhXZOuUw_42 =
 
 /* section: NIM_merge_VARS */
 extern int ei_tracelevel;
-extern int erl_errno;
+extern int volatile __erl_errno;
 extern int SOMAXCONN__0XWtgJz0atYHiEz9b9aVOcQg;
 extern NIM_THREADVAR NIM_BOOL nimInErrorMode__759bT87luu8XGcbkw13FUjA;
 extern NIM_THREADVAR TFrame* framePtr__HRfVMH3jYeBJz6Q6X9b6Ptw;
@@ -583,7 +583,7 @@ N_LIB_PRIVATE N_NIMCALL(void, publishServer__RniT8wB6o9a0mWcjoSTgqnQ)(tyObject_E
 		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");
 #line 34 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 		nimln_(34, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");		T15_.len = 0; T15_.p = NIM_NIL;		T15_ = nimIntToStr(((NI) (erl_errno)));
+"m/example_server.nim");		T15_.len = 0; T15_.p = NIM_NIL;		T15_ = nimIntToStr(((NI) (__erl_errno)));
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 		nimln_(49, "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim");		eqsink___aBBXmHFBEivKqERloP6zmA((&colontmpD__6), T15_);
 		T14_ = rawNewString(colontmpD__6.len + 19);appendString((&T14_), TM__F2tqCOO6WDiND6xhXZOuUw_27);appendString((&T14_), colontmpD__6);
