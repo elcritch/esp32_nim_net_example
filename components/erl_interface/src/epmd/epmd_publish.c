@@ -97,7 +97,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
                           /* no extra string */
 
   printf("ei_epmd_r4_publish: ei_epmd_connect_tmo\n");
-
+  
   if ((fd = ei_epmd_connect_tmo(NULL,ms)) < 0) {
     printf("ei_epmd_r4_publish: fd\n");
     return fd;

@@ -28,15 +28,15 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   echo("socket publish: " )
   delay(1_000)
 
-  var published_ret = ei_publish(einode.ec.addr, einode.port.cint)
-  if published_ret < 0:
-    echo("publish error: " & $published_ret )
-    echo("publish erl_errno: " & $erl_errno )
-    delay(1_000)
-    raise newException(LibraryError, "ERROR: publishing on port " & $(einode.port))
+  # var published_ret = ei_publish(einode.ec.addr, einode.port.cint)
+  # if published_ret < 0:
+  #   echo("publish error: " & $published_ret )
+  #   echo("publish erl_errno: " & $erl_errno )
+  #   delay(1_000)
+  #   raise newException(LibraryError, "ERROR: publishing on port " & $(einode.port))
 
-  echo("socket published: " )
-  delay(1_000)
+  # echo("socket published: " )
+  # delay(1_000)
   echo("socket accept: " )
   delay(1_000)
 
