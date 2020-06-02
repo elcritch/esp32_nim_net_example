@@ -96,7 +96,12 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   put16be(s,elen);        /* length of extra string = 0 */
                           /* no extra string */
 
-  if ((fd = ei_epmd_connect_tmo(NULL,ms)) < 0) return fd;
+  printf("ei_epmd_r4_publish: ei_epmd_connect_tmo\n");
+
+  if ((fd = ei_epmd_connect_tmo(NULL,ms)) < 0) {
+    printf("ei_epmd_r4_publish: fd\n");
+    return fd;
+  }
 
   dlen = (ssize_t) len+2;
   err = ei_write_fill_t__(fd, buf, &dlen, tmo);
