@@ -33,7 +33,7 @@ proc run_http_server*() {.exportc.} =
   echo("done: ")
 
 proc other_run_http_server*() {.exportc.} =
-  cprintf("starting: " )
+  echo("starting: " )
   # vTaskDelay(2000 / portTICK_PERIOD_MS);
   delay(1_000)
 
@@ -42,6 +42,8 @@ proc other_run_http_server*() {.exportc.} =
   var port = Port(5000)
 
   echo("starting: " )
+  delay(1_000)
+
   var einode: EiNode = newEiNode(
     node_name,
     "127.0.0.1",
@@ -51,48 +53,50 @@ proc other_run_http_server*() {.exportc.} =
   )
 
   einode.initialize()
+  echo("initialized..." )
+  delay(1_000)
 
-  ##  Listen socket
-  einode.publishServer(address="") 
+  # ##  Listen socket
+  # einode.publishServer(address="") 
 
-  # var conn: ErlConnect
-  echo("listening on port: $1" & $port)
-  echo("Connected to `$1`" & $(cast[cstring](einode.conn.nodename[0].addr)))
+  # # var conn: ErlConnect
+  # echo("listening on port: $1" & $port)
+  # echo("Connected to `$1`" & $(cast[cstring](einode.conn.nodename[0].addr)))
 
-  # var info: ErlangMsg
-  var emsg: EiBuff
+  # # var info: ErlangMsg
+  # var emsg: EiBuff
 
-  discard new_ei_x_size(emsg.addr, 128)
+  # discard new_ei_x_size(emsg.addr, 128)
 
-  ##  Lopp flag
+  # ##  Lopp flag
  
-  ##  Lopp flag
-  for (msgtype, info, eterm) in receive(einode):
-    case msgtype
-    of REG_SEND:
-      var res: cint = 0
+  # ##  Lopp flag
+  # for (msgtype, info, eterm) in receive(einode):
+  #   case msgtype
+  #   of REG_SEND:
+  #     var res: cint = 0
 
-      echo("erl_reg_send: msgtype: $1 " %
-              [ $info.msgtype, ])
+  #     echo("erl_reg_send: msgtype: $1 " %
+  #             [ $info.msgtype, ])
 
-      var main_msg: seq[ErlTerm] = eterm.getTuple()
+  #     var main_msg: seq[ErlTerm] = eterm.getTuple()
 
-      var rpc_msg = main_msg[2].getTuple()
-      var msg_atom = rpc_msg[0].getAtom()
-      var msg_arg = rpc_msg[1].getInt32()
+  #     var rpc_msg = main_msg[2].getTuple()
+  #     var msg_atom = rpc_msg[0].getAtom()
+  #     var msg_arg = rpc_msg[1].getInt32()
 
-      if msg_atom.n == "foo":
-        echo( "foo: " & $msg_arg)
-        res = foo(msg_arg).cint
-      elif msg_atom.n == "bar":
-        echo( "bar: " & $msg_arg)
-        res = bar(msg_arg).cint
-      else:
-        echo("other: " & $msg_arg)
-        echo("other message: " & $msg_atom)
+  #     if msg_atom.n == "foo":
+  #       echo( "foo: " & $msg_arg)
+  #       res = foo(msg_arg).cint
+  #     elif msg_atom.n == "bar":
+  #       echo( "bar: " & $msg_arg)
+  #       res = bar(msg_arg).cint
+  #     else:
+  #       echo("other: " & $msg_arg)
+  #       echo("other message: " & $msg_atom)
 
-      var rmsg = newETuple(@[newEAtom("cnode"), newETerm(res)])
+  #     var rmsg = newETuple(@[newEAtom("cnode"), newETerm(res)])
 
-      einode.send(to = info.`from`, msg = rmsg)
-    else:
-      echo("unhandled message: " & $msgtype)
+  #     einode.send(to = info.`from`, msg = rmsg)
+  #   else:
+  #     echo("unhandled message: " & $msgtype)

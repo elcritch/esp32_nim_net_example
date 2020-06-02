@@ -53,8 +53,6 @@ typedef struct TNimType TNimType;
 typedef struct tySequence__uB9b75OUPRENsBAu4AnoePA tySequence__uB9b75OUPRENsBAu4AnoePA;
 typedef struct tySequence__uB9b75OUPRENsBAu4AnoePA_Content tySequence__uB9b75OUPRENsBAu4AnoePA_Content;
 typedef struct TNimNode TNimNode;
-typedef struct tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw;
-typedef struct tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg;
 typedef struct tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA tyObject_StackTraceEntry__oLyohQ7O2XOvGnflOss8EA;
 
 /* section: NIM_merge_TYPES */
@@ -122,9 +120,6 @@ struct tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA {  tyObject_CatchableError__qrLS
 struct tyObject_LibraryError__x1muge9crz9aAVqWWUrEL9aXg {  tyObject_OSError__BeJgrOdDsczOwEWOZbRfKA Sup;};
 struct TNimNode {char dummy;
 };
-struct tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg {NimStringV2 data;
-int pos;
-};
 typedef N_CDECL_PTR(int, tyProc__lt6mMIQmO7J9bNIwRI0wEEA) (void** ctx, void* setup_ctx);
 typedef N_CDECL_PTR(int, tyProc__fbYpjfe38x3ujjAmVRbI1Q) (void* ctx);
 typedef N_CDECL_PTR(int, tyProc__v9aPfdhH7JoqXpf2LwOI87w) (void* ctx, void* addr, int* len_0, int backlog);
@@ -173,8 +168,6 @@ static N_INLINE(NIM_BOOL, nimAddInt)(NI a, NI b, NI* res);
 N_LIB_PRIVATE N_NOINLINE(void, raiseRangeErrorI)(NI64 i_0, NI64 a, NI64 b);
 N_LIB_PRIVATE N_NIMCALL(NimStringV2, rawNewString)(NI space);
 N_LIB_PRIVATE N_NIMCALL(void, raiseExceptionEx)(Exception* e, NCSTRING ename, NCSTRING procname, NCSTRING filename, NI line);
-N_LIB_PRIVATE N_NIMCALL(tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg*, termToBinary__dFz9bGK69cdqH9cM5RPmVm30Q)(tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw* node_0, NI capacity);
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___lCA9aSFzLFyZupo8tV2N0WA)(tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg** dest);
 
 /* section: NIM_merge_DATA */
 static const struct {
@@ -630,34 +623,5 @@ N_LIB_PRIVATE N_NIMCALL(void, initialize__bpVAYdS89a2bTdZIJLaDSZA)(tyObject_EiNo
 #line 49 "/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim"
 		eqdestroy___dS1BF3Vxjg9aJMmmhVJKSpQ((&alive));
 	}
-	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
-	popFrame();}
-
-#line 121 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-N_LIB_PRIVATE N_NIMCALL(void, send__5jeIoLHcBvtGb3uK9cIpxYA)(tyObject_EiNodecolonObjectType___alZFeXtmVkgSGjdnJX9a4PA** einode, erlang_pid to_0, tyObject_ErlTermObj__9czw2IWwdx6s2b4MjcXCfWw** msg) {	tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg* ssout;	erlang_pid pid_1;	int T2_;NIM_BOOL oldNimErrFin1_;NIM_BOOL* nimErr_;	nimfr_("send", "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/einode/src/einode.nim");{nimErr_ = nimErrorFlag();	ssout = (tyObject_ErlStreamObj__Dr16Cs3rknU23Ky2MqRyLg*)0;
-#line 122 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-	nimln_(122, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/einode/src/einode.nim");	pid_1 = to_0;
-#line 123 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-	nimln_(123, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/einode/src/einode.nim");
-#line 123 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-	ssout = termToBinary__dFz9bGK69cdqH9cM5RPmVm30Q((*msg), ((NI) 128));	if (NIM_UNLIKELY(*nimErr_)) goto LA1_;
-#line 124 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-	nimln_(124, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/einode/src/einode.nim");
-#line 124 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-
-#line 124 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim"
-	T2_ = (int)0;	T2_ = ei_send((*(*einode)).fd, (&pid_1), nimToCStringConv((*ssout).data), (*ssout).pos);	(void)(T2_);
-	{		LA1_:;	}
-	{		oldNimErrFin1_ = *nimErr_; *nimErr_ = NIM_FALSE;
-#line 602 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
-		nimln_(602, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/einode/src/einode/codec.nim");
-#line 602 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim"
-		eqdestroy___lCA9aSFzLFyZupo8tV2N0WA(&ssout);
-		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;		*nimErr_ = oldNimErrFin1_;	}
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();}

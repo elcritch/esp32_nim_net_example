@@ -10,11 +10,6 @@ alive	alive	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/ein
 node_addr	node_addr	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	48	6
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 src	src	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
-send	send__5jeIoLHcBvtGb3uK9cIpxYA	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	121	5
-ssout	ssout	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	123	6
-pid	pid_1	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	122	6
-node	node_0	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim	716	19
-capacity	capacity	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim	716	34
 ctx	ctx	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/ei.nim	338	41
 setup_ctx	setup_ctx	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/ei.nim	338	59
 ctx	ctx	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/ei.nim	340	39
