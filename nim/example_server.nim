@@ -24,13 +24,13 @@ proc foo*(x: int): int =
 proc bar*(y: int): int =
     return y * 2
 
-# proc run_http_server*() {.exportc.} =
-#   cprintf("starting: \n")
-#   for i in 1..10:
-#     echo("starting: " & $i)
-#     delay(1_000)
+proc count_down*() =
+  cprintf("starting: \n")
+  for i in 1..10:
+    echo("starting: " & $i)
+    delay(1_000)
 
-#   echo("done: ")
+  echo("done: ")
 
 proc run_http_server*() {.exportc.} =
   echo("starting: " )
@@ -59,9 +59,7 @@ proc run_http_server*() {.exportc.} =
   einode.publishServer(address="") 
 
   echo("published..." )
-  delay(1_000)
-  echo("published..." )
-  delay(1_000)
+  count_down()
   # # var conn: ErlConnect
   # echo("listening on port: $1" & $port)
   # echo("Connected to `$1`" & $(cast[cstring](einode.conn.nodename[0].addr)))
