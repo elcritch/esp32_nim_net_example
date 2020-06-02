@@ -1203,6 +1203,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
     unsigned tmo = ms == 0 ? EI_SCLBK_INF_TMO : ms;
 
     erl_errno = EIO;		/* Default error code */
+    printf("ei_accept start" "\n");
     
     err = EI_GET_CBS_CTX__(&cbs, &ctx, lfd);
     if (err) {
@@ -1219,7 +1220,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
     }
 
 
-    printf("ei_accept" "<- ACCEPT waiting for connection");
+    printf("ei_accept" "<- ACCEPT waiting for connection\n");
 
     if (conp) {
         her_name = &conp->nodename[0];
@@ -1234,7 +1235,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
      */
     err = ei_accept_ctx_t__(cbs, &ctx, (void *) &addr, &addr_len, tmo);
     if (err) {
-	printf("ei_accept" "<- ACCEPT socket accept failed: %s (%d)",
+	printf("ei_accept" "<- ACCEPT socket accept failed: %s (%d)\n",
                       estr(err), err);
         EI_CONN_SAVE_ERRNO__(err);
         return ERL_ERROR;
@@ -1242,7 +1243,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
 
     err = EI_GET_FD__(cbs, ctx, &fd);
     if (err) {
-	printf("ei_accept" "<- ACCEPT get fd failed: %s (%d)",
+	printf("ei_accept" "<- ACCEPT get fd failed: %s (%d)\n",
                       estr(err), err);
         EI_CONN_SAVE_ERRNO__(err);
     }
@@ -1250,27 +1251,27 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
     if (addr_len != sizeof(struct sockaddr_in)) {
         if (addr_len < (offsetof(struct sockaddr_in, sin_addr)
                         + sizeof(addr.sin_addr))) {
-            printf("ei_accept" "<- ACCEPT get addr failed");
+            printf("ei_accept" "<- ACCEPT get addr failed\n");
             goto error;
         }
     }
 
     err = cbs->handshake_packet_header_size(ctx, &pkt_sz);
     if (err) {
-	printf("ei_accept" "<- ACCEPT get packet size failed: %s (%d)",
+	printf("ei_accept" "<- ACCEPT get packet size failed: %s (%d)\n",
                       estr(err), err);
         EI_CONN_SAVE_ERRNO__(err);
     }
     
-    printf("ei_accept" "<- ACCEPT connected to remote");
+    printf("ei_accept" "<- ACCEPT connected to remote\n");
     
     if (recv_name(cbs, ctx, pkt_sz, &her_version, &her_flags, her_name, tmo)) {
-	printf("ei_accept" "<- ACCEPT initial ident failed");
+	printf("ei_accept" "<- ACCEPT initial ident failed\n");
 	goto error;
     }
     
     if (her_version <= 4) {
-	printf("ei_accept" "<- ACCEPT remote version not compatible");
+	printf("ei_accept" "<- ACCEPT remote version not compatible\n");
 	goto error;
     }
     else {
@@ -1300,7 +1301,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
     if (cbs->accept_handshake_complete) {
         err = cbs->accept_handshake_complete(ctx);
         if (err) {
-            printf("ei_xconnect" "-> ACCEPT handshake failed: %s (%d)",
+            printf("ei_xconnect" "-> ACCEPT handshake failed: %s (%d)\n",
                           estr(err), err);
             close_connection(cbs, ctx, fd);
             EI_CONN_SAVE_ERRNO__(err);
@@ -1308,13 +1309,13 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
         }
     }
     
-    printf("ei_accept" "<- ACCEPT (ok) remote = %s",her_name);
+    printf("ei_accept" "<- ACCEPT (ok) remote = %s\n",her_name);
 
     erl_errno = 0;		/* No error */
     return fd;
     
 error:
-    printf("ei_accept" "<- ACCEPT failed");
+    printf("ei_accept" "<- ACCEPT failed\n");
     abort_connection(cbs, ctx);
     return ERL_ERROR;
 } /* ei_accept */
