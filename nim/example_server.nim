@@ -9,11 +9,13 @@ import system/ansi_c
 const
   BUFSIZE* = 1000
 
+var ei_tracelevel* {.importc: "ei_tracelevel".}: cint
 proc delay*(milsecs: int) {.importc: "delay".}
 
 proc publishServer*(einode: var EiNode; address: string = "") =
 
   echo("socket start: " )
+  ei_tracelevel = 5
   var socket: Socket = newSocket()
   socket.bindAddr(Port(einode.port), address=address) # bind all
   socket.setSockOpt(OptReuseAddr, true)
