@@ -535,31 +535,6 @@ static N_INLINE(NIM_BOOL, nimDecRefIsLast)(void* p_0) {	NIM_BOOL result;	nimfr_(
 	popFrame();	return result;}
 
 #line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___LRnX9aE1u4bAexvcX0iL5Qg)(tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ** dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	{		NIM_BOOL T3_;
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-		T3_ = (NIM_BOOL)0;		T3_ = nimDecRefIsLast((*dest));		if (!T3_) goto LA4_;
-
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-		eqdestroy___1TCKL9aWTg3J2fdjyrLXdQw((*dest));
-		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-		nimRawDispose((*dest));
-	}
-	LA4_: ;
-
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
-	(*dest) = NIM_NIL;	}BeforeRet_: ;
-}
-
-#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 N_LIB_PRIVATE N_NIMCALL(void, eqsink___uz5bm6GTj6lhUqoWSCWdvg)(tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ** dest, tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ* src) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
 #line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 	{		NIM_BOOL T3_;
@@ -582,6 +557,31 @@ N_LIB_PRIVATE N_NIMCALL(void, eqsink___uz5bm6GTj6lhUqoWSCWdvg)(tyObject_SocketIm
 
 #line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
 	(*dest) = src;	}BeforeRet_: ;
+}
+
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+N_LIB_PRIVATE N_NIMCALL(void, eqdestroy___LRnX9aE1u4bAexvcX0iL5Qg)(tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ** dest) {NIM_BOOL* nimErr_;{nimErr_ = nimErrorFlag();
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	{		NIM_BOOL T3_;
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+		T3_ = (NIM_BOOL)0;		T3_ = nimDecRefIsLast((*dest));		if (!T3_) goto LA4_;
+
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+		eqdestroy___1TCKL9aWTg3J2fdjyrLXdQw((*dest));
+		if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+		nimRawDispose((*dest));
+	}
+	LA4_: ;
+
+#line 207 "/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim"
+	(*dest) = NIM_NIL;	}BeforeRet_: ;
 }
 
 #line 52 "/home/elcritch/.asdf/installs/nim/devel/lib/system/integerops.nim"

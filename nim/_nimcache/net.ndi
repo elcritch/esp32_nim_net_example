@@ -38,8 +38,8 @@ result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	1033	0
 listen	listen__VTYZW8ymcSe8kkgeKu8O5g	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	860	5
 socket	socket_0	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	256	13
 backlog	backlog	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	256	35
-=destroy	eqdestroy___LRnX9aE1u4bAexvcX0iL5Qg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
 =sink	eqsink___uz5bm6GTj6lhUqoWSCWdvg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
+=destroy	eqdestroy___LRnX9aE1u4bAexvcX0iL5Qg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
 =	eq___uz5bm6GTj6lhUqoWSCWdvg_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
 getFd	getFd__hPmmRa30uwmk5LP7qeLdNA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	1568	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	1568	0

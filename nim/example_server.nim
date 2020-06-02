@@ -21,14 +21,6 @@ proc foo*(x: int): int =
 proc bar*(y: int): int =
     return y * 2
 
-proc my_listen(port: Port): Socket =
-  var socket = newSocket()
-  socket.bindAddr(port, address="")
-  socket.setSockOpt(OptReuseAddr, true)
-  socket.setSockOpt(OptKeepAlive, true)
-  socket.listen()
-  return socket
-
 proc run_http_server*() {.exportc.} =
   var node_name = "cnode1"
   var port = Port(5000)
@@ -45,12 +37,11 @@ proc run_http_server*() {.exportc.} =
   einode.initialize()
 
   ##  Listen socket
-  var sock = my_listen(port)
   einode.publishServer(address="") 
 
   # var conn: ErlConnect
-  # echo("listening on port: $1" % [$port])
-  # echo("Connected to `$1`" % [ $(cast[cstring](conn.nodename[0].addr))])
+  echo("listening on port: $1" & $port)
+  echo("Connected to `$1`" & $(cast[cstring](einode.conn.nodename[0].addr)))
 
   # var info: ErlangMsg
   var emsg: EiBuff
