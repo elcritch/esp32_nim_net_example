@@ -80,12 +80,12 @@ void ei_trace_printf(const char *name, int level, const char *format,...)
 
     va_start(args, format);
 
-    time(&now);
-    timestr = (char *)ctime(&now);
-    sprintf(buf, "%s: %.*s: ", name, (int) strlen(timestr)-1, timestr);
+    // time(&now);
+    // timestr = (char *)ctime(&now);
+    // sprintf(buf, "%s: %.*s: ", name, (int) strlen(timestr)-1, timestr);
     len = strlen(buf);
     vsprintf(buf + len, format, args);
-    fprintf(stderr,"%s\r\n",buf);
+    printf("%s\r\n",buf);
     va_end(args);
 }
 
