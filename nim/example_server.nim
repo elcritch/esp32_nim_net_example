@@ -24,19 +24,18 @@ proc foo*(x: int): int =
 proc bar*(y: int): int =
     return y * 2
 
+# proc run_http_server*() {.exportc.} =
+#   cprintf("starting: \n")
+#   for i in 1..10:
+#     echo("starting: " & $i)
+#     delay(1_000)
+
+#   echo("done: ")
+
 proc run_http_server*() {.exportc.} =
-  cprintf("starting: \n")
-  for i in 1..10:
-    echo("starting: " & $i)
-    delay(1_000)
-
-  echo("done: ")
-
-proc other_run_http_server*() {.exportc.} =
   echo("starting: " )
   # vTaskDelay(2000 / portTICK_PERIOD_MS);
   delay(1_000)
-
 
   var node_name = "cnode1"
   var port = Port(5000)
