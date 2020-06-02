@@ -1233,6 +1233,7 @@ int ei_accept_tmo(ei_cnode* ec, int lfd, ErlConnect *conp, unsigned ms)
      * ei_accept_ctx_t__() replaces the pointer to the listen context
      * with a pointer to the accepted connection context on success.
      */
+    printf("ei_accept" "<- ACCEPT ei_accept_ctx_t__ \n");
     err = ei_accept_ctx_t__(cbs, &ctx, (void *) &addr, &addr_len, tmo);
     if (err) {
         printf("ei_accept" "<- ACCEPT socket accept failed: %s (%d)\n",
