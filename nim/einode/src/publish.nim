@@ -1,6 +1,5 @@
 
 import strutils
-import os
 import posix
 import net
 import options
@@ -9,24 +8,24 @@ import einode/codec
 import einode/ei
 import einode
 
-export codec
-export ei
+# export codec
+# export ei
 
 proc publishServer*(einode: var EiNode; address: string = "") =
 
-  var listen = newSocket()
-  listen.bindAddr(einode.port, address=address) # bind all
-  listen.setSockOpt(OptReuseAddr, true)
-  listen.setSockOpt(OptKeepAlive, true)
-  listen.listen()
+  var socket: Socket = newSocket()
+  socket.bindAddr(Port(einode.port), address=address) # bind all
+  socket.setSockOpt(OptReuseAddr, true)
+  socket.setSockOpt(OptKeepAlive, true)
+  socket.listen()
 
-  einode.listen = some(listen)
+  einode.sock = some(socket)
   if ei_publish(einode.ec.addr, einode.port.cint) == -1:
     raise newException(LibraryError, "ERROR: publishing on port $1" % [$(einode.port)])
 
   var fd = ei_accept(einode.ec.addr,
-                     listen.getFd().cint,
+                     socket.getFd().cint,
                      einode.conn.addr)
 
   if fd == ERL_ERROR:
-    raise newException(LibraryError, "ERROR: erl_accept on listen socket $1" % [repr(listen)])
+    raise newException(LibraryError, "ERROR: erl_accept on listen socket " & repr(socket))

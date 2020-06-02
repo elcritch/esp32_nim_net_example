@@ -1,7 +1,7 @@
 
-import strutils
 import options
 import posix
+import net
 
 import einode/codec
 import einode/ei
@@ -20,6 +20,7 @@ type
     conn*: ErlConnect
     fd*: cint
     loop*: bool
+    sock*: Option[Socket]
     # info: ErlangMsg
     # emsg: EiBuff
 

@@ -201,3 +201,8 @@ N_LIB_PRIVATE N_NIMCALL(void, echoBinSafe)(NimStringV2* args, NI argsLen_0) {	in
 	T6_ = (int)0;	T6_ = fflush(stdout);	(void)(T6_);
 	}BeforeRet_: ;
 	popFrame();}
+
+#line 326 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+N_LIB_PRIVATE N_NIMCALL(NIM_BOOL, setInheritable__avyDiy1HdQrfaD3Ql9b63EQ)(int f_0, NIM_BOOL inheritable) {	NIM_BOOL result;	nimfr_("setInheritable", "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = (NIM_BOOL)0;
+#line 336 "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim"
+	nimln_(336, "/home/elcritch/.asdf/installs/nim/devel/lib/system/io.nim");	result = NIM_TRUE;	popFrame();	return result;}
