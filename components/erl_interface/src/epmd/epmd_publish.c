@@ -109,7 +109,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
 
   printf(
 		 "-> ALIVE2_REQ alive=%s port=%d ntype=%d "
-		 "proto=%d dist-high=%d dist-low=%d",
+		 "proto=%d dist-high=%d dist-low=%d\n",
 		 alive,port,'H',EI_MYPROTO,EI_DIST_HIGH,EI_DIST_LOW);
 
   dlen = (ssize_t) 4;
@@ -127,17 +127,17 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   /* Don't close fd here! It keeps us registered with epmd */
   s = buf;
   if (((res=get8(s)) != EI_EPMD_ALIVE2_RESP)) {  /* response */
-    printf("ei_epmd_r4_publish" "<- unknown (%d)",res);
-    printf("ei_epmd_r4_publish" "-> CLOSE");
+    printf("ei_epmd_r4_publish" "<- unknown (%d)\n",res);
+    printf("ei_epmd_r4_publish" "-> CLOSE\n");
     ei_close__(fd);
     erl_errno = EIO;
     return -1;
   }
 
-  printf("ei_epmd_r4_publish" "<- ALIVE2_RESP");
+  printf("ei_epmd_r4_publish" "<- ALIVE2_RESP\n");
 
   if (((res=get8(s)) != 0)) {           /* 0 == success */
-      printf("ei_epmd_r4_publish" " result=%d (fail)",res);
+      printf("ei_epmd_r4_publish" " result=%d (fail)\n",res);
     ei_close__(fd);
     erl_errno = EIO;
     return -1;
@@ -146,7 +146,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   creation = get16be(s);
 
   printf("ei_epmd_r4_publish"
-		 " result=%d (ok) creation=%d",res,creation);
+		 " result=%d (ok) creation=%d\n",res,creation);
 
   /* probably should save fd so we can close it later... */
   /* epmd_saveconn(OPEN,fd,alive); */
