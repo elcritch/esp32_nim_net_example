@@ -77,6 +77,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   if (len > sizeof(buf)-2)
   {
     erl_errno = ERANGE;
+    printf("ei_epmd_r4_publish: erange\n");
     return -1;
   }
 
@@ -99,9 +100,12 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
 
   dlen = (ssize_t) len+2;
   err = ei_write_fill_t__(fd, buf, &dlen, tmo);
-  if (!err && dlen != (ssize_t) len + 2)
+  if (!err && dlen != (ssize_t) len + 2) {
+      printf("ei_epmd_r4_publish: EIO\n");
       erl_errno = EIO;
+  }
   if (err) {
+      printf("ei_epmd_r4_publish: erange\n");
       ei_close__(fd);
       EI_CONN_SAVE_ERRNO__(err);
       return -1;
@@ -115,10 +119,12 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   dlen = (ssize_t) 4;
   err = ei_read_fill_t__(fd, buf, &dlen, tmo);
   n = (int) dlen;
-  if (!err && n != 4)
+  if (!err && n != 4) {
+      printf("ei_epmd_r4_publish: EIO\n");
       err = EIO;
+  }
   if (err) {
-    printf("ei_epmd_r4_publish" "<- CLOSE");
+    printf("ei_epmd_r4_publish" "<- CLOSE\n");
     ei_close__(fd);
     EI_CONN_SAVE_ERRNO__(err);
     return -2;			/* version mismatch */
@@ -137,7 +143,7 @@ static int ei_epmd_r4_publish (int port, const char *alive, unsigned ms)
   printf("ei_epmd_r4_publish" "<- ALIVE2_RESP\n");
 
   if (((res=get8(s)) != 0)) {           /* 0 == success */
-      printf("ei_epmd_r4_publish" " result=%d (fail)\n",res);
+    printf("ei_epmd_r4_publish" " result=%d (fail)\n",res);
     ei_close__(fd);
     erl_errno = EIO;
     return -1;
