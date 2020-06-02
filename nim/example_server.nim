@@ -28,8 +28,7 @@ proc run_http_server*() {.exportc.} =
   cprintf("starting: \n")
   for i in 1..10:
     echo("starting: " & $i)
-    delay(2_000)
-    echo("\n")
+    delay(1_000)
 
   echo("done: ")
 
