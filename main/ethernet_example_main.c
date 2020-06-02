@@ -136,6 +136,7 @@ void app_main(void)
 
     NimMain();
     printf("NimMain!\n");
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
     run_http_server();
     printf("run_http_server\n");
 }
