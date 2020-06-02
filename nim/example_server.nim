@@ -27,6 +27,8 @@ proc foo*(x: int): int =
 proc bar*(y: int): int =
     return y * 2
 
+var t:TickType = (1_000 div portTICK_PERIOD_MS).TickType
+
 proc run_http_server*() {.exportc.} =
   var node_name: string = "enode"
   echo("starting: " )
@@ -40,7 +42,6 @@ proc run_http_server*() {.exportc.} =
   einode.connectServer(server_node):
     echo("Warning: unable to connect to node: " & server_node)
     # os.sleep(1_000)
-    var t:TickType = (1_000 div portTICK_PERIOD_MS).TickType
     vTaskDelay(t)
 
 
