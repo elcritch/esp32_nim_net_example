@@ -64,7 +64,7 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
 }
 
 void NimMain();
-void run_http_server();
+void run_tcp_server();
 
 #define GPIO_OUTPUT_IO_4    4
 #define GPIO_OUTPUT_IO_5    5
