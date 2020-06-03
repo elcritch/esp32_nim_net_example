@@ -1,3 +1,22 @@
+defmodule TestEpdmless do
+  @moduledoc """
+  Documentation for `TestEpdmless`.
+  """
+
+  @doc """
+  Hello world.
+
+  ## Examples
+
+      iex> TestEpdmless.hello()
+      :world
+
+  """
+  def hello do
+    :world
+  end
+end
+
 # A module containing the function that determines the port number
 defmodule Epmdless do
   require Logger
@@ -28,7 +47,8 @@ defmodule Epmdless do
 end
 
 defmodule Epmdless_epmd_client do
-  def start_link do
+  def start_link(args \\ [], opts \\ []) do
+    IO.put "Epmdless_epmd_client -> start_link => args: #{inspect args} opts: #{inspect opts}"
     :ignore
   end
 
