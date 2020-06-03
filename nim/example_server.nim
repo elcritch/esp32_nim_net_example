@@ -74,22 +74,29 @@ proc count_down*() =
 proc run_http_server*() {.exportc.} =
   echo("starting: " )
 
-  var port = Port(4370)
+  var port = Port(5011)
+  var name = "cnode11"
+  var ip = "192.168.1.36"
+
+  echo("starting: " )
+
   discard ei_init()
 
   var node_addr: InAddr
   ##  32-bit IP number of host
-  node_addr.s_addr = inet_addr("127.0.0.1")
+  node_addr.s_addr = inet_addr(ip)
+
   var ec: EiCnode
-  if ei_connect_xinit(ec.addr, "alpha", "cnode1", "cnode1@127.0.0.1", node_addr.addr,
+
+  if ei_connect_xinit(ec.addr, "alpha", name, name & "@" & ip, node_addr.addr,
                      "secretcookie", 0) < 0:
     raise newException(LibraryError, "ERROR: when initializing ei_connect_xinit ")
 
   ##  Listen socket
   var listen = my_listen(port)
 
-  if ei_publish(ec.addr, port.cint) == -1:
-    raise newException(LibraryError, "ERROR: publishing on port $1" % [$port])
+  # if ei_publish(ec.addr, port.cint) == -1:
+    # raise newException(LibraryError, "ERROR: publishing on port $1" % [$port])
 
   var conn: ErlConnect
 
