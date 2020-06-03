@@ -32,10 +32,6 @@
 /home/elcritch/.asdf/installs/nim/devel/lib/std/monotimes.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/pure/ssl_certs.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/deprecated/pure/ospaths.nim
-/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim
-/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/codec.nim
-/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tables.nim
-/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode/ei.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/bitmasks.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/arithmetics.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/osenv.nim
@@ -55,7 +51,6 @@
 /home/elcritch/.asdf/installs/nim/devel/lib/system/atomics.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/threads.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/gc_interface.nim
-/home/elcritch/.asdf/installs/nim/devel/lib/pure/collections/tableimpl.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/mmdisp.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/inclrtl.nim
 /home/elcritch/.asdf/installs/nim/devel/lib/system/memalloc.nim
