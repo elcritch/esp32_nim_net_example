@@ -74,8 +74,8 @@ proc count_down*() =
 proc run_http_server*() {.exportc.} =
   echo("starting: " )
 
-  var port = Port(5011)
-  var name = "cnode11"
+  var port = Port(4370)
+  var name = "cnode"
   var ip = "192.168.1.36"
 
   echo("starting: " )
