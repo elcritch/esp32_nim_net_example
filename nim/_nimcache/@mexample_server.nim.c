@@ -195,9 +195,9 @@ static const struct {
 } TM__F2tqCOO6WDiND6xhXZOuUw_4 = { 6 | NIM_STRLIT_FLAG, "cnode1" };
 static const NimStringV2 TM__F2tqCOO6WDiND6xhXZOuUw_5 = {6, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_4};
 static const struct {
-  NI cap; NIM_CHAR data[9+1];
-} TM__F2tqCOO6WDiND6xhXZOuUw_6 = { 9 | NIM_STRLIT_FLAG, "127.0.0.1" };
-static const NimStringV2 TM__F2tqCOO6WDiND6xhXZOuUw_7 = {9, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_6};
+  NI cap; NIM_CHAR data[12+1];
+} TM__F2tqCOO6WDiND6xhXZOuUw_6 = { 12 | NIM_STRLIT_FLAG, "192.168.1.36" };
+static const NimStringV2 TM__F2tqCOO6WDiND6xhXZOuUw_7 = {12, (NimStrPayload*)&TM__F2tqCOO6WDiND6xhXZOuUw_6};
 static const struct {
   NI cap; NIM_CHAR data[12+1];
 } TM__F2tqCOO6WDiND6xhXZOuUw_8 = { 12 | NIM_STRLIT_FLAG, "secretcookie" };
@@ -680,7 +680,7 @@ N_LIB_PRIVATE N_NIMCALL(void, run_http_server)(void) {	NimStringV2 node_name;	ty
 "m/example_server.nim");	node_name = TM__F2tqCOO6WDiND6xhXZOuUw_5;
 #line 70 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	nimln_(70, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
-"m/example_server.nim");	port_1 = ((NU16) 5000);
+"m/example_server.nim");	port_1 = ((NU16) 5001);
 #line 72 "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/example_server.nim"
 	nimln_(72, "/home/elcritch/projects/pt/third-party/esp32_nim_net_example/ni"
 "m/example_server.nim");	echoBinSafe(TM__F2tqCOO6WDiND6xhXZOuUw_2, 1);
