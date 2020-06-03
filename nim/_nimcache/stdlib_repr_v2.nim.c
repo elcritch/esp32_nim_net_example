@@ -721,3 +721,10 @@ N_LIB_PRIVATE N_NIMCALL(NimStringV2, repr__bed2yRJ9cgOSUKAUEFA8J1A)(tyObject_Soc
 	reprObject__rpxzovMTAQ5iPPdHLFpTcQ((&result), (&(*x)));
 	if (NIM_UNLIKELY(*nimErr_)) goto BeforeRet_;	}BeforeRet_: ;
 	popFrame();	return result;}
+
+#line 43 "/home/elcritch/.asdf/installs/nim/devel/lib/system/repr_v2.nim"
+N_LIB_PRIVATE N_NIMCALL(NimStringV2, repr__tW8HvRRkF7aw2PEMA5Vx9bA)(NimStringV2 x) {	NimStringV2 result;	NimStringV2 T1_;	nimfr_("repr", "/home/elcritch/.asdf/installs/nim/devel/lib/system/repr_v2.nim");	result.len = 0; result.p = NIM_NIL;
+#line 46 "/home/elcritch/.asdf/installs/nim/devel/lib/system/repr_v2.nim"
+	nimln_(46, "/home/elcritch/.asdf/installs/nim/devel/lib/system/repr_v2.nim");
+#line 46 "/home/elcritch/.asdf/installs/nim/devel/lib/system/repr_v2.nim"
+	T1_.len = 0; T1_.p = NIM_NIL;	T1_ = rawNewString(x.len + 2);appendChar((&T1_), 34);appendString((&T1_), x);appendChar((&T1_), 34);	result = T1_;	popFrame();	return result;}

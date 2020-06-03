@@ -1,17 +1,28 @@
 ##  #include <erl_format.h>
 import strutils
 import net
-import os
+import posix
 import einode/src/einode
+import einode/src/einode/ei
 # import einode/src/publish
 import system/ansi_c
 
 const
   BUFSIZE* = 1000
 
+proc new_ei_x_size*(x: ptr EiBuff; size: clong): cint
+
 var ei_tracelevel* {.importc: "ei_tracelevel".}: cint
 var erl_errno* {.importc: "__erl_errno", volatile.}: cint
 proc delay*(milsecs: int) {.importc: "delay".}
+
+proc my_listen*(port: Port): Socket =
+  var socket = newSocket()
+  socket.bindAddr(port, address="")
+  socket.setSockOpt(OptReuseAddr, true)
+  socket.setSockOpt(OptKeepAlive, true)
+  socket.listen()
+  return socket
 
 proc publishServer*(einode: var EiNode; address: string = "") =
 
@@ -62,70 +73,111 @@ proc count_down*() =
 
 proc run_http_server*() {.exportc.} =
   echo("starting: " )
-  # vTaskDelay(2000 / portTICK_PERIOD_MS);
-  delay(1_000)
 
-  var node_name = "cnode1"
-  var port = Port(5001)
+  var port = Port(4370)
+  discard ei_init()
 
-  echo("starting: " )
-  # delay(1_000)
+  var node_addr: InAddr
+  ##  32-bit IP number of host
+  node_addr.s_addr = inet_addr("127.0.0.1")
+  var ec: EiCnode
+  if ei_connect_xinit(ec.addr, "alpha", "cnode1", "cnode1@127.0.0.1", node_addr.addr,
+                     "secretcookie", 0) < 0:
+    raise newException(LibraryError, "ERROR: when initializing ei_connect_xinit ")
 
-  var einode: EiNode = newEiNode(
-    node_name,
-    "192.168.1.36",
-    cookie = "secretcookie",
-    port = port.int,
-    alivename = "alpha",
-  )
+  ##  Listen socket
+  var listen = my_listen(port)
 
-  einode.initialize()
-  echo("initialized..." )
-  # delay(1_000)
+  if ei_publish(ec.addr, port.cint) == -1:
+    raise newException(LibraryError, "ERROR: publishing on port $1" % [$port])
 
-  # ##  Listen socket
-  einode.publishServer(address="") 
+  var conn: ErlConnect
 
-  echo("published..." )
-  count_down()
-  # # var conn: ErlConnect
-  # echo("listening on port: $1" & $port)
-  # echo("Connected to `$1`" & $(cast[cstring](einode.conn.nodename[0].addr)))
+  ##  Connection data
+  var fd = ei_accept(ec.addr, listen.getFd().cint, conn.addr)
+  if fd == ERL_ERROR:
+    raise newException(LibraryError, "ERROR: erl_accept on listen socket $1" % [repr(listen)])
 
-  # # var info: ErlangMsg
-  # var emsg: EiBuff
+  echo("listening on port: $1" % [$port])
+  echo("Connected to $1" % [$conn.nodename])
 
-  # discard new_ei_x_size(emsg.addr, 128)
+  var info: ErlangMsg
+  var emsg: EiBuff
+  var x_out: EiBuff
 
-  # ##  Lopp flag
- 
-  # ##  Lopp flag
-  # for (msgtype, info, eterm) in receive(einode):
-  #   case msgtype
-  #   of REG_SEND:
-  #     var res: cint = 0
+  discard new_ei_x_size(emsg.addr, 128)
 
-  #     echo("erl_reg_send: msgtype: $1 " %
-  #             [ $info.msgtype, ])
+  ##  Lopp flag
+  var loop: bool = true
+  while loop:
+    echo("loop: ")
+    var got: cint = ei_receive_msg(fd, addr(info), addr(emsg))
+    if got == ERL_TICK:
+      echo("tick: " & $got)
+    elif got == ERL_ERROR:
+      echo("err: " )
+      loop = false
+      raise newException(LibraryError, "erl_error: " & $got)
+    else:
+      ##  ETERM *fromp, *tuplep, *fnp, *argp, *resp;
+      echo("message: " & $got)
+      if info.msgtype == ERL_REG_SEND.clong:
+        var res: cint = 0
+        var version: cint
+        var arity: cint
+        var msg_atom = newString(MAXATOMLEN + 1)
+        var msg_arg: clong
+        var pid: ErlangPid
 
-  #     var main_msg: seq[ErlTerm] = eterm.getTuple()
+        echo("erl_reg_send: msgtype: $1 buff: $2 idx: $3 bufsz: $4 " %
+                [ $info.msgtype, $emsg.buff, $emsg.index, $emsg.buffsz])
 
-  #     var rpc_msg = main_msg[2].getTuple()
-  #     var msg_atom = rpc_msg[0].getAtom()
-  #     var msg_arg = rpc_msg[1].getInt32()
+        emsg.index = 0
+        if ei_decode_version(emsg.buff, addr(emsg.index), addr(version)) < 0:
+          raise newException(LibraryError, "ignoring malformed message (bad version: $1) " % [$version])
 
-  #     if msg_atom.n == "foo":
-  #       echo( "foo: " & $msg_arg)
-  #       res = foo(msg_arg).cint
-  #     elif msg_atom.n == "bar":
-  #       echo( "bar: " & $msg_arg)
-  #       res = bar(msg_arg).cint
-  #     else:
-  #       echo("other: " & $msg_arg)
-  #       echo("other message: " & $msg_atom)
+        if ei_decode_tuple_header(emsg.buff, addr(emsg.index), addr(arity)) < 0:
+          raise newException(LibraryError, "ignoring malformed message (not tuple) ")
+        if arity != 3:
+          raise newException(LibraryError, "ignoring malformed message (must be a 3-arity tuple ")
+        if ei_decode_atom(emsg.buff, addr(emsg.index), cstring(msg_atom)) < 0:
+          raise newException(LibraryError, "ignoring malformed message (first tuple element not atom ")
+        if ei_decode_pid(emsg.buff, emsg.index.addr, pid.addr) < 0:
+          raise newException(LibraryError, "ignoring malformed message (first tuple element of second tuple element not pid) ")
+        if ei_decode_tuple_header(emsg.buff, addr(emsg.index), addr(arity)) < 0 or
+            arity != 2:
+          raise newException(LibraryError, "ignoring malformed message (second tuple element not 2-arity tuple) ")
+        if ei_decode_atom(emsg.buff, emsg.index.addr, cstring(msg_atom)) < 0:
+          raise newException(LibraryError, "ignoring malformed message (first message tuple element not atom) ")
+        if ei_decode_long(emsg.buff, emsg.index.addr, msg_arg.addr) < 0:
+          raise newException(LibraryError, "ignoring malformed message (second message tuple element not an int)")
 
-  #     var rmsg = newETuple(@[newEAtom("cnode"), newETerm(res)])
+        var fname: string = $(cstring(msg_atom))
+        echo( "fname: " & fname)
+        echo( "fname:len: " & $len(fname))
+        echo( "fname:type: " & $typeof(fname))
+        echo( "fname:repr: " & repr(fname))
+        echo( "fname:foo: " & "foo")
 
-  #     einode.send(to = info.`from`, msg = rmsg)
-  #   else:
-  #     echo("unhandled message: " & $msgtype)
+        if fname == "foo":
+          echo( "foo: " & $msg_arg)
+          res = foo(msg_arg).cint
+        if fname == "bar":
+          echo( "bar: " & $msg_arg)
+          res = bar(msg_arg).cint
+        else:
+          echo("other: " & $msg_arg)
+          echo("other message: " & fname)
+          echo("other message: " & $msg_atom)
+
+        x_out.index = 0
+        discard ei_x_format(addr(x_out), "{cnode,~i}", res)
+        discard ei_send(fd, addr(info.`from`), x_out.buff, x_out.index)
+        ##  erl_free_term(argp);
+
+proc new_ei_x_size(x: ptr EiBuff; size: int): cint =
+  # x.buff = cast[cstring](ei_malloc(size))
+  x.buff = cast[cstring](alloc(size))
+  x.buffsz = size.cint
+  x.index = 0
+  return if x.buff != nil: 0 else: -1

@@ -11,7 +11,7 @@ defmodule Epmdless do
   end
 
   def dist_port(name) when is_binary(name) do
-    base_port = :application.get_env :kernel, :inet_dist_base_port, 5000
+    base_port = :application.get_env :kernel, :inet_dist_base_port, 4370
 
     node_name = Regex.replace ~r/@.*$/, name, ""
     offset =

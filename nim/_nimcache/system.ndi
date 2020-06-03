@@ -275,9 +275,6 @@ orig	orig	/home/elcritch/.asdf/installs/nim/devel/lib/system/refs_v2.nim	87	8
 =destroy	eqdestroy___qRVWt3jIAyom1VkyIWI7tA	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 blitTmp	blitTmp	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	29
-=	eq___aBBXmHFBEivKqERloP6zmA_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
-a	a	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	117	18
-b	b	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	117	38
 =destroy	eqdestroy___3yGECjxuJODSHMD250HMkQ	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	59	22
 dest	dest	/home/elcritch/projects/pt/third-party/esp32_nim_net_example/nim/einode/src/einode.nim	59	22
 =destroy	eqdestroy___yiTnphQYecMH5tyEfwQ3Lg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/includes/oserr.nim	78	6
@@ -294,6 +291,9 @@ n	n_1	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2779	8
 msg	msg	/home/elcritch/.asdf/installs/nim/devel/lib/system/assertions.nim	24	23
 =destroy	eqdestroy___sUPxfcqVijR0WN3SH4QQ6A	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+=	eq___aBBXmHFBEivKqERloP6zmA_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
+a	a	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	117	18
+b	b	/home/elcritch/.asdf/installs/nim/devel/lib/system/strs_v2.nim	117	38
 =destroy	eqdestroy___nUsMv9ct9cZaqYSn3ctclnHw	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/system/fatal.nim	49	4
 $	dollar___RkX9btpg5sQIaP8yYXB6tbA	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	294	5
@@ -308,8 +308,16 @@ nn	nn	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	304	10
 half	half	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	310	8
 t	t	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	312	8
 res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	77	10
+substr	substr__2yh9cer0ymNRHlOOg8P7IuA	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2950	5
+result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2950	0
+first	first_2	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2965	6
+L	L	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2966	6
+i	i_1	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2968	6
+res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	77	10
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	287	0
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/strmantle.nim	290	0
+addQuoted	addQuoted__Jx9cyf9byen4PwchGOyl5LUg	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2783	5
+equalMem	equalMem__Bj9c9cm9cBM9coLsuNsT5BvZ9awsystem	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2146	7
 reportUnhandledError	reportUnhandledError__na8C8pUZ9cLQWVwk35l5vfw_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	403	5
 e	e	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	403	26
 reportUnhandledErrorAux	reportUnhandledErrorAux__na8C8pUZ9cLQWVwk35l5vfw_3	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	354	5
@@ -324,3 +332,6 @@ res	res	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	77	10
 oldLen`gensym11570267	oldLenX60gensym11570267_	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	244	6
 k`gensym11570268	kX60gensym11570268_	/home/elcritch/.asdf/installs/nim/devel/lib/system/excpt.nim	246	6
 res	res_2	/home/elcritch/.asdf/installs/nim/devel/lib/system/iterators_1.nim	77	10
+allocImpl	allocImpl__aMIFDISudztFhhVWVqortg_3	/home/elcritch/.asdf/installs/nim/devel/lib/system/mm/malloc.nim	4	5
+result	result	/home/elcritch/.asdf/installs/nim/devel/lib/system/mm/malloc.nim	4	0
+==	eqeq___aqip9cmQIuefPKdd25wuEEwsystem	/home/elcritch/.asdf/installs/nim/devel/lib/system.nim	2882	5

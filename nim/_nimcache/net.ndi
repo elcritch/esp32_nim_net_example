@@ -1,4 +1,3 @@
-=destroy	eqdestroy___1TCKL9aWTg3J2fdjyrLXdQw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
 newSocket	newSocket__YxN6ic9aWAkO0RL2k3ldopQ	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	235	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	235	0
 fd	fd	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	245	6
@@ -38,8 +37,8 @@ result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	1033	0
 listen	listen__VTYZW8ymcSe8kkgeKu8O5g	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	860	5
 socket	socket_0	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	256	13
 backlog	backlog	/home/elcritch/.asdf/installs/nim/devel/lib/pure/nativesockets.nim	256	35
-=sink	eqsink___uz5bm6GTj6lhUqoWSCWdvg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
 =destroy	eqdestroy___LRnX9aE1u4bAexvcX0iL5Qg	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
-=	eq___uz5bm6GTj6lhUqoWSCWdvg_2	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
+=destroy	eqdestroy___1TCKL9aWTg3J2fdjyrLXdQw	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
+dest	dest	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	207	17
 getFd	getFd__hPmmRa30uwmk5LP7qeLdNA	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	1568	5
 result	result	/home/elcritch/.asdf/installs/nim/devel/lib/pure/net.nim	1568	0
