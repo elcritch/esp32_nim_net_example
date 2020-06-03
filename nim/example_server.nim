@@ -93,6 +93,7 @@ proc run_http_server*() {.exportc.} =
     raise newException(LibraryError, "ERROR: when initializing ei_connect_xinit ")
 
   ##  Listen socket
+  echo("listen: " & $port )
   var listen = my_listen(port)
 
   # if ei_publish(ec.addr, port.cint) == -1:
