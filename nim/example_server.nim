@@ -76,7 +76,7 @@ proc run_http_server*() {.exportc.} =
     node_name,
     "192.168.1.36",
     cookie = "secretcookie",
-    port = 5000,
+    port = port.int,
     alivename = "alpha",
   )
 
