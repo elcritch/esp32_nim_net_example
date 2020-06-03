@@ -67,14 +67,14 @@ proc run_http_server*() {.exportc.} =
   delay(1_000)
 
   var node_name = "cnode1"
-  var port = Port(5000)
+  var port = Port(5001)
 
   echo("starting: " )
   delay(1_000)
 
   var einode: EiNode = newEiNode(
     node_name,
-    "127.0.0.1",
+    "192.168.1.36",
     cookie = "secretcookie",
     port = 5000,
     alivename = "alpha",
