@@ -144,7 +144,7 @@ void app_main(void)
     printf("run http server!\n");
     // vTaskDelay(2000 / portTICK_PERIOD_MS);
 
-    xTaskCreate(run_http_server, "run_http_server", 16384, NULL, tskIDLE_PRIORITY, NULL);
+    // xTaskCreate(run_http_server, "run_http_server", 16384, NULL, tskIDLE_PRIORITY, NULL);
     // run_http_server();
     // printf("run_http_server\n");
 }
