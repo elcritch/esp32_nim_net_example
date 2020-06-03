@@ -79,8 +79,12 @@ proc run_http_server*() {.exportc.} =
   var ip = "192.168.1.36"
 
   echo("starting: " )
+  delay(400)
 
   discard ei_init()
+
+  echo("ei_init " )
+  delay(400)
 
   var node_addr: InAddr
   ##  32-bit IP number of host
@@ -89,6 +93,7 @@ proc run_http_server*() {.exportc.} =
   var ec: EiCnode
 
   echo("xinit: " )
+  delay(400)
   if ei_connect_xinit(ec.addr, "alpha", name, name & "@" & ip, node_addr.addr,
                      "secretcookie", 0) < 0:
     raise newException(LibraryError, "ERROR: when initializing ei_connect_xinit ")
