@@ -24,9 +24,8 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   socket.listen()
   einode.sock = some(socket)
   echo("socket listening: " & $repr(socket.getFd()) )
-  delay(1_000)
   echo("socket publish: " )
-  delay(1_000)
+  delay(100)
 
   # var published_ret = ei_publish(einode.ec.addr, einode.port.cint)
   # if published_ret < 0:
@@ -38,7 +37,7 @@ proc publishServer*(einode: var EiNode; address: string = "") =
   # echo("socket published: " )
   # delay(1_000)
   echo("socket accept: " )
-  delay(1_000)
+  delay(100)
 
   var fd = ei_accept(einode.ec.addr,
                      socket.getFd().cint,
@@ -70,7 +69,7 @@ proc run_http_server*() {.exportc.} =
   var port = Port(5001)
 
   echo("starting: " )
-  delay(1_000)
+  # delay(1_000)
 
   var einode: EiNode = newEiNode(
     node_name,
@@ -82,7 +81,7 @@ proc run_http_server*() {.exportc.} =
 
   einode.initialize()
   echo("initialized..." )
-  delay(1_000)
+  # delay(1_000)
 
   # ##  Listen socket
   einode.publishServer(address="") 
