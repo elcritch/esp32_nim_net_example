@@ -88,6 +88,7 @@ proc run_http_server*() {.exportc.} =
 
   var ec: EiCnode
 
+  echo("xinit: " )
   if ei_connect_xinit(ec.addr, "alpha", name, name & "@" & ip, node_addr.addr,
                      "secretcookie", 0) < 0:
     raise newException(LibraryError, "ERROR: when initializing ei_connect_xinit ")
@@ -102,12 +103,13 @@ proc run_http_server*() {.exportc.} =
   var conn: ErlConnect
 
   ##  Connection data
+  echo("accept: " )
   var fd = ei_accept(ec.addr, listen.getFd().cint, conn.addr)
   if fd == ERL_ERROR:
     raise newException(LibraryError, "ERROR: erl_accept on listen socket $1" % [repr(listen)])
 
-  echo("listening on port: $1" % [$port])
-  echo("Connected to $1" % [$conn.nodename])
+  echo("listening on port: " & $port)
+  echo("Connected to " & $conn.nodename)
 
   var info: ErlangMsg
   var emsg: EiBuff
