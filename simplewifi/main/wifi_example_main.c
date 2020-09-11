@@ -1,12 +1,3 @@
-/* Simple HTTP Server Example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
-
 #include <esp_wifi.h>
 #include <esp_event.h>
 #include <esp_log.h>
@@ -26,7 +17,6 @@
 #include "lwip/sys.h"
 
 #define GOT_IPV4_BIT BIT(0)
-#define GOT_IPV6_BIT BIT(1)
 
 #define CONNECTED_BITS (GOT_IPV4_BIT)
 
@@ -34,7 +24,6 @@ static EventGroupHandle_t s_connect_event_group;
 static ip4_addr_t s_ip_addr;
 static const char *s_connection_name;
 
-//static const char *TAG = "example_connect";
 static const char *TAG = "example";
 
 /* set up connection, Wi-Fi or Ethernet */
@@ -77,8 +66,6 @@ esp_err_t example_disconnect()
     return ESP_OK;
 }
 
-//ifdef CONFIG_EXAMPLE_CONNECT_WIFI
-
 static void on_wifi_disconnect(void *arg, esp_event_base_t event_base,
                                int32_t event_id, void *event_data)
 {
@@ -116,10 +103,6 @@ static void stop()
     ESP_ERROR_CHECK(esp_wifi_stop());
     ESP_ERROR_CHECK(esp_wifi_deinit());
 }
-//endif // CONFIG_EXAMPLE_CONNECT_WIFI
-/* A simple example that demonstrates how to create GET and POST
- * handlers for the web server.
- */
 
 void app_main()
 {
@@ -127,10 +110,6 @@ void app_main()
     tcpip_adapter_init();
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
-    /* This helper function configures Wi-Fi or Ethernet, as selected in menuconfig.
-     * Read "Establishing Wi-Fi or Ethernet Connection" section in
-     * examples/protocols/README.md for more information about this function.
-     */
     ESP_ERROR_CHECK(example_connect());
 
     /* Register event handlers to stop the server when Wi-Fi or Ethernet is disconnected,
