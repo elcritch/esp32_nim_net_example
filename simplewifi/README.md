@@ -20,6 +20,10 @@ cd simplewifi
 cd nim
 nim prepare ./nim/server.nim
 idf.py menuconfig
+```
+a config menu appear, go to `Wifi Example Configuration` and set ssid and password.
+Remember to save before exiting.
+```
 idf.py build
 idf.py -p [port] flash
 idf.py -p [port] monitor
