@@ -1,1 +1,5 @@
 build
+nimcache
+*.exe
+simplewifi/sdkconfig
+simplewifi/sdkconfig.old
